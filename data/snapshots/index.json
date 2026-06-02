@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-03T00:22:33+08:00",
+  "generated_at": "2026-06-03T00:55:33+08:00",
   "snapshots": [
     {
       "date": "2026-05-26",
@@ -32,6 +32,42 @@
         },
         "outlier_count": 1178,
         "sold_out_count": 551
+      }
+    },
+    {
+      "date": "2026-05-22",
+      "cities": 20,
+      "hotels": 200,
+      "checkins": 46,
+      "kpi": {
+        "snapshot_date": "2026-05-22",
+        "cities_covered": 20,
+        "hotels_covered": 200,
+        "max_heat": {
+          "city": "kyoto",
+          "ci": "2026-10-17",
+          "heat": 86.8
+        },
+        "outlier_count": 1070,
+        "sold_out_count": 493
+      }
+    },
+    {
+      "date": "2026-05-19",
+      "cities": 10,
+      "hotels": 100,
+      "checkins": 47,
+      "kpi": {
+        "snapshot_date": "2026-05-19",
+        "cities_covered": 10,
+        "hotels_covered": 100,
+        "max_heat": {
+          "city": "bangkok",
+          "ci": "2026-08-15",
+          "heat": 85.0
+        },
+        "outlier_count": 541,
+        "sold_out_count": 290
       }
     }
   ]

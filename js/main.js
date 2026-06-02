@@ -113,9 +113,10 @@ function renderSnapshotPicker() {
   for (const s of state.snapshotIndex.snapshots) {
     const opt = document.createElement('option');
     opt.value = s.date;
-    // 在选项里附加摘要信息
+    // 在选项里附加摘要信息；cities=0 标注「采集不完整」
     const cities = s.cities || 0;
-    opt.textContent = `${s.date} (${cities} 城)`;
+    const tag = cities === 0 ? ' · ⚠ 采集不完整' : '';
+    opt.textContent = `${s.date} (${cities} 城${tag})`;
     if (s.date === state.currentDate) opt.selected = true;
     sel.appendChild(opt);
   }
