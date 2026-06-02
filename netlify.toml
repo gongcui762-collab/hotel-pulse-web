@@ -17,10 +17,12 @@
 # ----------------------------------------
 # 安全 / 性能 headers
 # ----------------------------------------
+# 注意：故意不设 X-Frame-Options 和 Content-Security-Policy: frame-ancestors，
+# 允许任何网站用 iframe 嵌入（业务侧需要把 dashboard 嵌到内部门户页）。
+# Dashboard 完全公开 + 只读 + 无表单交互，clickjacking 风险可忽略。
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options       = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy       = "strict-origin-when-cross-origin"
     Permissions-Policy    = "camera=(), microphone=(), geolocation=()"
