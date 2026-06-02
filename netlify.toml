@@ -1,0 +1,50 @@
+# Netlify 部署配置
+#
+# 这是一份 100% 静态站，没有 build 步骤——直接发布根目录所有文件。
+# 数据更新流程：本地跑 export_static_data.py → git push → Netlify 自动检测 → 重发布
+#
+# 文档：https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # 没有打包过程，publish 目录就是仓库根
+  publish = "."
+  command = ""
+
+[build.environment]
+  # 强制 Node 20，避免 Netlify 默认 Node 版本浮动
+  NODE_VERSION = "20"
+
+# ----------------------------------------
+# 安全 / 性能 headers
+# ----------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options       = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy       = "strict-origin-when-cross-origin"
+    Permissions-Policy    = "camera=(), microphone=(), geolocation=()"
+
+# JSON 数据文件 1 小时浏览器缓存（每天 push 才会真正变）
+# 配合 Netlify 自动加 ETag,变化时仍能即时更新
+[[headers]]
+  for = "/data/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# 静态资源（CSS/JS）较少更新，长缓存
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# index.html 不缓存（确保部署后即时刷新）
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

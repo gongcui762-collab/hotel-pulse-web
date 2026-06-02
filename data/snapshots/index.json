@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-03T00:22:33+08:00",
+  "snapshots": [
+    {
+      "date": "2026-05-26",
+      "cities": 0,
+      "hotels": 41,
+      "checkins": 0,
+      "kpi": {
+        "snapshot_date": "2026-05-26",
+        "cities_covered": 0,
+        "hotels_covered": 41,
+        "max_heat": null,
+        "outlier_count": 0,
+        "sold_out_count": 16
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "cities": 20,
+      "hotels": 200,
+      "checkins": 53,
+      "kpi": {
+        "snapshot_date": "2026-05-24",
+        "cities_covered": 20,
+        "hotels_covered": 200,
+        "max_heat": {
+          "city": "osaka",
+          "ci": "2026-09-19",
+          "heat": 83.1
+        },
+        "outlier_count": 1178,
+        "sold_out_count": 551
+      }
+    }
+  ]
+}

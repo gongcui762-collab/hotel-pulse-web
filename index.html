@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hotel Pulse · 出境酒店价格脉搏系统" />
+  <title>Hotel Pulse · 出境酒店价格脉搏</title>
+
+  <!-- Plotly.js CDN（首次访问 ~1.4MB，浏览器缓存后秒开） -->
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- 顶部栏 ------------------------------------------------------ -->
+  <header class="topbar">
+    <div class="brand">
+      <h1>🏨 Hotel Pulse</h1>
+      <p class="subtitle">出境酒店价格脉搏系统 · 100 家境外基准酒店逐日价格监控</p>
+    </div>
+    <div class="snapshot-picker">
+      <label for="snapshot-select">📅 数据快照</label>
+      <select id="snapshot-select" aria-label="选择数据快照日期"></select>
+    </div>
+  </header>
+
+  <!-- KPI 栏 ----------------------------------------------------- -->
+  <section class="kpi-bar" id="kpi-bar">
+    <div class="kpi-card"><span class="kpi-label">预订日</span>     <span class="kpi-value" id="kpi-snapshot-date">—</span></div>
+    <div class="kpi-card"><span class="kpi-label">覆盖城市</span>   <span class="kpi-value" id="kpi-cities">—</span></div>
+    <div class="kpi-card"><span class="kpi-label">基准酒店</span>   <span class="kpi-value" id="kpi-hotels">—</span></div>
+    <div class="kpi-card highlight"><span class="kpi-label">最高热点</span><span class="kpi-value" id="kpi-max-heat">—</span></div>
+  </section>
+
+  <!-- 热度档位图例 ----------------------------------------------- -->
+  <section class="heat-legend">
+    <span class="legend-item lvl-blue">🔵 &lt;35 冷</span>
+    <span class="legend-item lvl-green">🟢 35–65 平</span>
+    <span class="legend-item lvl-yellow">🟡 65–85 热</span>
+    <span class="legend-item lvl-red">🔴 ≥85 烫</span>
+  </section>
+
+  <!-- Tab 导航 --------------------------------------------------- -->
+  <nav class="tab-nav" role="tablist">
+    <button class="tab-btn active" data-tab="heatmap"     role="tab" aria-selected="true">🗺 热度地图</button>
+    <button class="tab-btn"        data-tab="holidays"    role="tab" aria-selected="false">🎉 节假日窗口</button>
+    <button class="tab-btn"        data-tab="drilldown"   role="tab" aria-selected="false">🔍 单点钻取</button>
+    <button class="tab-btn"        data-tab="hotels"      role="tab" aria-selected="false">🏨 酒店清单</button>
+    <button class="tab-btn"        data-tab="data-health" role="tab" aria-selected="false">⚙ 数据健康</button>
+  </nav>
+
+  <!-- Tab 内容容器 ----------------------------------------------- -->
+  <main class="tab-content">
+
+    <!-- 1. 热度地图 -->
+    <section id="tab-heatmap" class="tab-panel active" role="tabpanel">
+      <div class="panel-header">
+        <h2>城市 × 入住日 热度图</h2>
+        <p class="hint">单击单元格 → 自动跳转「单点钻取」查看明细</p>
+      </div>
+      <div id="heatmap-plot" class="plot-container"></div>
+    </section>
+
+    <!-- 2. 节假日窗口 -->
+    <section id="tab-holidays" class="tab-panel" role="tabpanel">
+      <div class="panel-header">
+        <h2>节假日窗口热度对比</h2>
+        <p class="hint">中国法定节假日 + 当地节假日（⭐）期间的城市热度</p>
+      </div>
+      <div id="holidays-content"></div>
+    </section>
+
+    <!-- 3. 单点钻取（事实先行） -->
+    <section id="tab-drilldown" class="tab-panel" role="tabpanel">
+      <div class="panel-header">
+        <h2>🔍 单点钻取</h2>
+        <p class="hint">查看某一 city × checkin 的酒店级明细</p>
+      </div>
+      <div class="drilldown-controls">
+        <label>城市 <select id="drilldown-city"></select></label>
+        <label>入住日 <select id="drilldown-checkin"></select></label>
+      </div>
+      <div id="drilldown-content"></div>
+    </section>
+
+    <!-- 4. 酒店清单 -->
+    <section id="tab-hotels" class="tab-panel" role="tabpanel">
+      <div class="panel-header">
+        <h2>🏨 100 家基准酒店清单</h2>
+      </div>
+      <div id="hotels-content"></div>
+    </section>
+
+    <!-- 5. 数据健康 -->
+    <section id="tab-data-health" class="tab-panel" role="tabpanel">
+      <div class="panel-header">
+        <h2>⚙ 数据健康</h2>
+        <p class="hint">FlyAI 调用情况、采集成功率、异常分布</p>
+      </div>
+      <div id="data-health-content"></div>
+    </section>
+
+  </main>
+
+  <!-- 底部信息 --------------------------------------------------- -->
+  <footer class="footer">
+    <span id="footer-generated-at">数据更新时间：—</span>
+    <span class="separator">·</span>
+    <span>采集源：FlyAI</span>
+    <span class="separator">·</span>
+    <a href="https://github.com" id="footer-repo-link" target="_blank" rel="noopener">源码</a>
+  </footer>
+
+  <!-- 加载中遮罩 ------------------------------------------------- -->
+  <div id="loading-overlay" class="loading-overlay">
+    <div class="spinner"></div>
+    <p>加载数据中…</p>
+  </div>
+
+  <!-- 主入口 ----------------------------------------------------- -->
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
