@@ -6,8 +6,9 @@
   <meta name="description" content="Hotel Pulse · 出境酒店价格脉搏系统" />
   <title>Hotel Pulse · 出境酒店价格脉搏</title>
 
-  <!-- Plotly.js CDN（首次访问 ~1.4MB，浏览器缓存后秒开） -->
-  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+  <!-- Plotly.js 本地托管（曾用 cdn.plot.ly，国内访问 20s 超时导致渲染崩；
+       自己托管后走 Netlify CDN，跟 dashboard 同源） -->
+  <script src="./js/lib/plotly.min.js" charset="utf-8"></script>
 
   <link rel="stylesheet" href="./css/style.css" />
 </head>
