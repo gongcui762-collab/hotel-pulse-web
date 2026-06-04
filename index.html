@@ -6,11 +6,16 @@
   <meta name="description" content="Hotel Pulse · 出境酒店价格脉搏系统" />
   <title>Hotel Pulse · 出境酒店价格脉搏</title>
 
-  <!-- Plotly.js 本地托管（曾用 cdn.plot.ly，国内访问 20s 超时导致渲染崩；
-       自己托管后走 Netlify CDN，跟 dashboard 同源） -->
-  <script src="./js/lib/plotly.min.js" charset="utf-8"></script>
+  <!-- 性能优化：preload 关键资源让浏览器并发尽早开拉，CSS 不再排队等 JS -->
+  <link rel="preload" href="./js/lib/plotly.min.js" as="script" />
+  <link rel="preload" href="./data/meta.json" as="fetch" crossorigin />
 
   <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- Plotly.js（cartesian-dist 2.3MB，不再用 full 4.4MB）+ defer
+       defer = 不阻塞 HTML 解析，HTML 先出骨架，JS 后台并行加载。
+       main.js 是 type=module 默认就 defer，二者按声明顺序执行 -->
+  <script defer src="./js/lib/plotly.min.js" charset="utf-8"></script>
 </head>
 <body>
 
@@ -119,7 +124,9 @@
     <p>加载数据中…</p>
   </div>
 
-  <!-- 主入口 ----------------------------------------------------- -->
+  <!-- 主入口（type=module 自动 defer，在 plotly defer 之后执行） -->
   <script type="module" src="./js/main.js"></script>
+  <link rel="modulepreload" href="./js/main.js" />
+  <link rel="modulepreload" href="./js/tabs/heatmap.js" />
 </body>
 </html>
