@@ -361,6 +361,12 @@ summary::-webkit-details-marker { display: none; }
   margin-left: 6px; letter-spacing: 0.05em;
   cursor: pointer;
 }
+.city-main-row:hover td { background: #f0f4ff !important; }
+.city-main-row.expanded > td { background: #eff6ff; border-bottom-color: #bfdbfe; }
+.sub-row.district:hover td { background: #f0f4ff !important; }
+.sub-row.district.expanded > td { background: #f0f9ff; }
+.sub-row.district .row-label::before { content: ''; margin-right: 0; }
+.sub-row.hotel .row-label::before { content: ''; margin-right: 0; }
 
 /* sparkline */
 .sparkline { display: inline-block; width: 80px; height: 24px; vertical-align: middle; }

@@ -104,8 +104,11 @@ function renderSnapshotPicker() {
 }
 
 function renderKPIBar() {
-  const kpi = state.currentSnapshot?.kpi;
+  const { currentSnapshot, meta } = state;
+  const kpi = currentSnapshot?.kpi;
   if (!kpi) return;
+
+  // ---- 卡 1: 最热目的地 ----
   if (kpi.max_heat) {
     document.getElementById('kpi-hot-target').textContent = `${cityNameZh(kpi.max_heat.city)} · ${kpi.max_heat.ci}`;
     document.getElementById('kpi-hot-value').textContent = kpi.max_heat.heat;
@@ -113,15 +116,68 @@ function renderKPIBar() {
     document.getElementById('kpi-hot-conf').textContent = '置信度 高';
     document.getElementById('kpi-hot-conf').className = 'confidence high';
   }
-  document.getElementById('kpi-surge-target').textContent = `${kpi.cities_covered} 城覆盖`;
-  document.getElementById('kpi-surge-value').textContent = kpi.hotels_covered;
-  document.getElementById('kpi-surge-desc').textContent = '基准酒店总数';
-  document.getElementById('kpi-scarce-target').textContent = '异常指标';
-  document.getElementById('kpi-scarce-value').textContent = kpi.outlier_count || 0;
-  document.getElementById('kpi-scarce-desc').textContent = '异常高价酒店数';
-  document.getElementById('kpi-speed-target').textContent = '售罄';
-  document.getElementById('kpi-speed-value').textContent = kpi.sold_out_count || 0;
-  document.getElementById('kpi-speed-desc').textContent = '售罄 / 未上架';
+
+  // ---- 卡 2: 最大涨幅（排除异常值 out=1 及极端 delta>300%） ----
+  const details = currentSnapshot.hotel_details || [];
+  const windowDetails = details.filter(d => d.delta != null && d.status === 'ok' && !d.out && d.delta <= 3.0 && windowFilter(d.ci));
+  const topSurge = windowDetails.length ? windowDetails.reduce((max, d) => d.delta > max.delta ? d : max, windowDetails[0]) : null;
+  if (topSurge) {
+    document.getElementById('kpi-surge-target').textContent = `${cityNameZh(topSurge.city)} · ${topSurge.ci}`;
+    document.getElementById('kpi-surge-value').textContent = `+${(topSurge.delta * 100).toFixed(0)}%`;
+    const h = hotelById(topSurge.hid);
+    document.getElementById('kpi-surge-desc').textContent = h ? (h.name_zh || h.name_en) : '单酒店最大涨幅';
+    document.getElementById('kpi-surge-conf').textContent = '置信度 高';
+    document.getElementById('kpi-surge-conf').className = 'confidence high';
+  } else {
+    document.getElementById('kpi-surge-target').textContent = '暂无数据';
+    document.getElementById('kpi-surge-value').textContent = '—';
+    document.getElementById('kpi-surge-desc').textContent = '窗口内无涨价记录';
+  }
+
+  // ---- 卡 3: 异常稀缺（售罄率最高的城市） ----
+  const cityCodes = [...new Set(details.filter(d => windowFilter(d.ci)).map(d => d.city))];
+  let maxSoCity = null, maxSoRate = 0, maxSoCount = 0, maxSoTotal = 0;
+  for (const cc of cityCodes) {
+    const cityItems = details.filter(d => d.city === cc && windowFilter(d.ci));
+    const soCount = cityItems.filter(d => d.so).length;
+    const rate = cityItems.length ? soCount / cityItems.length : 0;
+    if (rate > maxSoRate) {
+      maxSoRate = rate; maxSoCity = cc; maxSoCount = soCount; maxSoTotal = cityItems.length;
+    }
+  }
+  if (maxSoCity && maxSoRate > 0) {
+    document.getElementById('kpi-scarce-target').textContent = `${cityNameZh(maxSoCity)} · 窗口内`;
+    document.getElementById('kpi-scarce-value').textContent = `${(maxSoRate * 100).toFixed(0)}%`;
+    document.getElementById('kpi-scarce-desc').textContent = `${maxSoCount}/${maxSoTotal} 售罄`;
+    document.getElementById('kpi-scarce-conf').textContent = maxSoRate > 0.3 ? '置信度 高' : '置信度 中';
+    document.getElementById('kpi-scarce-conf').className = `confidence ${maxSoRate > 0.3 ? 'high' : 'mid'}`;
+  } else {
+    document.getElementById('kpi-scarce-target').textContent = '异常稀缺';
+    document.getElementById('kpi-scarce-value').textContent = kpi.sold_out_count || 0;
+    document.getElementById('kpi-scarce-desc').textContent = '售罄总数';
+  }
+
+  // ---- 卡 4: 涨速 TOP（涨价最普遍的城市） ----
+  let maxUpCity = null, maxUpRate = 0, maxUpCnt = 0, maxUpTotal = 0;
+  for (const cc of cityCodes) {
+    const cityOk = windowDetails.filter(d => d.city === cc);
+    const upCnt = cityOk.filter(d => d.delta > 0.05).length;
+    const rate = cityOk.length ? upCnt / cityOk.length : 0;
+    if (rate > maxUpRate && cityOk.length >= 5) {
+      maxUpRate = rate; maxUpCity = cc; maxUpCnt = upCnt; maxUpTotal = cityOk.length;
+    }
+  }
+  if (maxUpCity) {
+    document.getElementById('kpi-speed-target').textContent = `${cityNameZh(maxUpCity)} · 窗口内`;
+    document.getElementById('kpi-speed-value').textContent = `${(maxUpRate * 100).toFixed(0)}%`;
+    document.getElementById('kpi-speed-desc').textContent = `${maxUpCnt}/${maxUpTotal} 酒店涨价超 5%`;
+    document.getElementById('kpi-speed-conf').textContent = '置信度 高';
+    document.getElementById('kpi-speed-conf').className = 'confidence high';
+  } else {
+    document.getElementById('kpi-speed-target').textContent = '涨速';
+    document.getElementById('kpi-speed-value').textContent = '—';
+    document.getElementById('kpi-speed-desc').textContent = '窗口内暂无足够数据';
+  }
 }
 
 function renderCountryTabs() {
@@ -206,6 +262,27 @@ function renderInsights() {
   }).join('');
 }
 
+// ---- 城市排行表（三级下钻 + 关键信号） ----
+const COUNTRY_FLAGS = { JP:'🇯🇵', TH:'🇹🇭', KR:'🇰🇷', HK:'🇭🇰', MO:'🇲🇴', SG:'🇸🇬', MY:'🇲🇾', ID:'🇮🇩', VN:'🇻🇳', AE:'🇦🇪', MV:'🇲🇻' };
+const SIGNAL_MAP = {
+  consecutive_high: { icon: '🔥', label: '连续高热' },
+  surge:            { icon: '📈', label: '涨速异动' },
+  anomaly_sold_out: { icon: '⚠️', label: '异常售罄' },
+  price_stable:     { icon: '✅', label: '平稳' },
+};
+
+function windowFilter(ci) {
+  const w = state.activeWindow;
+  if (!w || w.start === 'auto') return true;
+  return ci >= w.start && ci <= w.end;
+}
+
+function getCitySignal(cityCode) {
+  const signals = state.insights?.signals;
+  if (!signals) return null;
+  return signals.find(s => s.city_code === cityCode) || null;
+}
+
 function renderCityTable() {
   const { meta, currentSnapshot } = state;
   if (!currentSnapshot?.city_heat || !meta?.cities) {
@@ -216,41 +293,213 @@ function renderCityTable() {
   const filtered = state.activeCountry
     ? cities.filter(c => (c.country_group || c.country) === state.activeCountry)
     : cities;
-  const wf = (ci) => {
-    const w = state.activeWindow;
-    if (!w || w.start === 'auto') return true;
-    return ci >= w.start && ci <= w.end;
-  };
-  const flags = { JP:'🇯🇵', TH:'🇹🇭', KR:'🇰🇷', HK:'🇭🇰', MO:'🇲🇴', SG:'🇸🇬', MY:'🇲🇾', ID:'🇮🇩', VN:'🇻🇳', AE:'🇦🇪', MV:'🇲🇻' };
+
   const rows = filtered.map((city, idx) => {
-    const heats = (currentSnapshot.city_heat[city.code] || []).filter(r => wf(r.ci));
+    const heats = (currentSnapshot.city_heat[city.code] || []).filter(r => windowFilter(r.ci));
     const vH = heats.filter(r => r.heat != null).map(r => r.heat);
     const avg = vH.length ? vH.reduce((a, b) => a + b, 0) / vH.length : null;
     const hc = avg == null ? '' : avg >= 85 ? 'heat-red' : avg >= 65 ? 'heat-yellow' : avg >= 35 ? 'heat-green' : 'heat-blue';
     const soR = heats.filter(r => r.so != null).map(r => r.so);
     const avgSo = soR.length ? soR.reduce((a, b) => a + b, 0) / soR.length : 0;
-    const details = (currentSnapshot.hotel_details || []).filter(d => d.city === city.code && d.delta != null && d.status === 'ok').filter(d => wf(d.ci));
-    const upCnt = details.filter(d => d.delta > 0.05).length;
-    return `<tr>
+    const allDetails = (currentSnapshot.hotel_details || []).filter(d => d.city === city.code && windowFilter(d.ci));
+    const okDetails = allDetails.filter(d => d.delta != null && d.status === 'ok');
+    const upCnt = okDetails.filter(d => d.delta > 0.05).length;
+    const soldOut = allDetails.filter(d => d.so).length;
+
+    // 商圈数
+    const districtSet = new Set();
+    for (const d of allDetails) {
+      const h = hotelById(d.hid);
+      if (h?.district) districtSet.add(h.district);
+    }
+
+    // 关键信号
+    const sig = getCitySignal(city.code);
+    const sigHtml = sig
+      ? `<span class="signal">${SIGNAL_MAP[sig.type]?.icon || '📊'} ${SIGNAL_MAP[sig.type]?.label || sig.type}${sig.price_change_pct != null ? ` ${sig.price_change_pct > 0 ? '+' : ''}${(sig.price_change_pct * 100).toFixed(0)}%` : ''}</span>`
+      : '<span class="signal" style="color:#94a3b8;">—</span>';
+
+    return `<tr class="city-main-row" data-city="${city.code}" style="cursor:pointer;">
       <td><span class="rank ${idx < 3 ? 'top' : ''}">${city.outbound_rank || idx + 1}</span></td>
-      <td><span class="city-row">${flags[city.country] || ''} ${city.name_zh}</span></td>
+      <td><span class="city-row">${COUNTRY_FLAGS[city.country] || ''} ${city.name_zh}</span></td>
       <td class="center">${avg != null ? `<span class="heat-pill ${hc}">${avg.toFixed(1)}</span>` : '—'}</td>
       <td class="center">${avgSo > 0 ? `${(avgSo * 100).toFixed(0)}%` : '—'}</td>
-      <td class="center">${heats.length}</td>
-      <td><div class="evidence-cell"><span>${upCnt}/${details.length} 涨价超 5%</span></div></td>
+      <td class="center">${districtSet.size || '—'}</td>
+      <td><div class="evidence-cell"><span><strong>${upCnt}/${okDetails.length}</strong> 涨价超 5%</span>${soldOut > 0 ? `<span><strong>${soldOut}</strong> 售罄</span>` : ''}</div></td>
+      <td>${sigHtml}</td>
     </tr>`;
   }).join('');
 
   document.getElementById('city-table-wrap').innerHTML = `
-    <table class="data-table">
-      <colgroup><col style="width:56px" /><col /><col style="width:120px" />
-        <col style="width:100px" /><col style="width:100px" /><col /></colgroup>
+    <table class="data-table" id="city-rank-table">
+      <colgroup><col style="width:56px" /><col style="width:200px" /><col style="width:110px" />
+        <col style="width:90px" /><col style="width:80px" /><col /><col style="width:160px" /></colgroup>
       <thead><tr>
         <th>排名</th><th>目的地</th><th class="center">窗口热度</th>
-        <th class="center">售罄率</th><th class="center">入住日数</th><th>热度证据</th>
+        <th class="center">售罄率</th><th class="center">商圈</th><th>热度证据</th><th>关键信号</th>
       </tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
+
+  // 绑定展开/折叠事件
+  document.querySelectorAll('.city-main-row').forEach(row => {
+    row.addEventListener('click', () => toggleCityExpand(row));
+  });
+}
+
+function toggleCityExpand(row) {
+  const cityCode = row.dataset.city;
+  const tbody = row.closest('tbody');
+  const isOpen = row.classList.contains('expanded');
+
+  // 收起：移除所有子行
+  if (isOpen) {
+    row.classList.remove('expanded');
+    const tag = row.querySelector('.expand-tag');
+    if (tag) tag.remove();
+    let next = row.nextElementSibling;
+    while (next && next.classList.contains('sub-row')) {
+      const toRemove = next;
+      next = next.nextElementSibling;
+      toRemove.remove();
+    }
+    return;
+  }
+
+  // 展开：生成商圈子行
+  row.classList.add('expanded');
+  const nameCell = row.querySelector('.city-row');
+  if (nameCell && !nameCell.querySelector('.expand-tag')) {
+    nameCell.insertAdjacentHTML('beforeend', ' <span class="expand-tag">展开中</span>');
+  }
+
+  const { currentSnapshot, meta } = state;
+  const allDetails = (currentSnapshot.hotel_details || []).filter(d => d.city === cityCode && windowFilter(d.ci));
+
+  // 按 district 分组，聚合每个商圈的指标
+  const byDistrict = {};
+  for (const d of allDetails) {
+    const hotel = hotelById(d.hid);
+    const dist = hotel?.district || '其他';
+    (byDistrict[dist] = byDistrict[dist] || []).push(d);
+  }
+
+  const fragment = document.createDocumentFragment();
+  for (const [dist, items] of Object.entries(byDistrict)) {
+    // 商圈聚合
+    const hotelIds = [...new Set(items.map(d => d.hid))];
+    const okItems = items.filter(d => d.delta != null && d.status === 'ok');
+    const upCnt = okItems.filter(d => d.delta > 0.05).length;
+    const soCount = items.filter(d => d.so).length;
+    const deltas = okItems.map(d => d.delta).filter(x => x != null);
+    const avgDelta = deltas.length ? deltas.reduce((a, b) => a + b, 0) / deltas.length : null;
+    const deltaCls = avgDelta == null ? 'delta-flat' : avgDelta > 0.02 ? 'delta-up' : avgDelta < -0.02 ? 'delta-down' : 'delta-flat';
+    const deltaTxt = avgDelta == null ? '—' : `${avgDelta > 0 ? '+' : ''}${(avgDelta * 100).toFixed(0)}%`;
+
+    const distRow = document.createElement('tr');
+    distRow.className = 'sub-row district';
+    distRow.dataset.district = dist;
+    distRow.dataset.city = cityCode;
+    distRow.style.cursor = 'pointer';
+    distRow.innerHTML = `
+      <td></td>
+      <td><span class="row-label">└─ ${esc(dist)}</span></td>
+      <td class="center"><span class="${deltaCls}">${deltaTxt}</span></td>
+      <td class="center">${soCount > 0 ? soCount + ' 售罄' : '—'}</td>
+      <td class="center">${hotelIds.length} 家</td>
+      <td><div class="evidence-cell"><span>${upCnt}/${okItems.length} 涨价</span></div></td>
+      <td></td>`;
+    distRow.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleDistrictExpand(distRow, items);
+    });
+    fragment.appendChild(distRow);
+  }
+
+  // 插入到城市行后面
+  const nextSibling = row.nextElementSibling;
+  if (nextSibling) {
+    tbody.insertBefore(fragment, nextSibling);
+  } else {
+    tbody.appendChild(fragment);
+  }
+}
+
+function toggleDistrictExpand(distRow, items) {
+  const isOpen = distRow.classList.contains('expanded');
+
+  if (isOpen) {
+    distRow.classList.remove('expanded');
+    const tag = distRow.querySelector('.expand-tag');
+    if (tag) tag.remove();
+    let next = distRow.nextElementSibling;
+    while (next && next.classList.contains('sub-row') && next.classList.contains('hotel')) {
+      const toRemove = next;
+      next = next.nextElementSibling;
+      toRemove.remove();
+    }
+    return;
+  }
+
+  distRow.classList.add('expanded');
+  const label = distRow.querySelector('.row-label');
+  if (label && !label.querySelector('.expand-tag')) {
+    label.insertAdjacentHTML('beforeend', ' <span class="expand-tag">展开中</span>');
+  }
+
+  // 按酒店聚合（同一酒店可能有多个 checkin 日期）
+  const byHotel = {};
+  for (const d of items) {
+    (byHotel[d.hid] = byHotel[d.hid] || []).push(d);
+  }
+
+  const fragment = document.createDocumentFragment();
+  // 排序：按平均 delta 降序
+  const hotelEntries = Object.entries(byHotel).sort((a, b) => {
+    const avgA = a[1].filter(x => x.delta != null).reduce((s, x) => s + x.delta, 0) / (a[1].filter(x => x.delta != null).length || 1);
+    const avgB = b[1].filter(x => x.delta != null).reduce((s, x) => s + x.delta, 0) / (b[1].filter(x => x.delta != null).length || 1);
+    return avgB - avgA;
+  });
+
+  for (const [hid, records] of hotelEntries) {
+    const hotel = hotelById(hid);
+    const name = hotel ? (hotel.name_zh || hotel.name_en) : hid;
+    const okRecs = records.filter(r => r.delta != null && r.status === 'ok');
+    const avgDelta = okRecs.length ? okRecs.reduce((s, r) => s + r.delta, 0) / okRecs.length : null;
+    const avgPrice = okRecs.length ? okRecs.reduce((s, r) => s + (r.price || 0), 0) / okRecs.length : null;
+    const isSoldOut = records.some(r => r.so);
+    const deltaCls = avgDelta == null ? '' : avgDelta > 0.02 ? 'delta-up' : avgDelta < -0.02 ? 'delta-down' : 'delta-flat';
+    const deltaTxt = avgDelta == null ? '—' : `${avgDelta > 0 ? '+' : ''}${(avgDelta * 100).toFixed(1)}%`;
+
+    let statusTag = '';
+    if (isSoldOut) statusTag = '<span class="tag priority-high" style="font-size:11px;">售罄</span>';
+    else if (avgDelta != null && avgDelta < 0.02) statusTag = '<span class="signal" style="color:#059669;">✅ 可包房</span>';
+    else if (avgDelta != null && avgDelta > 0.15) statusTag = '<span class="signal" style="color:#dc2626;">🔴 涨价中</span>';
+
+    const hotelRow = document.createElement('tr');
+    hotelRow.className = 'sub-row hotel';
+    hotelRow.innerHTML = `
+      <td></td>
+      <td><span class="row-label">◦ ${esc(name)}</span></td>
+      <td class="center">${isSoldOut ? '售罄' : (avgPrice ? fmtCNY(Math.round(avgPrice)) : '—')}</td>
+      <td class="center"><span class="${deltaCls}">${deltaTxt}</span></td>
+      <td class="center"></td>
+      <td><div class="evidence-cell"><span>${records.length} 个入住日</span></div></td>
+      <td>${statusTag}</td>`;
+    fragment.appendChild(hotelRow);
+  }
+
+  const nextSibling = distRow.nextElementSibling;
+  if (nextSibling) {
+    distRow.parentNode.insertBefore(fragment, nextSibling);
+  } else {
+    distRow.parentNode.appendChild(fragment);
+  }
+}
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c =>
+    ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
 function renderSpeedTable() {
@@ -265,7 +514,7 @@ function renderSpeedTable() {
     return ci >= w.start && ci <= w.end;
   };
   let items = currentSnapshot.hotel_details
-    .filter(d => d.delta != null && d.delta > 0 && d.status === 'ok')
+    .filter(d => d.delta != null && d.delta > 0 && d.delta <= 3.0 && d.status === 'ok' && !d.out)
     .filter(d => wf(d.ci));
   if (state.activeCountry) {
     const cc = new Set((meta.cities || []).filter(c => (c.country_group || c.country) === state.activeCountry).map(c => c.code));
@@ -280,17 +529,23 @@ function renderSpeedTable() {
   const rows = items.map(d => {
     const h = hotelById(d.hid);
     const name = h ? (h.name_zh || h.name_en || d.hid) : d.hid;
+    // 查热度
+    const heatRow = (currentSnapshot.city_heat?.[d.city] || []).find(r => r.ci === d.ci);
+    const heat = heatRow?.heat;
+    const hc = heat == null ? '' : heat >= 85 ? 'heat-red' : heat >= 65 ? 'heat-yellow' : heat >= 35 ? 'heat-green' : 'heat-blue';
+    const heatHtml = heat != null ? `<span class="heat-pill ${hc}">${heat.toFixed(1)}</span>` : '—';
     return `<tr>
       <td><span class="city-row">${cityNameZh(d.city)} · ${d.ci}</span></td>
       <td class="right">${fmtCNY(d.price)}</td>
       <td class="right">${fmtCNY(d.p50)}</td>
       <td class="right delta-up">+${(d.delta * 100).toFixed(1)}%</td>
+      <td class="center">${heatHtml}</td>
     </tr>`;
   }).join('');
   document.getElementById('speed-table-wrap').innerHTML = `
     <table class="data-table">
-      <colgroup><col /><col style="width:120px" /><col style="width:120px" /><col style="width:100px" /></colgroup>
-      <thead><tr><th>城市 / 入住日</th><th class="right">当前价</th><th class="right">淡季中位</th><th class="right">涨幅</th></tr></thead>
+      <colgroup><col /><col style="width:110px" /><col style="width:110px" /><col style="width:100px" /><col style="width:110px" /></colgroup>
+      <thead><tr><th>城市 / 入住日</th><th class="right">当前价</th><th class="right">淡季中位</th><th class="right">涨幅</th><th class="center">当前热度</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 }
