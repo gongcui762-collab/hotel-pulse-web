@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-06-05T14:51:51+08:00",
+  "snapshot_date": "2026-06-04",
+  "window": {
+    "start": "2026-07-01",
+    "end": "2026-08-31"
+  },
+  "signal_count_raw": 22,
+  "signal_count_filtered": 7,
+  "signals": [
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "bali",
+      "city_name_zh": "巴厘岛",
+      "checkin_start": "2026-07-15",
+      "checkin_end": "2026-07-15",
+      "heat_current": 67.8,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 3,
+      "snapshot_dates": [
+        "2026-05-22",
+        "2026-05-24",
+        "2026-06-04"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "巴厘岛 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.8",
+      "evidence": [
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 67.8",
+        "持续日期：2026-05-22 → 2026-05-24 → 2026-06-04"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "bali",
+      "city_name_zh": "巴厘岛",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 67.8,
+      "heat_change_7d": null,
+      "price_change_pct": 0.151,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 120,
+      "hotels_total": 175,
+      "summary": "巴厘岛 7 天涨幅 +15.1%，120/175 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +15.1%，120/175 家酒店涨价",
+        "最大涨幅 230.3%"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "hongkong",
+      "city_name_zh": "香港",
+      "checkin_start": "2026-08-08",
+      "checkin_end": "2026-08-08",
+      "heat_current": 65.3,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 4,
+      "snapshot_dates": [
+        "2026-05-19",
+        "2026-05-22",
+        "2026-05-24",
+        "2026-06-04"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "香港 连续 4 个 snapshot 窗口内平均热度 ≥ 65.0，当前 65.3",
+      "evidence": [
+        "连续 4 个采集日窗口内平均热度 ≥ 65，当前 65.3",
+        "持续日期：2026-05-19 → 2026-05-22 → 2026-05-24 → 2026-06-04"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "macao",
+      "city_name_zh": "澳门",
+      "checkin_start": "2026-08-08",
+      "checkin_end": "2026-08-08",
+      "heat_current": 70.6,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 3,
+      "snapshot_dates": [
+        "2026-05-22",
+        "2026-05-24",
+        "2026-06-04"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "澳门 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.6",
+      "evidence": [
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 70.6",
+        "持续日期：2026-05-22 → 2026-05-24 → 2026-06-04"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "phuket",
+      "city_name_zh": "普吉",
+      "checkin_start": "2026-07-27",
+      "checkin_end": "2026-07-27",
+      "heat_current": 68.5,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 3,
+      "snapshot_dates": [
+        "2026-05-22",
+        "2026-05-24",
+        "2026-06-04"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "普吉 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.5",
+      "evidence": [
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 68.5",
+        "持续日期：2026-05-22 → 2026-05-24 → 2026-06-04",
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "high",
+      "city_code": "osaka",
+      "city_name_zh": "大阪",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 49.0,
+      "heat_change_7d": null,
+      "price_change_pct": -0.174,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 12,
+      "hotels_total": 152,
+      "summary": "大阪 7 天涨幅 -17.4%，12/152 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 -17.4%，12/152 家酒店涨价",
+        "最大涨幅 47.3%",
+        "🎉 大阪天神祭（2026-07-15~2026-07-17）— 日本三大祭之一，每年 100 万人参加，周边酒店翻倍",
+        "🎉 日本盂兰盆节（2026-08-13~2026-08-16）— 日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点",
+        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "high",
+      "city_code": "pattaya",
+      "city_name_zh": "芭堤雅",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 50.3,
+      "heat_change_7d": null,
+      "price_change_pct": -0.101,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 37,
+      "hotels_total": 150,
+      "summary": "芭堤雅 7 天涨幅 -10.1%，37/150 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 -10.1%，37/150 家酒店涨价",
+        "最大涨幅 32.5%",
+        "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求",
+        "🎉 泰国母亲节 (Queen's Birthday)（2026-08-12~2026-08-12）— 泰国法定假日，国内旅游需求上升",
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ]
+    }
+  ]
+}
