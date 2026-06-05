@@ -332,8 +332,8 @@ function renderCityTable() {
 
   document.getElementById('city-table-wrap').innerHTML = `
     <table class="data-table" id="city-rank-table">
-      <colgroup><col style="width:56px" /><col style="width:200px" /><col style="width:110px" />
-        <col style="width:90px" /><col style="width:80px" /><col /><col style="width:160px" /></colgroup>
+      <colgroup><col style="width:50px" /><col /><col style="width:100px" />
+        <col style="width:72px" /><col style="width:60px" /><col style="width:200px" /><col style="width:150px" /></colgroup>
       <thead><tr>
         <th>排名</th><th>目的地</th><th class="center">窗口热度</th>
         <th class="center">售罄率</th><th class="center">商圈</th><th>热度证据</th><th>关键信号</th>
@@ -544,7 +544,7 @@ function renderSpeedTable() {
   }).join('');
   document.getElementById('speed-table-wrap').innerHTML = `
     <table class="data-table">
-      <colgroup><col /><col style="width:110px" /><col style="width:110px" /><col style="width:100px" /><col style="width:110px" /></colgroup>
+      <colgroup><col /><col style="width:110px" /><col style="width:110px" /><col style="width:100px" /><col style="width:100px" /></colgroup>
       <thead><tr><th>城市 / 入住日</th><th class="right">当前价</th><th class="right">淡季中位</th><th class="right">涨幅</th><th class="center">当前热度</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;

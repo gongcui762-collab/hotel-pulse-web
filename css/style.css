@@ -284,7 +284,7 @@ summary::-webkit-details-marker { display: none; }
 }
 .data-table thead { background: #f8fafc; }
 .data-table th {
-  text-align: left; padding: 14px 20px;
+  text-align: left; padding: 12px 14px;
   font-size: 12px; font-weight: 600; color: #64748b;
   text-transform: uppercase; letter-spacing: 0.05em;
   border-bottom: 1px solid #e5e7eb;
@@ -292,7 +292,7 @@ summary::-webkit-details-marker { display: none; }
 .data-table th.right { text-align: right; }
 .data-table th.center { text-align: center; }
 .data-table td {
-  padding: 14px 20px;
+  padding: 12px 14px;
   border-bottom: 1px solid #f1f5f9;
   font-size: 14px;
   vertical-align: middle;
@@ -342,7 +342,7 @@ summary::-webkit-details-marker { display: none; }
 
 /* 三级下钻子行 */
 .sub-row { background: #f8fafc !important; }
-.sub-row td { font-size: 13px; padding: 10px 20px; border-bottom: 1px solid #e5e7eb; }
+.sub-row td { font-size: 13px; padding: 8px 14px; border-bottom: 1px solid #e5e7eb; }
 .sub-row.district td:nth-child(2) { padding-left: 40px; }
 .sub-row.hotel    td:nth-child(2) { padding-left: 76px; }
 .sub-row.district .row-label {
