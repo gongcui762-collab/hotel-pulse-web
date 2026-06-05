@@ -6,127 +6,170 @@
   <meta name="description" content="Hotel Pulse · 出境酒店价格脉搏系统" />
   <title>Hotel Pulse · 出境酒店价格脉搏</title>
 
-  <!-- 性能优化：preload 关键资源让浏览器并发尽早开拉，CSS 不再排队等 JS -->
+  <!-- 性能：preload 关键资源 -->
   <link rel="preload" href="./js/lib/plotly.min.js" as="script" />
   <link rel="preload" href="./data/meta.json" as="fetch" crossorigin />
 
   <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- Plotly.js（cartesian-dist 2.3MB，不再用 full 4.4MB）+ defer
-       defer = 不阻塞 HTML 解析，HTML 先出骨架，JS 后台并行加载。
-       main.js 是 type=module 默认就 defer，二者按声明顺序执行 -->
+  <!-- Plotly.js cartesian-dist + defer -->
   <script defer src="./js/lib/plotly.min.js" charset="utf-8"></script>
 </head>
 <body>
 
-  <!-- 顶部栏 ------------------------------------------------------ -->
-  <header class="topbar">
-    <div class="brand">
-      <h1>🏨 Hotel Pulse</h1>
-      <p class="subtitle">出境酒店价格脉搏系统 · 100 家境外基准酒店逐日价格监控</p>
-    </div>
+  <!-- ========== 顶部导航（sticky） ========== -->
+  <header class="topbar" id="topbar">
+    <div class="brand">🏨 Hotel Pulse</div>
+    <nav class="nav" id="nav-links">
+      <a href="#insights">关键洞察</a>
+      <a href="#cities">城市排行</a>
+      <a href="#heatmap">热度地图</a>
+      <a href="#speed">涨速 TOP</a>
+      <a href="#drilldown">单点钻取</a>
+      <a href="#health">数据健康</a>
+    </nav>
     <div class="snapshot-picker">
-      <label for="snapshot-select">📅 数据快照</label>
+      <span>📅</span>
       <select id="snapshot-select" aria-label="选择数据快照日期"></select>
     </div>
   </header>
 
-  <!-- KPI 栏 ----------------------------------------------------- -->
-  <section class="kpi-bar" id="kpi-bar">
-    <div class="kpi-card"><span class="kpi-label">预订日</span>     <span class="kpi-value" id="kpi-snapshot-date">—</span></div>
-    <div class="kpi-card"><span class="kpi-label">覆盖城市</span>   <span class="kpi-value" id="kpi-cities">—</span></div>
-    <div class="kpi-card"><span class="kpi-label">基准酒店</span>   <span class="kpi-value" id="kpi-hotels">—</span></div>
-    <div class="kpi-card highlight"><span class="kpi-label">最高热点</span><span class="kpi-value" id="kpi-max-heat">—</span></div>
+  <!-- ========== Hero 叙事区 ========== -->
+  <section class="hero">
+    <div class="pill">日报 · 出境酒店价格脉搏 · 收益管理专用</div>
+    <h1>
+      Hotel Pulse
+      <span class="sub">出境酒店价格脉搏</span>
+    </h1>
+    <p class="cities" id="hero-cities">—</p>
+    <div class="meta" id="hero-meta">
+      <span id="hero-snapshot">📊 数据截至 —</span>
+      <span class="sep">·</span>
+      <span id="hero-scale">🏨 — 家基准酒店 · — 城</span>
+      <span class="sep">·</span>
+      <span>📅 入住日范围 T+0 ~ T+60</span>
+    </div>
   </section>
 
-  <!-- 热度档位图例 ----------------------------------------------- -->
-  <section class="heat-legend">
-    <span class="legend-item lvl-blue">🔵 &lt;35 冷</span>
-    <span class="legend-item lvl-green">🟢 35–65 平</span>
-    <span class="legend-item lvl-yellow">🟡 65–85 热</span>
-    <span class="legend-item lvl-red">🔴 ≥85 烫</span>
+  <!-- ========== 4 KPI 大卡 ========== -->
+  <section class="kpi-grid" id="kpi-grid">
+    <div class="kpi-card hot" id="kpi-hot">
+      <div class="kpi-header"><span class="kpi-label">🎯 最热目的地</span><span class="confidence" id="kpi-hot-conf"></span></div>
+      <div class="kpi-target" id="kpi-hot-target">—</div>
+      <div class="kpi-value" id="kpi-hot-value">—</div>
+      <div class="kpi-desc" id="kpi-hot-desc">—</div>
+    </div>
+    <div class="kpi-card surge" id="kpi-surge">
+      <div class="kpi-header"><span class="kpi-label">🔥 最大涨幅</span><span class="confidence" id="kpi-surge-conf"></span></div>
+      <div class="kpi-target" id="kpi-surge-target">—</div>
+      <div class="kpi-value" id="kpi-surge-value">—</div>
+      <div class="kpi-desc" id="kpi-surge-desc">—</div>
+    </div>
+    <div class="kpi-card scarce" id="kpi-scarce">
+      <div class="kpi-header"><span class="kpi-label">⚠️ 异常稀缺</span><span class="confidence" id="kpi-scarce-conf"></span></div>
+      <div class="kpi-target" id="kpi-scarce-target">—</div>
+      <div class="kpi-value" id="kpi-scarce-value">—</div>
+      <div class="kpi-desc" id="kpi-scarce-desc">—</div>
+    </div>
+    <div class="kpi-card speed" id="kpi-speed">
+      <div class="kpi-header"><span class="kpi-label">📈 涨速 TOP</span><span class="confidence" id="kpi-speed-conf"></span></div>
+      <div class="kpi-target" id="kpi-speed-target">—</div>
+      <div class="kpi-value" id="kpi-speed-value">—</div>
+      <div class="kpi-desc" id="kpi-speed-desc">—</div>
+    </div>
   </section>
 
-  <!-- Tab 导航 --------------------------------------------------- -->
-  <nav class="tab-nav" role="tablist">
-    <button class="tab-btn active" data-tab="heatmap"     role="tab" aria-selected="true">🗺 热度地图</button>
-    <button class="tab-btn"        data-tab="holidays"    role="tab" aria-selected="false">🎉 节假日窗口</button>
-    <button class="tab-btn"        data-tab="drilldown"   role="tab" aria-selected="false">🔍 单点钻取</button>
-    <button class="tab-btn"        data-tab="hotels"      role="tab" aria-selected="false">🏨 酒店清单</button>
-    <button class="tab-btn"        data-tab="data-health" role="tab" aria-selected="false">⚙ 数据健康</button>
-  </nav>
+  <!-- ========== 筛选条（国家 tab + 业务窗口） ========== -->
+  <section class="filter-bar" id="filter-bar">
+    <div class="filter-tabs" id="country-tabs"></div>
+    <div class="filter-window">
+      <label>关注窗口</label>
+      <select id="window-select"></select>
+    </div>
+  </section>
 
-  <!-- Tab 内容容器 ----------------------------------------------- -->
-  <main class="tab-content">
+  <!-- ========== 01 · 今日关键洞察 ========== -->
+  <section class="chapter container" id="insights">
+    <div class="chapter-header">
+      <div class="chapter-number">📍 01</div>
+      <h2 class="chapter-title">今日关键洞察</h2>
+      <p class="chapter-subtitle" id="insights-subtitle">—</p>
+    </div>
+    <div class="insight-list" id="insight-list"></div>
+  </section>
 
-    <!-- 1. 热度地图 -->
-    <section id="tab-heatmap" class="tab-panel active" role="tabpanel">
-      <div class="panel-header">
-        <h2>城市 × 入住日 热度图</h2>
-        <p class="hint">单击单元格 → 自动跳转「单点钻取」查看明细</p>
-      </div>
-      <div id="heatmap-plot" class="plot-container"></div>
-    </section>
+  <!-- ========== 02 · 城市热度排行 ========== -->
+  <section class="chapter container" id="cities">
+    <div class="chapter-header">
+      <div class="chapter-number">📊 02</div>
+      <h2 class="chapter-title">城市热度排行</h2>
+      <p class="chapter-subtitle">按出境量级排序 · 仅展示关注窗口热度 · 点击行展开商圈下钻</p>
+    </div>
+    <div id="city-table-wrap"></div>
+  </section>
 
-    <!-- 2. 节假日窗口 -->
-    <section id="tab-holidays" class="tab-panel" role="tabpanel">
-      <div class="panel-header">
-        <h2>节假日窗口热度对比</h2>
-        <p class="hint">中国法定节假日 + 当地节假日（⭐）期间的城市热度</p>
-      </div>
-      <div id="holidays-content"></div>
-    </section>
+  <!-- ========== 03 · 热度地图 ========== -->
+  <section class="chapter container" id="heatmap">
+    <div class="chapter-header">
+      <div class="chapter-number">🗺️ 03</div>
+      <h2 class="chapter-title">城市 × 入住日 热度图</h2>
+      <p class="chapter-subtitle">点击单元格 → 跳转单点钻取</p>
+    </div>
+    <div id="heatmap-plot" class="plot-container"></div>
+  </section>
 
-    <!-- 3. 单点钻取（事实先行） -->
-    <section id="tab-drilldown" class="tab-panel" role="tabpanel">
-      <div class="panel-header">
-        <h2>🔍 单点钻取</h2>
-        <p class="hint">查看某一 city × checkin 的酒店级明细</p>
-      </div>
-      <div class="drilldown-controls">
-        <label>城市 <select id="drilldown-city"></select></label>
-        <label>入住日 <select id="drilldown-checkin"></select></label>
-      </div>
-      <div id="drilldown-content"></div>
-    </section>
+  <!-- ========== 04 · 涨速 TOP ========== -->
+  <section class="chapter container" id="speed">
+    <div class="chapter-header">
+      <div class="chapter-number">🚀 04</div>
+      <h2 class="chapter-title">涨速 TOP 20</h2>
+      <p class="chapter-subtitle">最近 7 天 (城市 × 入住日) 价格涨幅最大</p>
+    </div>
+    <div id="speed-table-wrap"></div>
+  </section>
 
-    <!-- 4. 酒店清单 -->
-    <section id="tab-hotels" class="tab-panel" role="tabpanel">
-      <div class="panel-header">
-        <h2>🏨 100 家基准酒店清单</h2>
-      </div>
-      <div id="hotels-content"></div>
-    </section>
+  <!-- ========== 05 · 单点钻取 ========== -->
+  <section class="chapter container" id="drilldown">
+    <div class="chapter-header">
+      <div class="chapter-number">🔍 05</div>
+      <h2 class="chapter-title">单点钻取</h2>
+      <p class="chapter-subtitle">查看某一 city × checkin 的酒店级明细</p>
+    </div>
+    <div class="drilldown-controls">
+      <label>城市 <select id="drilldown-city"></select></label>
+      <label>入住日 <select id="drilldown-checkin"></select></label>
+    </div>
+    <div id="drilldown-content"></div>
+  </section>
 
-    <!-- 5. 数据健康 -->
-    <section id="tab-data-health" class="tab-panel" role="tabpanel">
-      <div class="panel-header">
-        <h2>⚙ 数据健康</h2>
-        <p class="hint">FlyAI 调用情况、采集成功率、异常分布</p>
-      </div>
-      <div id="data-health-content"></div>
-    </section>
+  <!-- ========== 06 · 数据健康 ========== -->
+  <section class="chapter container" id="health">
+    <div class="chapter-header">
+      <div class="chapter-number">⚙ 06</div>
+      <h2 class="chapter-title">数据健康</h2>
+      <p class="chapter-subtitle">FlyAI 调用情况、采集成功率、异常分布</p>
+    </div>
+    <div id="data-health-content"></div>
+  </section>
 
-  </main>
-
-  <!-- 底部信息 --------------------------------------------------- -->
-  <footer class="footer">
-    <span id="footer-generated-at">数据更新时间：—</span>
-    <span class="separator">·</span>
-    <span>采集源：FlyAI</span>
-    <span class="separator">·</span>
-    <a href="https://github.com" id="footer-repo-link" target="_blank" rel="noopener">源码</a>
+  <!-- ========== 方法学 Footer ========== -->
+  <footer class="footer-meta">
+    <div class="inner">
+      <div><dt>采集源</dt><dd>FlyAI 酒店报价 API · 飞猪开放平台</dd></div>
+      <div><dt>采样节奏</dt><dd>每日 03:00 全量采集 200 家基准酒店 × 40 入住日</dd></div>
+      <div><dt>热度算法</dt><dd>A 价格水平 + B 库存稀缺 + C 涨价斜率</dd></div>
+      <div><dt>数据更新</dt><dd id="footer-update-time">最新：— · 下次：—</dd></div>
+    </div>
   </footer>
 
-  <!-- 加载中遮罩 ------------------------------------------------- -->
+  <!-- ========== 加载中遮罩 ========== -->
   <div id="loading-overlay" class="loading-overlay">
     <div class="spinner"></div>
     <p>加载数据中…</p>
   </div>
 
-  <!-- 主入口（type=module 自动 defer，在 plotly defer 之后执行） -->
+  <!-- ========== 主入口 ========== -->
   <script type="module" src="./js/main.js"></script>
   <link rel="modulepreload" href="./js/main.js" />
-  <link rel="modulepreload" href="./js/tabs/heatmap.js" />
 </body>
 </html>
