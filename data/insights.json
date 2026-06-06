@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-06T14:11:15+08:00",
+  "generated_at": "2026-06-06T20:16:16+08:00",
   "snapshot_date": "2026-06-06",
   "window": {
     "start": "2026-07-01",
@@ -112,68 +112,17 @@
       "city_name_zh": "福冈",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
-      "heat_current": 71.6,
+      "heat_current": 32.5,
       "heat_change_7d": null,
       "price_change_pct": null,
-      "sold_out_rate": 0.562,
+      "sold_out_rate": 1.0,
       "consecutive_days": 0,
       "snapshot_dates": [],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "福冈 售罄率 56% 异常偏高",
+      "summary": "福冈 售罄率 100% 异常偏高",
       "evidence": [
-        "售罄率 56%，远高于历史均值",
-        "🎉 日本盂兰盆节（2026-08-13~2026-08-16）— 日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点",
-        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "hongkong",
-      "city_name_zh": "香港",
-      "checkin_start": "2026-07-25",
-      "checkin_end": "2026-07-25",
-      "heat_current": 65.4,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 5,
-      "snapshot_dates": [
-        "2026-05-19",
-        "2026-05-22",
-        "2026-05-24",
-        "2026-06-04",
-        "2026-06-06"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "香港 连续 5 个 snapshot 窗口内平均热度 ≥ 65.0，当前 65.4",
-      "evidence": [
-        "连续 5 个采集日窗口内平均热度 ≥ 65，当前 65.4",
-        "持续日期：2026-05-19 → 2026-05-22 → 2026-05-24 → 2026-06-04 → 2026-06-06"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "high",
-      "confidence": "mid",
-      "city_code": "kyoto",
-      "city_name_zh": "京都",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 56.9,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.535,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "京都 售罄率 53% 异常偏高",
-      "evidence": [
-        "售罄率 54%，远高于历史均值",
+        "售罄率 100%，远高于历史均值",
         "🎉 日本盂兰盆节（2026-08-13~2026-08-16）— 日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点",
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
       ]
@@ -182,8 +131,8 @@
       "type": "anomaly_sold_out",
       "priority": "high",
       "confidence": "mid",
-      "city_code": "macao",
-      "city_name_zh": "澳门",
+      "city_code": "hanoi",
+      "city_name_zh": "河内",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
       "heat_current": 32.5,
@@ -194,7 +143,49 @@
       "snapshot_dates": [],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "澳门 售罄率 100% 异常偏高",
+      "summary": "河内 售罄率 100% 异常偏高",
+      "evidence": [
+        "售罄率 100%，远高于历史均值"
+      ]
+    },
+    {
+      "type": "anomaly_sold_out",
+      "priority": "high",
+      "confidence": "mid",
+      "city_code": "hochiminh",
+      "city_name_zh": "胡志明",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 32.5,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": 1.0,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "胡志明 售罄率 100% 异常偏高",
+      "evidence": [
+        "售罄率 100%，远高于历史均值"
+      ]
+    },
+    {
+      "type": "anomaly_sold_out",
+      "priority": "high",
+      "confidence": "mid",
+      "city_code": "hongkong",
+      "city_name_zh": "香港",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 32.5,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": 1.0,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "香港 售罄率 100% 异常偏高",
       "evidence": [
         "售罄率 100%，远高于历史均值"
       ]
