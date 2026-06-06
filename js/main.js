@@ -313,6 +313,12 @@ function renderCityTable() {
       if (h?.district) districtSet.add(h.district);
     }
 
+    // 平均涨幅
+    const deltas = okDetails.map(d => d.delta).filter(x => x != null);
+    const avgDelta = deltas.length ? deltas.reduce((a, b) => a + b, 0) / deltas.length : null;
+    const deltaCls = avgDelta == null ? 'delta-flat' : avgDelta > 0.02 ? 'delta-up' : avgDelta < -0.02 ? 'delta-down' : 'delta-flat';
+    const deltaTxt = avgDelta == null ? '—' : `${avgDelta > 0 ? '+' : ''}${(avgDelta * 100).toFixed(1)}%`;
+
     // 关键信号
     const sig = getCitySignal(city.code);
     const sigHtml = sig
@@ -323,19 +329,18 @@ function renderCityTable() {
       <td><span class="rank ${idx < 3 ? 'top' : ''}">${city.outbound_rank || idx + 1}</span></td>
       <td><span class="city-row">${COUNTRY_FLAGS[city.country] || ''} ${city.name_zh}</span></td>
       <td class="center">${avg != null ? `<span class="heat-pill ${hc}">${avg.toFixed(1)}</span>` : '—'}</td>
+      <td class="center"><span class="${deltaCls}">${deltaTxt}</span></td>
       <td class="center">${avgSo > 0 ? `${(avgSo * 100).toFixed(0)}%` : '—'}</td>
-      <td class="center">${districtSet.size || '—'}</td>
-      <td><div class="evidence-cell"><span><strong>${upCnt}/${okDetails.length}</strong> 涨价超 5%</span>${soldOut > 0 ? `<span><strong>${soldOut}</strong> 售罄</span>` : ''}</div></td>
+      <td class="center">${districtSet.size}</td>
+      <td><div class="evidence-cell"><span><strong>${upCnt}/${okDetails.length}</strong> 涨价</span>${soldOut > 0 ? `<span><strong>${soldOut}</strong> 售罄</span>` : ''}</div></td>
       <td>${sigHtml}</td>
     </tr>`;
   }).join('');
 
   document.getElementById('city-table-wrap').innerHTML = `
     <table class="data-table" id="city-rank-table">
-      <colgroup><col style="width:50px" /><col /><col style="width:100px" />
-        <col style="width:72px" /><col style="width:60px" /><col style="width:200px" /><col style="width:150px" /></colgroup>
       <thead><tr>
-        <th>排名</th><th>目的地</th><th class="center">窗口热度</th>
+        <th>排名</th><th>目的地</th><th class="center">窗口热度</th><th class="center">平均涨幅</th>
         <th class="center">售罄率</th><th class="center">商圈</th><th>热度证据</th><th>关键信号</th>
       </tr></thead>
       <tbody>${rows}</tbody>
@@ -404,6 +409,7 @@ function toggleCityExpand(row) {
     distRow.innerHTML = `
       <td></td>
       <td><span class="row-label">└─ ${esc(dist)}</span></td>
+      <td class="center">—</td>
       <td class="center"><span class="${deltaCls}">${deltaTxt}</span></td>
       <td class="center">${soCount > 0 ? soCount + ' 售罄' : '—'}</td>
       <td class="center">${hotelIds.length} 家</td>
@@ -484,6 +490,7 @@ function toggleDistrictExpand(distRow, items) {
       <td class="center">${isSoldOut ? '售罄' : (avgPrice ? fmtCNY(Math.round(avgPrice)) : '—')}</td>
       <td class="center"><span class="${deltaCls}">${deltaTxt}</span></td>
       <td class="center"></td>
+      <td class="center"></td>
       <td><div class="evidence-cell"><span>${records.length} 个入住日</span></div></td>
       <td>${statusTag}</td>`;
     fragment.appendChild(hotelRow);
@@ -521,6 +528,13 @@ function renderSpeedTable() {
     items = items.filter(d => cc.has(d.city));
   }
   items.sort((a, b) => (b.delta || 0) - (a.delta || 0));
+  // 每酒店只保留涨幅最大的一条，避免同一酒店刷屏
+  const seenHotels = new Set();
+  items = items.filter(d => {
+    if (seenHotels.has(d.hid)) return false;
+    seenHotels.add(d.hid);
+    return true;
+  });
   items = items.slice(0, 20);
   if (!items.length) {
     document.getElementById('speed-table-wrap').innerHTML = '<p style="color:#94a3b8;padding:20px 0;">当前窗口内无涨价数据</p>';
@@ -535,17 +549,17 @@ function renderSpeedTable() {
     const hc = heat == null ? '' : heat >= 85 ? 'heat-red' : heat >= 65 ? 'heat-yellow' : heat >= 35 ? 'heat-green' : 'heat-blue';
     const heatHtml = heat != null ? `<span class="heat-pill ${hc}">${heat.toFixed(1)}</span>` : '—';
     return `<tr>
-      <td><span class="city-row">${cityNameZh(d.city)} · ${d.ci}</span></td>
+      <td>${cityNameZh(d.city)} · ${d.ci}</td>
+      <td style="color:#334155;">${name}</td>
       <td class="right">${fmtCNY(d.price)}</td>
-      <td class="right">${fmtCNY(d.p50)}</td>
+      <td class="right" style="color:#94a3b8;">${fmtCNY(d.p50)}</td>
       <td class="right delta-up">+${(d.delta * 100).toFixed(1)}%</td>
       <td class="center">${heatHtml}</td>
     </tr>`;
   }).join('');
   document.getElementById('speed-table-wrap').innerHTML = `
     <table class="data-table">
-      <colgroup><col /><col style="width:110px" /><col style="width:110px" /><col style="width:100px" /><col style="width:100px" /></colgroup>
-      <thead><tr><th>城市 / 入住日</th><th class="right">当前价</th><th class="right">淡季中位</th><th class="right">涨幅</th><th class="center">当前热度</th></tr></thead>
+      <thead><tr><th>城市 / 入住日</th><th>酒店</th><th class="right">当前价</th><th class="right">淡季中位</th><th class="right">涨幅</th><th class="center">当前热度</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 }

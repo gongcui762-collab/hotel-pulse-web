@@ -280,23 +280,24 @@ summary::-webkit-details-marker { display: none; }
   border: 1px solid #e5e7eb; border-radius: 14px;
   border-collapse: separate; border-spacing: 0;
   overflow: hidden;
-  table-layout: fixed;
+  table-layout: auto;
 }
 .data-table thead { background: #f8fafc; }
 .data-table th {
-  text-align: left; padding: 12px 14px;
+  text-align: left; padding: 12px 16px;
   font-size: 12px; font-weight: 600; color: #64748b;
   text-transform: uppercase; letter-spacing: 0.05em;
   border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
 }
 .data-table th.right { text-align: right; }
 .data-table th.center { text-align: center; }
 .data-table td {
-  padding: 12px 14px;
+  padding: 12px 16px;
   border-bottom: 1px solid #f1f5f9;
   font-size: 14px;
   vertical-align: middle;
-  word-wrap: break-word; overflow-wrap: break-word;
+  white-space: nowrap;
 }
 .data-table td.right { text-align: right; font-variant-numeric: tabular-nums; }
 .data-table td.center { text-align: center; }
@@ -337,8 +338,13 @@ summary::-webkit-details-marker { display: none; }
 .evidence-cell {
   font-size: 12px; color: #64748b; line-height: 1.5;
   display: flex; flex-direction: column; gap: 2px;
+  white-space: normal;
 }
 .evidence-cell strong { color: #0f172a; font-weight: 600; }
+
+/* 子行允许名称换行 */
+.sub-row td { white-space: normal; }
+.sub-row td:nth-child(n+3) { white-space: nowrap; }
 
 /* 三级下钻子行 */
 .sub-row { background: #f8fafc !important; }
