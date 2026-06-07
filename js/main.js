@@ -41,10 +41,11 @@ async function loadInitialData() {
   const defaultDate = meta.latest_complete_snapshot || meta.latest_snapshot
     || snapshotIndex.snapshots[0]?.date;
   if (!defaultDate) throw new Error('No snapshot available');
-  await loadSnapshot(defaultDate);
 
   try { state.insights = await fetchJSON('./data/insights.json'); }
   catch { state.insights = null; }
+
+  await loadSnapshot(defaultDate);
 }
 
 async function loadSnapshot(snapshotDate) {
@@ -244,19 +245,29 @@ function renderInsights() {
   const w = state.activeWindow;
   subtitle.textContent = w ? `关注窗口：${w.name_zh}` : '全部窗口';
   container.innerHTML = state.insights.signals.map(s => {
-    const icons = { consecutive_high: '🔥', surge: '📈', anomaly_sold_out: '⚠️', price_stable: '✅' };
-    const cls = { consecutive_high: 'surge', surge: 'surge', anomaly_sold_out: 'alert', price_stable: 'calm' };
+    const isDown = s.type === 'surge' && s.price_change_pct < 0;
+    const icons = { consecutive_high: '🔥', surge: isDown ? '📉' : '📈', anomaly_sold_out: '⚠️', price_stable: '✅' };
+    const cls = { consecutive_high: 'surge', surge: isDown ? 'calm' : 'surge', anomaly_sold_out: 'alert', price_stable: 'calm' };
     const prio = { high: '<span class="tag priority-high">高优先级</span>', mid: '<span class="tag priority-mid">需关注</span>', low: '<span class="tag priority-low">无需调整</span>' };
     const conf = s.confidence ? `<span class="confidence ${s.confidence}">置信度 ${{ high:'高', mid:'中', low:'低' }[s.confidence] || s.confidence}</span>` : '';
+    const evidenceHtml = s.evidence?.length ? `<details class="evidence-block" open>
+          <summary>📊 数据证据</summary>
+          <div class="content"><ul>${s.evidence.map(e => `<li>${e}</li>`).join('')}</ul></div>
+        </details>` : '';
+    const causesHtml = s.causes?.length ? `<details class="evidence-block">
+          <summary>💡 可能原因</summary>
+          <div class="content"><ul>${s.causes.map(c => `<li>${c}</li>`).join('')}</ul></div>
+        </details>` : '';
+    const actionsHtml = s.actions?.length ? `<details class="evidence-block" open>
+          <summary>🎯 行动建议</summary>
+          <div class="content"><ul class="actions-list">${s.actions.map(a => `<li>${a}</li>`).join('')}</ul></div>
+        </details>` : '';
     return `<div class="insight-card ${cls[s.type] || 'calm'}">
       <div class="icon-box">${icons[s.type] || '📊'}</div>
       <div class="body">
         <h3>${s.city_name_zh || s.city_code} ${prio[s.priority] || ''} ${conf}</h3>
         <p class="lead">${s.summary || ''}</p>
-        ${s.evidence ? `<div class="evidence-blocks"><details class="evidence-block" open>
-          <summary>📊 数据证据</summary>
-          <div class="content"><ul>${s.evidence.map(e => `<li>${e}</li>`).join('')}</ul></div>
-        </details></div>` : ''}
+        <div class="evidence-blocks">${evidenceHtml}${causesHtml}${actionsHtml}</div>
       </div>
     </div>`;
   }).join('');
