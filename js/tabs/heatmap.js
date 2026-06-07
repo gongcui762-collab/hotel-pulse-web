@@ -44,9 +44,11 @@ export function renderHeatmap(state) {
     let lastHeat = null;
     for (const d of xDates) {
       const r = cityMap.get(d);
-      if (r && r.heat != null) {
-        lastHeat = r.heat;
-        row.push(r.heat);
+      // 优先用 blended_heat（bh），fallback 到 heat
+      const heatVal = r ? (r.bh != null ? r.bh : r.heat) : null;
+      if (r && heatVal != null) {
+        lastHeat = heatVal;
+        row.push(heatVal);
         txtRow.push(formatHover(c, d, r));
       } else if (lastHeat != null) {
         row.push(lastHeat);
@@ -147,11 +149,17 @@ export function renderHeatmap(state) {
 }
 
 function formatHover(cityCode, date, row) {
-  const lvl = heatLevel(row.heat);
+  const displayHeat = row.bh != null ? row.bh : row.heat;
+  const lvl = heatLevel(displayHeat);
   const emoji = { blue: '🔵', green: '🟢', yellow: '🟡', red: '🔴', na: '⚫' }[lvl];
   const dt = new Date(date);
   const dow = ['日', '一', '二', '三', '四', '五', '六'][dt.getDay()];
   let t = `<b>${cityNameZh(cityCode)}</b><br>${date} (周${dow}) ${emoji}<br>`;
+  if (row.bh != null) t += `融合热度 ${row.bh}`;
+  if (row.heat != null && row.bh != null) t += ` (原始 ${row.heat})`;
+  t += '<br>';
+  if (row.strk > 0) t += `🔥 连续 ${row.strk} 次高热<br>`;
+  if (row.conf) t += `置信度 ${({high:'高',mid:'中',low:'低'})[row.conf] || row.conf}<br>`;
   if (row.lvl != null) t += `价格水平 ${row.lvl}<br>`;
   if (row.so != null && row.so > 0) t += `售罄率 ${(row.so * 100).toFixed(0)}%<br>`;
   if (row.n != null) t += `酒店数 ${row.n}`;

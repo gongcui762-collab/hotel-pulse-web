@@ -296,7 +296,8 @@ function renderCityTable() {
 
   const rows = filtered.map((city, idx) => {
     const heats = (currentSnapshot.city_heat[city.code] || []).filter(r => windowFilter(r.ci));
-    const vH = heats.filter(r => r.heat != null).map(r => r.heat);
+    // 优先用 blended_heat（bh），fallback 到 heat
+    const vH = heats.filter(r => (r.bh ?? r.heat) != null).map(r => r.bh ?? r.heat);
     const avg = vH.length ? vH.reduce((a, b) => a + b, 0) / vH.length : null;
     const hc = avg == null ? '' : avg >= 85 ? 'heat-red' : avg >= 65 ? 'heat-yellow' : avg >= 35 ? 'heat-green' : 'heat-blue';
     const soR = heats.filter(r => r.so != null).map(r => r.so);
@@ -545,7 +546,7 @@ function renderSpeedTable() {
     const name = h ? (h.name_zh || h.name_en || d.hid) : d.hid;
     // 查热度
     const heatRow = (currentSnapshot.city_heat?.[d.city] || []).find(r => r.ci === d.ci);
-    const heat = heatRow?.heat;
+    const heat = heatRow ? (heatRow.bh ?? heatRow.heat) : null;
     const hc = heat == null ? '' : heat >= 85 ? 'heat-red' : heat >= 65 ? 'heat-yellow' : heat >= 35 ? 'heat-green' : 'heat-blue';
     const heatHtml = heat != null ? `<span class="heat-pill ${hc}">${heat.toFixed(1)}</span>` : '—';
     return `<tr>
