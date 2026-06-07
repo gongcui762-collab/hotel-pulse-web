@@ -246,8 +246,8 @@ function renderInsights() {
   subtitle.textContent = w ? `关注窗口：${w.name_zh}` : '全部窗口';
   container.innerHTML = state.insights.signals.map(s => {
     const isDown = s.type === 'surge' && s.price_change_pct < 0;
-    const icons = { consecutive_high: '🔥', surge: isDown ? '📉' : '📈', anomaly_sold_out: '⚠️', price_stable: '✅' };
-    const cls = { consecutive_high: 'surge', surge: isDown ? 'calm' : 'surge', anomaly_sold_out: 'alert', price_stable: 'calm' };
+    const icons = { consecutive_high: '🔥', surge: isDown ? '📉' : '📈', anomaly_sold_out: '⚠️', price_stable: '✅', event_upcoming: '📅' };
+    const cls = { consecutive_high: 'surge', surge: isDown ? 'calm' : 'surge', anomaly_sold_out: 'alert', price_stable: 'calm', event_upcoming: 'alert' };
     const prio = { high: '<span class="tag priority-high">高优先级</span>', mid: '<span class="tag priority-mid">需关注</span>', low: '<span class="tag priority-low">无需调整</span>' };
     const conf = s.confidence ? `<span class="confidence ${s.confidence}">置信度 ${{ high:'高', mid:'中', low:'低' }[s.confidence] || s.confidence}</span>` : '';
     const evidenceHtml = s.evidence?.length ? `<details class="evidence-block" open>
@@ -274,12 +274,13 @@ function renderInsights() {
 }
 
 // ---- 城市排行表（三级下钻 + 关键信号） ----
-const COUNTRY_FLAGS = { JP:'🇯🇵', TH:'🇹🇭', KR:'🇰🇷', HK:'🇭🇰', MO:'🇲🇴', SG:'🇸🇬', MY:'🇲🇾', ID:'🇮🇩', VN:'🇻🇳', AE:'🇦🇪', MV:'🇲🇻' };
+const COUNTRY_FLAGS = { JP:'🇯🇵', TH:'🇹🇭', KR:'🇰🇷', HK:'🇭🇰', MO:'🇲🇴', SG:'🇸🇬', MY:'🇲🇾', ID:'🇮🇩', VN:'🇻🇳', AE:'🇦🇪', MV:'🇲🇻', US:'🇺🇸', CA:'🇨🇦' };
 const SIGNAL_MAP = {
   consecutive_high: { icon: '🔥', label: '连续高热' },
   surge:            { icon: '📈', label: '涨速异动' },
   anomaly_sold_out: { icon: '⚠️', label: '异常售罄' },
   price_stable:     { icon: '✅', label: '平稳' },
+  event_upcoming:   { icon: '📅', label: '近期事件' },
 };
 
 function windowFilter(ci) {

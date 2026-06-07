@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-07T16:45:11+08:00",
+  "generated_at": "2026-06-08T02:28:30+08:00",
   "snapshot_dates": [
     "2026-06-07",
     "2026-06-06",
@@ -272,6 +272,46 @@
       "tier": 2,
       "outbound_rank": 26,
       "tz": "Indian/Maldives"
+    },
+    {
+      "code": "losangeles",
+      "name_zh": "洛杉矶",
+      "name_en": "Los Angeles",
+      "country": "US",
+      "country_group": null,
+      "tier": 2,
+      "outbound_rank": null,
+      "tz": "America/Los_Angeles"
+    },
+    {
+      "code": "newjersey",
+      "name_zh": "新泽西",
+      "name_en": "New Jersey",
+      "country": "US",
+      "country_group": null,
+      "tier": 2,
+      "outbound_rank": null,
+      "tz": "America/New_York"
+    },
+    {
+      "code": "newyork",
+      "name_zh": "纽约",
+      "name_en": "New York",
+      "country": "US",
+      "country_group": null,
+      "tier": 2,
+      "outbound_rank": null,
+      "tz": "America/New_York"
+    },
+    {
+      "code": "toronto",
+      "name_zh": "多伦多",
+      "name_en": "Toronto",
+      "country": "CA",
+      "country_group": null,
+      "tier": 2,
+      "outbound_rank": null,
+      "tz": "America/Toronto"
     }
   ],
   "hotels": [
@@ -1966,6 +2006,136 @@
       "lng": null
     },
     {
+      "id": "losangeles_courtyard_la_live",
+      "name_zh": "洛杉矶LA Live万怡酒店",
+      "name_en": "Courtyard by Marriott Los Angeles L.A. LIVE",
+      "city": "losangeles",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_doubletree_carson",
+      "name_zh": "卡尔森希尔顿逸林酒店",
+      "name_en": "DoubleTree by Hilton Hotel Carson",
+      "city": "losangeles",
+      "district": "卡尔森",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_hilton_airport",
+      "name_zh": "洛杉矶机场希尔顿酒店",
+      "name_en": "Hilton Los Angeles Airport",
+      "city": "losangeles",
+      "district": "机场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_hilton_garden_inn_beverly_hills",
+      "name_zh": "洛杉矶好莱坞希尔顿花园酒店",
+      "name_en": "Hilton Garden Inn Los Angeles/Hollywood",
+      "city": "losangeles",
+      "district": "比弗利山",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_holiday_inn_express_hollywood",
+      "name_zh": "好莱坞星光大道智选假日酒店",
+      "name_en": "Holiday Inn Express Hollywood Walk of Fame",
+      "city": "losangeles",
+      "district": "好莱坞",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_hyatt_regency_lax",
+      "name_zh": "洛杉矶机场凯悦酒店",
+      "name_en": "Hyatt Regency Los Angeles International Airport",
+      "city": "losangeles",
+      "district": "机场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_intercontinental_downtown",
+      "name_zh": "洛杉矶市中心洲际酒店",
+      "name_en": "InterContinental Los Angeles Downtown",
+      "city": "losangeles",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_loews_hollywood",
+      "name_zh": "好莱坞洛伊斯酒店",
+      "name_en": "Loews Hollywood Hotel",
+      "city": "losangeles",
+      "district": "好莱坞",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_santa_monica_proper",
+      "name_zh": "圣莫尼卡Proper酒店",
+      "name_en": "Santa Monica Proper Hotel",
+      "city": "losangeles",
+      "district": "圣莫尼卡",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "losangeles_sheraton_universal",
+      "name_zh": "环球影城喜来登酒店",
+      "name_en": "Sheraton Universal Hotel",
+      "city": "losangeles",
+      "district": "环球影城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "macao_east_asia_hotel",
       "name_zh": "澳门东亚酒店",
       "name_en": "East Asia Hotel",
@@ -2092,6 +2262,266 @@
       "rooms": null,
       "p20": 1057,
       "p50": 1268,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_doubletree_jersey_city",
+      "name_zh": "泽西城希尔顿逸林酒店",
+      "name_en": "DoubleTree by Hilton Hotel & Suites Jersey City",
+      "city": "newjersey",
+      "district": "泽西城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_element_harrison_newark",
+      "name_zh": "纽瓦克哈里森源宿酒店",
+      "name_en": "Element Harrison - Newark",
+      "city": "newjersey",
+      "district": "哈里森",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_hampton_inn_jersey_city",
+      "name_zh": "泽西城欢朋酒店",
+      "name_en": "Hampton Inn Jersey City",
+      "city": "newjersey",
+      "district": "泽西城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_hampton_inn_newark_airport",
+      "name_zh": "纽瓦克机场欢朋酒店",
+      "name_en": "Hampton Inn & Suites Newark Airport/Elizabeth",
+      "city": "newjersey",
+      "district": "纽瓦克",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_hilton_newark_airport",
+      "name_zh": "纽瓦克机场希尔顿酒店",
+      "name_en": "Hilton Newark Airport",
+      "city": "newjersey",
+      "district": "纽瓦克",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_holiday_inn_express_jersey_city",
+      "name_zh": "泽西城智选假日酒店",
+      "name_en": "Holiday Inn Express & Suites Jersey City",
+      "city": "newjersey",
+      "district": "泽西城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_holiday_inn_express_newark_airport",
+      "name_zh": "纽瓦克机场智选假日酒店",
+      "name_en": "Holiday Inn Express Newark Airport",
+      "city": "newjersey",
+      "district": "纽瓦克",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_hyatt_house_jersey_city",
+      "name_zh": "泽西城凯悦嘉寓酒店",
+      "name_en": "Hyatt House Jersey City",
+      "city": "newjersey",
+      "district": "泽西城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_marriott_newark_airport",
+      "name_zh": "纽瓦克机场万豪酒店",
+      "name_en": "Newark Liberty International Airport Marriott",
+      "city": "newjersey",
+      "district": "纽瓦克",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newjersey_westin_jersey_city",
+      "name_zh": "泽西城纽波特威斯汀酒店",
+      "name_en": "The Westin Jersey City Newport",
+      "city": "newjersey",
+      "district": "泽西城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_courtyard_manhattan_chelsea",
+      "name_zh": "纽约切尔西万怡酒店",
+      "name_en": "Courtyard by Marriott New York Manhattan/Chelsea",
+      "city": "newyork",
+      "district": "切尔西",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_crowne_plaza_hy36_midtown",
+      "name_zh": "纽约中城HY36皇冠假日酒店",
+      "name_en": "Crowne Plaza HY36 Midtown Manhattan",
+      "city": "newyork",
+      "district": "中城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_hampton_inn_times_square",
+      "name_zh": "纽约时代广场欢朋酒店",
+      "name_en": "Hampton Inn Manhattan/Times Square South",
+      "city": "newyork",
+      "district": "时代广场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_hilton_midtown_manhattan",
+      "name_zh": "纽约曼哈顿中城希尔顿花园酒店",
+      "name_en": "Hilton Garden Inn New York Midtown Manhattan East",
+      "city": "newyork",
+      "district": "中城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_holiday_inn_wall_street",
+      "name_zh": "纽约华尔街假日酒店",
+      "name_en": "Holiday Inn New York City - Wall Street",
+      "city": "newyork",
+      "district": "金融区",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_hyatt_place_times_square",
+      "name_zh": "纽约时代广场凯悦嘉轩酒店",
+      "name_en": "Hyatt Place New York/Times Square",
+      "city": "newyork",
+      "district": "时代广场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_intercontinental_times_square",
+      "name_zh": "纽约巴克莱洲际酒店",
+      "name_en": "InterContinental New York Barclay",
+      "city": "newyork",
+      "district": "时代广场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_manhattan_at_times_square",
+      "name_zh": "曼哈顿时代广场酒店",
+      "name_en": "The Manhattan at Times Square",
+      "city": "newyork",
+      "district": "时代广场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_marriott_marquis_times_square",
+      "name_zh": "纽约万豪侯爵酒店",
+      "name_en": "New York Marriott Marquis",
+      "city": "newyork",
+      "district": "时代广场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "newyork_pod_times_square",
+      "name_zh": "纽约时代广场Pod酒店",
+      "name_en": "Pod Times Square",
+      "city": "newyork",
+      "district": "时代广场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
       "lat": null,
       "lng": null
     },
@@ -2874,6 +3304,136 @@
       "p50": 900,
       "lat": null,
       "lng": null
+    },
+    {
+      "id": "toronto_chelsea_hotel",
+      "name_zh": "多伦多切尔西酒店",
+      "name_en": "Chelsea Hotel Toronto",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_courtyard_downtown",
+      "name_zh": "多伦多市中心万怡酒店",
+      "name_en": "Courtyard by Marriott Toronto Downtown",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_delta_hotels",
+      "name_zh": "多伦多德尔塔酒店",
+      "name_en": "Delta Hotels by Marriott Toronto",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_fairmont_royal_york",
+      "name_zh": "多伦多费尔蒙皇家约克酒店",
+      "name_en": "Fairmont Royal York",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_hilton",
+      "name_zh": "多伦多希尔顿酒店",
+      "name_en": "Hilton Toronto",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_holiday_inn_express_downtown",
+      "name_zh": "多伦多市中心智选假日酒店",
+      "name_en": "Holiday Inn Express Toronto Downtown",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_hyatt_regency",
+      "name_zh": "多伦多凯悦酒店",
+      "name_en": "Hyatt Regency Toronto",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_intercontinental_centre",
+      "name_zh": "多伦多市中心洲际酒店",
+      "name_en": "InterContinental Toronto Centre",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_shangri_la",
+      "name_zh": "多伦多香格里拉大酒店",
+      "name_en": "Shangri-La Toronto",
+      "city": "toronto",
+      "district": "约克维尔",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "toronto_sheraton_centre",
+      "name_zh": "多伦多市中心喜来登酒店",
+      "name_en": "Sheraton Centre Toronto Hotel",
+      "city": "toronto",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
     }
   ],
   "business_windows": [
@@ -3062,6 +3622,118 @@
       ],
       "date": "2026-08-31",
       "name_zh": "国庆"
+    },
+    {
+      "affects": [
+        "osaka",
+        "tokyo",
+        "kyoto"
+      ],
+      "date": "2026-06-19",
+      "name_zh": "中国端午节假期"
+    },
+    {
+      "affects": [
+        "osaka",
+        "tokyo",
+        "kyoto"
+      ],
+      "date": "2026-06-20",
+      "name_zh": "中国端午节假期"
+    },
+    {
+      "affects": [
+        "osaka",
+        "tokyo",
+        "kyoto"
+      ],
+      "date": "2026-06-21",
+      "name_zh": "中国端午节假期"
+    },
+    {
+      "affects": [
+        "osaka",
+        "tokyo",
+        "kyoto"
+      ],
+      "date": "2026-06-22",
+      "name_zh": "中国端午节假期"
+    },
+    {
+      "affects": [
+        "osaka"
+      ],
+      "date": "2026-07-15",
+      "name_zh": "大阪天神祭"
+    },
+    {
+      "affects": [
+        "osaka"
+      ],
+      "date": "2026-07-16",
+      "name_zh": "大阪天神祭"
+    },
+    {
+      "affects": [
+        "osaka"
+      ],
+      "date": "2026-07-17",
+      "name_zh": "大阪天神祭"
+    },
+    {
+      "affects": [
+        "tokyo"
+      ],
+      "date": "2026-07-22",
+      "name_zh": "东京隅田川花火大会"
+    },
+    {
+      "affects": [
+        "tokyo"
+      ],
+      "date": "2026-07-23",
+      "name_zh": "东京隅田川花火大会"
+    },
+    {
+      "affects": [
+        "tokyo"
+      ],
+      "date": "2026-07-24",
+      "name_zh": "东京隅田川花火大会"
+    },
+    {
+      "affects": [
+        "phuket",
+        "bangkok",
+        "chiangmai",
+        "pattaya"
+      ],
+      "date": "2026-07-19",
+      "name_zh": "泰国守夏节 (Asanha Bucha + Wan Khao Phansa)"
+    },
+    {
+      "affects": [
+        "phuket",
+        "bangkok",
+        "chiangmai",
+        "pattaya"
+      ],
+      "date": "2026-07-20",
+      "name_zh": "泰国守夏节 (Asanha Bucha + Wan Khao Phansa)"
+    },
+    {
+      "affects": [
+        "busan"
+      ],
+      "date": "2026-06-12",
+      "name_zh": "BTS 釜山周年庆演唱会"
+    },
+    {
+      "affects": [
+        "busan"
+      ],
+      "date": "2026-06-13",
+      "name_zh": "BTS 釜山周年庆演唱会"
     }
   ],
   "heat_levels": {

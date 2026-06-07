@@ -1,14 +1,150 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-07T16:41:31+08:00",
+  "generated_at": "2026-06-08T02:27:00+08:00",
   "snapshot_date": "2026-06-07",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 20,
-  "signal_count_filtered": 4,
+  "signal_count_raw": 24,
+  "signal_count_filtered": 7,
   "signals": [
+    {
+      "type": "event_upcoming",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "busan",
+      "city_name_zh": "釜山",
+      "checkin_start": "2026-06-12",
+      "checkin_end": "2026-06-13",
+      "heat_current": 50.3,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "🎵 釜山 BTS 釜山周年庆演唱会 2026-06-12~2026-06-13",
+      "evidence": [
+        "BTS 釜山周年庆 6/12（周五）-13（周六）两场，粉丝涌入致酒店售罄率暴涨",
+        "事件期间当前热度 50.3",
+        "距事件开始还有 4 天",
+        "🎵 BTS 釜山周年庆演唱会（2026-06-12~2026-06-13）— BTS 釜山周年庆 6/12（周五）-13（周六）两场，粉丝涌入致酒店售罄率暴涨",
+        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
+      ],
+      "causes": [
+        "BTS 釜山周年庆演唱会可能推升后续需求",
+        "中国客大规模转向韩国可能推升后续需求",
+        "BTS 釜山周年庆演唱会将带来大量客流，酒店需求激增"
+      ],
+      "actions": [
+        "立即确认房源库存，事件期间酒店可能快速售罄",
+        "提前与酒店谈判锁价，避免临期涨价"
+      ]
+    },
+    {
+      "type": "event_upcoming",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "osaka",
+      "city_name_zh": "大阪",
+      "checkin_start": "2026-06-19",
+      "checkin_end": "2026-06-22",
+      "heat_current": 48.9,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "🎉 大阪 中国端午节假期 2026-06-19~2026-06-22",
+      "evidence": [
+        "中国三天小长假，日本是端午短途出境首选",
+        "事件期间当前热度 48.9",
+        "距事件开始还有 11 天",
+        "🎉 中国端午节假期（2026-06-19~2026-06-22）— 中国三天小长假，日本是端午短途出境首选",
+        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
+      ],
+      "causes": [
+        "中国端午节假期可能推升后续需求",
+        "涉台外交风波 + 中国客断崖抑制需求",
+        "中国端午节假期将带来大量客流，酒店需求激增"
+      ],
+      "actions": [
+        "立即确认房源库存，事件期间酒店可能快速售罄",
+        "提前与酒店谈判锁价，避免临期涨价"
+      ]
+    },
+    {
+      "type": "event_upcoming",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "tokyo",
+      "city_name_zh": "东京",
+      "checkin_start": "2026-06-19",
+      "checkin_end": "2026-06-22",
+      "heat_current": 49.7,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "🎉 东京 中国端午节假期 2026-06-19~2026-06-22",
+      "evidence": [
+        "中国三天小长假，日本是端午短途出境首选",
+        "事件期间当前热度 49.7",
+        "距事件开始还有 11 天",
+        "🎉 中国端午节假期（2026-06-19~2026-06-22）— 中国三天小长假，日本是端午短途出境首选",
+        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
+      ],
+      "causes": [
+        "中国端午节假期可能推升后续需求",
+        "涉台外交风波 + 中国客断崖抑制需求",
+        "中国端午节假期将带来大量客流，酒店需求激增"
+      ],
+      "actions": [
+        "立即确认房源库存，事件期间酒店可能快速售罄",
+        "提前与酒店谈判锁价，避免临期涨价"
+      ]
+    },
+    {
+      "type": "event_upcoming",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "kyoto",
+      "city_name_zh": "京都",
+      "checkin_start": "2026-06-19",
+      "checkin_end": "2026-06-22",
+      "heat_current": 34.0,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "🎉 京都 中国端午节假期 2026-06-19~2026-06-22",
+      "evidence": [
+        "中国三天小长假，日本是端午短途出境首选",
+        "事件期间当前热度 34.0",
+        "距事件开始还有 11 天",
+        "🎉 中国端午节假期（2026-06-19~2026-06-22）— 中国三天小长假，日本是端午短途出境首选",
+        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
+      ],
+      "causes": [
+        "中国端午节假期可能推升后续需求",
+        "涉台外交风波 + 中国客断崖抑制需求",
+        "中国端午节假期将带来大量客流，酒店需求激增"
+      ],
+      "actions": [
+        "立即确认房源库存，事件期间酒店可能快速售罄",
+        "提前与酒店谈判锁价，避免临期涨价"
+      ]
+    },
     {
       "type": "consecutive_high",
       "priority": "high",
@@ -40,34 +176,6 @@
       "actions": [
         "提前锁定房源，与酒店谈判包房协议",
         "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "surge",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "bali",
-      "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 68.5,
-      "heat_change_7d": null,
-      "price_change_pct": 0.174,
-      "sold_out_rate": null,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 102,
-      "hotels_total": 142,
-      "summary": "巴厘岛 7 天涨幅 +17.4%，102/142 家涨价",
-      "evidence": [
-        "7 天内平均涨幅 +17.4%，102/142 家酒店涨价",
-        "最大涨幅 163.6%"
-      ],
-      "causes": [
-        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
-      ],
-      "actions": [
-        "启动价格预警，与供应商沟通锁价可能性"
       ]
     },
     {
