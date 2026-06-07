@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-07T13:17:50+08:00",
+  "generated_at": "2026-06-07T13:43:31+08:00",
   "snapshots": [
     {
       "date": "2026-06-07",
@@ -12,9 +12,9 @@
         "cities_covered": 20,
         "hotels_covered": 200,
         "max_heat": {
-          "city": "seoul",
-          "ci": "2026-06-20",
-          "heat": 87.5
+          "city": "bali",
+          "ci": "2026-06-08",
+          "heat": null
         },
         "outlier_count": 904,
         "sold_out_count": 530
