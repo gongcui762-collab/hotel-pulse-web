@@ -182,17 +182,19 @@ function renderKPIBar() {
 }
 
 function renderCountryTabs() {
-  const { meta } = state;
+  const { meta, currentSnapshot } = state;
   if (!meta?.cities) return;
   const container = document.getElementById('country-tabs');
+  // 只统计当前 snapshot 有数据的城市
+  const activeCities = meta.cities.filter(c => currentSnapshot?.city_heat?.[c.code]?.length > 0);
   const groups = {};
-  for (const c of meta.cities) {
+  for (const c of activeCities) {
     const g = c.country_group || c.country || '其他';
     groups[g] = (groups[g] || 0) + 1;
   }
   const flags = { '日本': '🇯🇵', '泰国': '🇹🇭', '韩国': '🇰🇷', '港澳': '🇭🇰', '新加坡': '🇸🇬',
                   '马来西亚': '🇲🇾', '印尼': '🇮🇩', '越南': '🇻🇳', '中东': '🇦🇪', '南亚': '🇲🇻' };
-  let html = `<span class="filter-tab active" data-country="">🌐 全部 <span class="count">(${meta.cities.length})</span></span>`;
+  let html = `<span class="filter-tab active" data-country="">🌐 全部 <span class="count">(${activeCities.length})</span></span>`;
   for (const [g, cnt] of Object.entries(groups)) {
     html += `<span class="filter-tab" data-country="${g}">${flags[g] || '🌍'} ${g} <span class="count">(${cnt})</span></span>`;
   }
@@ -301,7 +303,9 @@ function renderCityTable() {
     document.getElementById('city-table-wrap').innerHTML = '<p class="error-msg">无数据</p>';
     return;
   }
-  const cities = [...meta.cities].sort((a, b) => (a.outbound_rank || 99) - (b.outbound_rank || 99));
+  const cities = [...meta.cities]
+    .filter(c => currentSnapshot.city_heat[c.code]?.length > 0)  // 只显示当前 snapshot 有数据的城市
+    .sort((a, b) => (a.outbound_rank || 99) - (b.outbound_rank || 99));
   const filtered = state.activeCountry
     ? cities.filter(c => (c.country_group || c.country) === state.activeCountry)
     : cities;
