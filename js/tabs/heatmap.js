@@ -1,11 +1,12 @@
 /**
- * 🗺 热度地图（v3 优化版）
+ * 热度地图（v3.1）
  *
- * v3 改动：
- *   1. 时间轴移到上方（优先看高热目的地）
- *   2. 按国家一级归类 + 国旗前缀 + 分隔线
- *   3. 通用节假日不标星（端午/中秋/国庆等）
- *   4. hover 增强：高热（≥70）时显示酒店涨价详情 + 可能原因
+ * v3 改动：时间轴上方 + 国家分组 + hover 增强
+ * v3.1 改动：
+ *   - 修复顶部窗口标注重复（去掉 holidays_cn 注释）
+ *   - 修复时间轴不显示日期（改用 Plotly 原生 tickvals/ticktext）
+ *   - 前端标星额外过滤影响 ≥3 城市的通用节日
+ *   - hover 所有色块均展示酒店涨跌概况，高热额外展示原因
  */
 
 import { cityNameZh, heatLevel, jumpToDrilldown } from '../main.js';
@@ -32,7 +33,6 @@ const COUNTRY_FLAGS = {
   MV: '🇲🇻', US: '🇺🇸', CA: '🇨🇦',
 };
 
-// 国家组排列顺序（决定热度图 Y 轴分组顺序）
 const GROUP_ORDER = ['日本', '泰国', '韩国', '港澳', '新加坡', '马来西亚', '印尼', '越南', '中东', '南亚', 'US', 'CA'];
 
 const HIGH_HEAT_THRESHOLD = 70;
@@ -65,24 +65,28 @@ export function renderHeatmap(state) {
   const xDates = [...allDates].sort();
 
   // ===== 预计算酒店明细索引（供 hover 用） =====
-  const detailIndex = {};  // {city_code+ci: {up, total, soldOut}}
+  const detailIndex = {};
   for (const d of currentSnapshot.hotel_details || []) {
     const key = `${d.city}|${d.ci}`;
-    if (!detailIndex[key]) detailIndex[key] = { up: 0, total: 0, soldOut: 0 };
+    if (!detailIndex[key]) detailIndex[key] = { up: 0, down: 0, flat: 0, total: 0, soldOut: 0 };
     if (d.status === 'ok' && !d.out) {
       detailIndex[key].total++;
-      if (d.delta != null && d.delta > 0) detailIndex[key].up++;
+      if (d.delta != null) {
+        if (d.delta > 0.05) detailIndex[key].up++;
+        else if (d.delta < -0.05) detailIndex[key].down++;
+        else detailIndex[key].flat++;
+      }
     }
     if (d.so) detailIndex[key].soldOut++;
   }
 
   // ===== 事件索引（供 hover 高热原因推断） =====
-  const eventIndex = {};  // {city_code+ci: [event_name, ...]}
+  const eventIndex = {};
   for (const h of meta.holidays_local || []) {
     for (const cc of h.affects) {
       const key = `${cc}|${h.date}`;
       if (!eventIndex[key]) eventIndex[key] = [];
-      eventIndex[key].push(h.name_zh);
+      if (!eventIndex[key].includes(h.name_zh)) eventIndex[key].push(h.name_zh);
     }
   }
 
@@ -114,9 +118,16 @@ export function renderHeatmap(state) {
   // ===== Annotations =====
   const annotations = [];
 
-  // 当地事件 ⭐（通用节假日已在后端过滤掉）
+  // 当地事件 ⭐ — 前端额外过滤：统计每个事件名影响的城市数，≥3 城市的通用节日跳过
+  const eventCityCounts = {};
+  for (const h of meta.holidays_local || []) {
+    if (!eventCityCounts[h.name_zh]) eventCityCounts[h.name_zh] = new Set();
+    for (const cc of h.affects) eventCityCounts[h.name_zh].add(cc);
+  }
+
   for (const h of meta.holidays_local || []) {
     if (!xDates.includes(h.date)) continue;
+    if ((eventCityCounts[h.name_zh]?.size || 0) >= 3) continue;
     for (const cc of h.affects) {
       const yIdx = cities.indexOf(cc);
       if (yIdx === -1) continue;
@@ -127,27 +138,26 @@ export function renderHeatmap(state) {
     }
   }
 
-  // 时间轴 tick（放在底部，因为 xaxis 已移到 top）
-  const holidaySet = new Set();
+  // ===== 时间轴日期 tick（Plotly 原生 xaxis ticks） =====
+  const holidayStarts = new Set();
   for (const w of meta.holidays_cn || []) {
-    let cur = new Date(w.start), end = new Date(w.end);
-    while (cur <= end) { holidaySet.add(cur.toISOString().substring(0, 10)); cur.setDate(cur.getDate() + 1); }
+    holidayStarts.add(w.start);
   }
+
+  const tickvals = [];
+  const ticktext = [];
   for (const d of xDates) {
-    const dt = new Date(d), dow = dt.getDay();
-    const isH = holidaySet.has(d);
-    let color = '#94a3b8';
-    if (isH) color = '#dc2626';
-    else if (dow === 6 || dow === 0) color = '#f59e0b';
-    else if (dow === 5) color = '#d97706';
-    if (dow !== 1 && dow !== 5 && dow !== 6 && dow !== 0 && !isH) continue;
+    const dt = new Date(d);
+    const dow = dt.getDay();
     const m = dt.getMonth() + 1, day = dt.getDate();
-    annotations.push({
-      x: d, y: -0.03, xref: 'x', yref: 'paper',
-      text: dow === 1 ? `${m}/${day}` : `${day}`,
-      showarrow: false, font: { color, size: 11, weight: isH ? 'bold' : 'normal' },
-      xanchor: 'center',
-    });
+    const isHolidayStart = holidayStarts.has(d);
+    const isMonday = dow === 1;
+    const isFirstOfMonth = day === 1;
+
+    if (isMonday || isFirstOfMonth || isHolidayStart) {
+      tickvals.push(d);
+      ticktext.push(`${m}/${day}`);
+    }
   }
 
   // ===== 业务窗口高亮 shapes + 国家分隔线 =====
@@ -173,26 +183,15 @@ export function renderHeatmap(state) {
       { type: 'line', xref: 'x', yref: 'paper', x0: i0 - 0.5, x1: i0 - 0.5, y0: 0, y1: 1, line: { color: borderColor, width: 1.5, dash: 'dot' }, layer: 'below' },
       { type: 'line', xref: 'x', yref: 'paper', x0: i1 + 0.5, x1: i1 + 0.5, y0: 0, y1: 1, line: { color: borderColor, width: 1.5, dash: 'dot' }, layer: 'below' },
     );
-    // 窗口名称标注在顶部
+    // 窗口名称标注
     const midIdx = Math.round((i0 + i1) / 2);
     annotations.push({
-      x: midIdx, y: 1.12, xref: 'x', yref: 'paper',
+      x: midIdx, y: 1.06, xref: 'x', yref: 'paper',
       text: `${w.emoji || ''} ${w.name_zh}`,
       showarrow: false,
       font: { size: 12, color: '#334155', weight: 'bold' },
       xanchor: 'center',
     });
-  }
-
-  // 节假日标注（中国法定假日在时间轴上方标注）
-  for (const w of meta.holidays_cn || []) {
-    if (xDates.includes(w.start)) {
-      annotations.push({
-        x: w.start, y: 1.07, xref: 'x', yref: 'paper',
-        text: `📅 ${w.name_zh}`, showarrow: false,
-        font: { size: 11, color: '#dc2626' }, xanchor: 'left',
-      });
-    }
   }
 
   // 国家分隔线
@@ -225,14 +224,17 @@ export function renderHeatmap(state) {
 
   const layout = {
     autosize: true,
-    height: Math.max(500, cities.length * 32 + 160),
+    height: Math.max(500, cities.length * 32 + 200),
     paper_bgcolor: '#ffffff',
     plot_bgcolor: '#ffffff',
-    margin: { l: 120, r: 40, t: 90, b: 40 },
+    margin: { l: 120, r: 40, t: 120, b: 30 },
     xaxis: {
       type: 'category',
       side: 'top',
-      tickfont: { size: 0, color: 'rgba(0,0,0,0)' },
+      tickvals,
+      ticktext,
+      tickfont: { size: 11, color: '#64748b' },
+      tickangle: -45,
       showgrid: false, showline: true, linecolor: '#e5e7eb',
     },
     yaxis: {
@@ -254,44 +256,48 @@ export function renderHeatmap(state) {
 
 function formatHover(cityCode, date, row, detailIndex, eventIndex) {
   const displayHeat = row.bh != null ? row.bh : row.heat;
-  const lvl = heatLevel(displayHeat);
-  const emoji = { blue: '🔵', green: '🟢', yellow: '🟡', red: '🔴', na: '⚫' }[lvl];
   const dt = new Date(date);
   const dow = ['日', '一', '二', '三', '四', '五', '六'][dt.getDay()];
 
-  let t = `<b>${cityNameZh(cityCode)}</b> · ${date} (周${dow}) ${emoji}<br>`;
+  let t = `<b>${cityNameZh(cityCode)}</b> · ${date} (周${dow})<br>`;
 
   // 热度
-  if (row.bh != null) t += `融合热度 <b>${row.bh}</b>`;
-  else if (row.heat != null) t += `热度 <b>${row.heat}</b>`;
-  if (row.heat != null && row.bh != null) t += ` (原始 ${row.heat})`;
+  if (row.bh != null) {
+    t += `热度 <b>${row.bh}</b>`;
+    if (row.heat != null) t += ` (原始 ${row.heat})`;
+  } else if (row.heat != null) {
+    t += `热度 <b>${row.heat}</b>`;
+  }
   t += '<br>';
 
-  // ===== 高热区（≥70）：展示更多业务信息 =====
+  // 酒店涨跌概况（所有色块均展示）
+  const detail = detailIndex[`${cityCode}|${date}`];
+  if (detail && detail.total > 0) {
+    const parts = [];
+    if (detail.up > 0) parts.push(`${detail.up} 家涨价`);
+    if (detail.down > 0) parts.push(`${detail.down} 家降价`);
+    if (detail.flat > 0) parts.push(`${detail.flat} 家持平`);
+    t += `📊 ${detail.total} 家酒店：${parts.join(' / ')}<br>`;
+    if (detail.soldOut > 0) t += `⚠️ ${detail.soldOut} 家售罄<br>`;
+  } else if (row.n != null) {
+    t += `酒店数 ${row.n}<br>`;
+  }
+
+  // 售罄率
+  if (row.so != null && row.so > 0) t += `售罄率 ${(row.so * 100).toFixed(0)}%<br>`;
+
+  // ===== 高热区（≥70）：额外信息 =====
   if (displayHeat >= HIGH_HEAT_THRESHOLD) {
-    // 连续高热
     if (row.strk > 0) t += `🔥 连续 ${row.strk} 次采集高热<br>`;
 
-    // 酒店涨价详情
-    const detail = detailIndex[`${cityCode}|${date}`];
-    if (detail && detail.total > 0) {
-      t += `📊 ${detail.up}/${detail.total} 家酒店涨价超淡季中位<br>`;
-      if (detail.soldOut > 0) t += `⚠️ ${detail.soldOut} 家售罄<br>`;
-    }
-
-    // 可能原因（匹配事件知识库）
     const events = eventIndex[`${cityCode}|${date}`];
     if (events && events.length > 0) {
       t += `💡 可能原因：${events.join('、')}<br>`;
     }
-
-    // 置信度
-    if (row.conf) t += `置信度 ${({high:'高',mid:'中',low:'低'})[row.conf] || row.conf}<br>`;
-  } else {
-    // 非高热：简洁展示
-    if (row.so != null && row.so > 0) t += `售罄率 ${(row.so * 100).toFixed(0)}%<br>`;
-    if (row.n != null) t += `酒店数 ${row.n}`;
   }
+
+  // 置信度
+  if (row.conf) t += `置信度 ${({high:'高',mid:'中',low:'低'})[row.conf] || row.conf}`;
 
   return t;
 }
