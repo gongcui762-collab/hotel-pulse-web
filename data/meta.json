@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-09T11:21:56+08:00",
+  "generated_at": "2026-06-10T00:16:56+08:00",
   "snapshot_dates": [
     "2026-06-09",
     "2026-06-08",
@@ -834,6 +834,240 @@
       "rooms": null,
       "p20": 268,
       "p50": 328,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_grandvrio_city",
+      "name_zh": "岘港格兰维利欧城市酒店",
+      "name_en": "Grandvrio City Danang",
+      "city": "danang",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_hilton",
+      "name_zh": "岘港希尔顿酒店",
+      "name_en": "Hilton Da Nang",
+      "city": "danang",
+      "district": "海滨",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_hyatt_regency",
+      "name_zh": "岘港凯悦度假酒店",
+      "name_en": "Hyatt Regency Danang Resort and Spa",
+      "city": "danang",
+      "district": "海滨",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_intercontinental_sun_peninsula",
+      "name_zh": "岘港洲际阳光半岛度假酒店",
+      "name_en": "InterContinental Danang Sun Peninsula Resort",
+      "city": "danang",
+      "district": "山茶半岛",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_mercure_son_tra",
+      "name_zh": "岘港巴拿山法国村美居酒店",
+      "name_en": "Mercure Danang French Village Bana Hills",
+      "city": "danang",
+      "district": "山茶",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_muong_thanh_luxury",
+      "name_zh": "岘港孟青奢华酒店",
+      "name_en": "Muong Thanh Luxury Da Nang Hotel",
+      "city": "danang",
+      "district": "海洲",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_novotel_premier_han_river",
+      "name_zh": "岘港韩江诺富特尊贵酒店",
+      "name_en": "Novotel Danang Premier Han River",
+      "city": "danang",
+      "district": "海洲",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_pullman",
+      "name_zh": "岘港铂尔曼海滩度假酒店",
+      "name_en": "Pullman Danang Beach Resort",
+      "city": "danang",
+      "district": "海滨",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "danang_sheraton_grand",
+      "name_zh": "岘港喜来登大酒店",
+      "name_en": "Sheraton Grand Danang Resort",
+      "city": "danang",
+      "district": "海滨",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_Address_downtown",
+      "name_zh": "迪拜市中心地标酒店",
+      "name_en": "Address Downtown Dubai",
+      "city": "dubai",
+      "district": "市中心",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_atlantis_the_palm",
+      "name_zh": "迪拜棕榈岛亚特兰蒂斯酒店",
+      "name_en": "Atlantis The Palm",
+      "city": "dubai",
+      "district": "棕榈岛",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_grand_hyatt",
+      "name_zh": "迪拜君悦酒店",
+      "name_en": "Grand Hyatt Dubai",
+      "city": "dubai",
+      "district": "乌德梅萨",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_hilton_al_habtoor",
+      "name_zh": "迪拜阿尔哈布图尔城希尔顿酒店",
+      "name_en": "Hilton Dubai Al Habtoor City",
+      "city": "dubai",
+      "district": "阿尔哈布图尔城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_holiday_inn_festival_city",
+      "name_zh": "迪拜节日城假日酒店",
+      "name_en": "Holiday Inn Dubai Festival City",
+      "city": "dubai",
+      "district": "节日城",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_ibis_styles_jumeirah",
+      "name_zh": "迪拜朱美拉宜必思尚品酒店",
+      "name_en": "ibis Styles Dubai Jumeira",
+      "city": "dubai",
+      "district": "朱美拉",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_jw_marriott_marquis",
+      "name_zh": "迪拜JW万豪侯爵酒店",
+      "name_en": "JW Marriott Marquis Hotel Dubai",
+      "city": "dubai",
+      "district": "商务湾",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_premier_inn_ibn_battuta",
+      "name_zh": "迪拜伊本白图泰购物中心普瑞米尔酒店",
+      "name_en": "Premier Inn Dubai Ibn Battuta Mall",
+      "city": "dubai",
+      "district": "杰贝阿里",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "dubai_sofitel_the_obelisk",
+      "name_zh": "迪拜方尖碑索菲特酒店",
+      "name_en": "Sofitel Dubai The Obelisk",
+      "city": "dubai",
+      "district": "瓦菲",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
       "lat": null,
       "lng": null
     },
@@ -2268,6 +2502,201 @@
       "lng": null
     },
     {
+      "id": "maldives_bandos",
+      "name_zh": "马尔代夫班度士岛度假酒店",
+      "name_en": "Bandos Maldives",
+      "city": "maldives",
+      "district": "北马累环礁",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "maldives_centara_grand",
+      "name_zh": "马尔代夫圣塔拉大岛度假酒店",
+      "name_en": "Centara Grand Island Resort & Spa Maldives",
+      "city": "maldives",
+      "district": "南阿里环礁",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "maldives_conrad_rangali",
+      "name_zh": "马尔代夫港丽岛度假酒店",
+      "name_en": "Conrad Maldives Rangali Island",
+      "city": "maldives",
+      "district": "南阿里环礁",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "maldives_hard_rock",
+      "name_zh": "马尔代夫硬石酒店",
+      "name_en": "Hard Rock Hotel Maldives",
+      "city": "maldives",
+      "district": "南马累环礁",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "maldives_holiday_inn_kandooma",
+      "name_zh": "马尔代夫康杜玛假日度假酒店",
+      "name_en": "Holiday Inn Resort Kandooma Maldives",
+      "city": "maldives",
+      "district": "南马累环礁",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "maldives_oblu_xperience_ailafushi",
+      "name_zh": "马尔代夫奥静体验岛度假酒店",
+      "name_en": "OBLU XPERIENCE Ailafushi",
+      "city": "maldives",
+      "district": "北马累环礁",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "maldives_sun_island",
+      "name_zh": "马尔代夫太阳岛度假酒店",
+      "name_en": "Sun Island Resort & Spa",
+      "city": "maldives",
+      "district": "南阿里环礁",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "nara_centurion_hotel_classic",
+      "name_zh": "奈良百夫长经典酒店",
+      "name_en": "Centurion Hotel Classic Nara",
+      "city": "nara",
+      "district": "奈良站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "nara_comfort_hotel",
+      "name_zh": "奈良舒适酒店",
+      "name_en": "Comfort Hotel Nara",
+      "city": "nara",
+      "district": "奈良站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "nara_daiwa_roynet",
+      "name_zh": "奈良大和鲁内酒店",
+      "name_en": "Daiwa Roynet Hotel Nara",
+      "city": "nara",
+      "district": "新大宫",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "nara_hotel",
+      "name_zh": "奈良酒店",
+      "name_en": "Nara Hotel",
+      "city": "nara",
+      "district": "奈良公园",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "nara_hotel_nikko",
+      "name_zh": "奈良日航酒店",
+      "name_en": "Hotel Nikko Nara",
+      "city": "nara",
+      "district": "奈良站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "nara_jw_marriott",
+      "name_zh": "奈良JW万豪酒店",
+      "name_en": "JW Marriott Hotel Nara",
+      "city": "nara",
+      "district": "奈良站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "nara_piazza_hotel_premier",
+      "name_zh": "奈良广场酒店",
+      "name_en": "Piazza Hotel Nara",
+      "city": "nara",
+      "district": "奈良站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "nara_washington_hotel_plaza",
+      "name_zh": "奈良华盛顿酒店广场",
+      "name_en": "Nara Washington Hotel Plaza",
+      "city": "nara",
+      "district": "奈良站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
       "id": "newjersey_doubletree_jersey_city",
       "name_zh": "泽西城希尔顿逸林酒店",
       "name_en": "DoubleTree by Hilton Hotel & Suites Jersey City",
@@ -2520,6 +2949,110 @@
       "name_en": "Pod Times Square",
       "city": "newyork",
       "district": "时代广场",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "okinawa_daiwa_roynet_naha_kokusai",
+      "name_zh": "那霸国际通大和鲁内酒店",
+      "name_en": "Daiwa Roynet Hotel Naha Kokusaidori",
+      "city": "okinawa",
+      "district": "那霸国际通",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "okinawa_double_tree_naha_shuri",
+      "name_zh": "冲绳北谷希尔顿逸林度假酒店",
+      "name_en": "DoubleTree by Hilton Okinawa Chatan Resort",
+      "city": "okinawa",
+      "district": "那霸首里",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "okinawa_hilton_naha_shuri",
+      "name_zh": "冲绳北谷希尔顿度假酒店",
+      "name_en": "Hilton Okinawa Chatan Resort",
+      "city": "okinawa",
+      "district": "那霸首里",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "okinawa_hotel_gracery_naha",
+      "name_zh": "那霸格拉斯丽酒店",
+      "name_en": "Hotel Gracery Naha",
+      "city": "okinawa",
+      "district": "那霸国际通",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "okinawa_hyatt_regency_naha",
+      "name_zh": "冲绳那霸凯悦酒店",
+      "name_en": "Hyatt Regency Naha Okinawa",
+      "city": "okinawa",
+      "district": "那霸",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "okinawa_rihga_royal_gran_naha",
+      "name_zh": "冲绳丽嘉皇家格兰酒店",
+      "name_en": "RIHGA Royal Gran Okinawa",
+      "city": "okinawa",
+      "district": "那霸",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "okinawa_sheraton_sunmarina",
+      "name_zh": "冲绳喜来登圣玛丽娜度假酒店",
+      "name_en": "Sheraton Okinawa Sunmarina Resort",
+      "city": "okinawa",
+      "district": "恩纳",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "okinawa_vessel_hotel_campana",
+      "name_zh": "冲绳坎帕纳船舶酒店",
+      "name_en": "Vessel Hotel Campana Okinawa",
+      "city": "okinawa",
+      "district": "北谷美国村",
       "tier": null,
       "rooms": null,
       "p20": null,
@@ -2914,6 +3447,84 @@
       "rooms": null,
       "p20": 2024,
       "p50": 2048,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "sapporo_ana_crowne_plaza",
+      "name_zh": "札幌全日空皇冠假日酒店",
+      "name_en": "ANA Crowne Plaza Sapporo",
+      "city": "sapporo",
+      "district": "大通/薄野",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "sapporo_cross_hotel",
+      "name_zh": "札幌十字酒店",
+      "name_en": "Cross Hotel Sapporo",
+      "city": "sapporo",
+      "district": "大通",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "sapporo_dormy_inn_premium_odori",
+      "name_zh": "札幌多美迪高级酒店",
+      "name_en": "Dormy Inn Premium Sapporo",
+      "city": "sapporo",
+      "district": "大通",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "sapporo_ibis_styles",
+      "name_zh": "札幌宜必思尚品酒店",
+      "name_en": "ibis Styles Sapporo",
+      "city": "sapporo",
+      "district": "札幌站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "sapporo_jr_tower_nikko",
+      "name_zh": "札幌JR塔日航酒店",
+      "name_en": "JR Tower Hotel Nikko Sapporo",
+      "city": "sapporo",
+      "district": "札幌站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
+      "lat": null,
+      "lng": null
+    },
+    {
+      "id": "sapporo_mitsui_garden_hotel",
+      "name_zh": "札幌三井花园酒店",
+      "name_en": "Mitsui Garden Hotel Sapporo",
+      "city": "sapporo",
+      "district": "札幌站",
+      "tier": null,
+      "rooms": null,
+      "p20": null,
+      "p50": null,
       "lat": null,
       "lng": null
     },
@@ -3565,104 +4176,6 @@
   "holidays_local": [
     {
       "affects": [
-        "tokyo",
-        "osaka"
-      ],
-      "date": "2026-08-13",
-      "name_zh": "盂兰盆节"
-    },
-    {
-      "affects": [
-        "tokyo",
-        "osaka"
-      ],
-      "date": "2026-08-14",
-      "name_zh": "盂兰盆节"
-    },
-    {
-      "affects": [
-        "tokyo",
-        "osaka"
-      ],
-      "date": "2026-08-15",
-      "name_zh": "盂兰盆节"
-    },
-    {
-      "affects": [
-        "tokyo",
-        "osaka"
-      ],
-      "date": "2026-08-16",
-      "name_zh": "盂兰盆节"
-    },
-    {
-      "affects": [
-        "seoul",
-        "jeju"
-      ],
-      "date": "2026-08-15",
-      "name_zh": "光复节"
-    },
-    {
-      "affects": [
-        "bangkok",
-        "pattaya"
-      ],
-      "date": "2026-08-12",
-      "name_zh": "母亲节"
-    },
-    {
-      "affects": [
-        "singapore"
-      ],
-      "date": "2026-08-09",
-      "name_zh": "国庆"
-    },
-    {
-      "affects": [
-        "kualalumpur"
-      ],
-      "date": "2026-08-31",
-      "name_zh": "国庆"
-    },
-    {
-      "affects": [
-        "osaka",
-        "tokyo",
-        "kyoto"
-      ],
-      "date": "2026-06-19",
-      "name_zh": "中国端午节假期"
-    },
-    {
-      "affects": [
-        "osaka",
-        "tokyo",
-        "kyoto"
-      ],
-      "date": "2026-06-20",
-      "name_zh": "中国端午节假期"
-    },
-    {
-      "affects": [
-        "osaka",
-        "tokyo",
-        "kyoto"
-      ],
-      "date": "2026-06-21",
-      "name_zh": "中国端午节假期"
-    },
-    {
-      "affects": [
-        "osaka",
-        "tokyo",
-        "kyoto"
-      ],
-      "date": "2026-06-22",
-      "name_zh": "中国端午节假期"
-    },
-    {
-      "affects": [
         "osaka"
       ],
       "date": "2026-07-15",
@@ -3702,26 +4215,6 @@
       ],
       "date": "2026-07-24",
       "name_zh": "东京隅田川花火大会"
-    },
-    {
-      "affects": [
-        "phuket",
-        "bangkok",
-        "chiangmai",
-        "pattaya"
-      ],
-      "date": "2026-07-19",
-      "name_zh": "泰国守夏节 (Asanha Bucha + Wan Khao Phansa)"
-    },
-    {
-      "affects": [
-        "phuket",
-        "bangkok",
-        "chiangmai",
-        "pattaya"
-      ],
-      "date": "2026-07-20",
-      "name_zh": "泰国守夏节 (Asanha Bucha + Wan Khao Phansa)"
     },
     {
       "affects": [
