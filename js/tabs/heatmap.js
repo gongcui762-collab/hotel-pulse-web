@@ -14,6 +14,13 @@ const HEAT_COLORSCALE = [
   [1.00, '#dc2626'],   // 深红（烫）
 ];
 
+const WINDOW_COLORS = {
+  duanwu_2026:              'rgba(52, 211, 153, 0.10)',  // 绿
+  summer_2026:              'rgba(251, 191, 36, 0.10)',  // 黄
+  mid_autumn_national_2026: 'rgba(249, 115, 22, 0.10)',  // 橙
+  new_year_spring_2027:     'rgba(239, 68, 68, 0.10)',   // 红
+};
+
 export function renderHeatmap(state) {
   const { meta, currentSnapshot } = state;
   const { city_heat } = currentSnapshot;
@@ -109,6 +116,39 @@ export function renderHeatmap(state) {
     });
   }
 
+  // 业务窗口高亮 shapes + 标注
+  const shapes = [];
+  for (const w of meta.business_windows || []) {
+    if (w.start === 'auto' || !w.start || !w.end) continue;
+    const color = WINDOW_COLORS[w.code] || 'rgba(148, 163, 184, 0.08)';
+    const wStart = w.start < xDates[0] ? xDates[0] : w.start;
+    const wEnd = w.end > xDates[xDates.length - 1] ? xDates[xDates.length - 1] : w.end;
+    if (wStart > xDates[xDates.length - 1] || wEnd < xDates[0]) continue;
+    // 找到 xDates 中落入窗口的第一个和最后一个日期的索引
+    const i0 = xDates.findIndex(d => d >= wStart);
+    const i1 = xDates.length - 1 - [...xDates].reverse().findIndex(d => d <= wEnd);
+    if (i0 === -1 || i1 === -1 || i0 > i1) continue;
+    shapes.push({
+      type: 'rect', xref: 'x', yref: 'paper',
+      x0: i0 - 0.5, x1: i1 + 0.5, y0: 0, y1: 1,
+      fillcolor: color, line: { width: 0 }, layer: 'below',
+    });
+    const borderColor = color.replace(/[\d.]+\)$/, '0.35)');
+    shapes.push(
+      { type: 'line', xref: 'x', yref: 'paper', x0: i0 - 0.5, x1: i0 - 0.5, y0: 0, y1: 1, line: { color: borderColor, width: 1.5, dash: 'dot' }, layer: 'below' },
+      { type: 'line', xref: 'x', yref: 'paper', x0: i1 + 0.5, x1: i1 + 0.5, y0: 0, y1: 1, line: { color: borderColor, width: 1.5, dash: 'dot' }, layer: 'below' },
+    );
+    // 窗口名称标注在顶部（高于节假日标注）
+    const midIdx = Math.round((i0 + i1) / 2);
+    annotations.push({
+      x: midIdx, y: 1.09, xref: 'x', yref: 'paper',
+      text: `${w.emoji || ''} ${w.name_zh}`,
+      showarrow: false,
+      font: { size: 12, color: '#334155', weight: 'bold' },
+      xanchor: 'center',
+    });
+  }
+
   const trace = {
     type: 'heatmap', x: xDates, y: yLabels, z, customdata, text,
     hovertemplate: '%{text}<br>热度 %{z}<extra></extra>',
@@ -126,7 +166,7 @@ export function renderHeatmap(state) {
     height: Math.max(500, cities.length * 32 + 140),
     paper_bgcolor: '#ffffff',
     plot_bgcolor: '#ffffff',
-    margin: { l: 100, r: 40, t: 60, b: 50 },
+    margin: { l: 100, r: 40, t: 80, b: 50 },
     xaxis: {
       type: 'category',
       tickfont: { size: 0, color: 'rgba(0,0,0,0)' },
@@ -137,6 +177,7 @@ export function renderHeatmap(state) {
       showgrid: false, autorange: 'reversed',
     },
     annotations,
+    shapes,
   };
 
   Plotly.newPlot(target, [trace], layout, { displayModeBar: false, responsive: true });
