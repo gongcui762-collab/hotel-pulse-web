@@ -4,6 +4,7 @@
  * v2 架构：章节式滚动 + 国家筛选 + 业务窗口 + 信号驱动 KPI
  */
 
+import { addExportButtons } from './export.js';
 import { renderHeatmap } from './tabs/heatmap.js';
 import { renderHistory } from './tabs/history.js';
 import { renderFlights } from './tabs/flights.js';
@@ -71,6 +72,10 @@ function renderAll() {
     document.getElementById('heatmap-plot').innerHTML = `<div class="error-msg">热度图渲染失败：${e.message}</div>`;
   }
   renderSpeedTable();
+  // 导出按钮
+  addExportButtons('city-table-wrap', 'city-rank-table', '城市热度排行', { csv: true, png: false });
+  addExportButtons('heatmap-plot', 'heatmap-plot', '热度地图', { csv: false, png: true });
+  addExportButtons('speed-table-wrap', 'speed-rank-table', '涨速TOP', { csv: true, png: false });
   try { renderHistory(state); } catch (e) { console.warn('renderHistory:', e); }
   try { renderFlights(state); } catch (e) { console.warn('renderFlights:', e); }
   try { renderDrilldown(state); } catch {}
@@ -579,7 +584,7 @@ function renderSpeedTable() {
     </tr>`;
   }).join('');
   document.getElementById('speed-table-wrap').innerHTML = `
-    <table class="data-table">
+    <table class="data-table" id="speed-rank-table">
       <thead><tr><th>城市 / 入住日</th><th>酒店</th><th class="right">当前价</th><th class="right">淡季中位</th><th class="right">涨幅</th><th class="center">当前热度</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
