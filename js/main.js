@@ -265,7 +265,7 @@ function renderInsights() {
           <summary>📊 数据证据</summary>
           <div class="content"><ul>${s.evidence.map(e => `<li>${e}</li>`).join('')}</ul></div>
         </details>` : '';
-    const backgroundHtml = s.background?.length ? `<details class="evidence-block">
+    const backgroundHtml = s.background?.length ? `<details class="evidence-block" open>
           <summary>📋 长期因素</summary>
           <div class="content"><ul style="color:#64748b;font-size:13px;">${s.background.map(b => `<li>${b}</li>`).join('')}</ul></div>
         </details>` : '';
