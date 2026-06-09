@@ -6,6 +6,7 @@
 
 import { renderHeatmap } from './tabs/heatmap.js';
 import { renderHistory } from './tabs/history.js';
+import { renderFlights } from './tabs/flights.js';
 import { renderDrilldown, prefillDrilldown } from './tabs/drilldown.js';
 import { renderDataHealth } from './tabs/data-health.js';
 
@@ -71,6 +72,7 @@ function renderAll() {
   }
   renderSpeedTable();
   try { renderHistory(state); } catch (e) { console.warn('renderHistory:', e); }
+  try { renderFlights(state); } catch (e) { console.warn('renderFlights:', e); }
   try { renderDrilldown(state); } catch {}
   try { renderDataHealth(state); } catch {}
   renderFooter();
