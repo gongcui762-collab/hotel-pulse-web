@@ -265,6 +265,10 @@ function renderInsights() {
           <summary>📊 数据证据</summary>
           <div class="content"><ul>${s.evidence.map(e => `<li>${e}</li>`).join('')}</ul></div>
         </details>` : '';
+    const backgroundHtml = s.background?.length ? `<details class="evidence-block">
+          <summary>📋 长期因素</summary>
+          <div class="content"><ul style="color:#64748b;font-size:13px;">${s.background.map(b => `<li>${b}</li>`).join('')}</ul></div>
+        </details>` : '';
     const causesHtml = s.causes?.length ? `<details class="evidence-block">
           <summary>💡 可能原因</summary>
           <div class="content"><ul>${s.causes.map(c => `<li>${c}</li>`).join('')}</ul></div>
@@ -278,7 +282,7 @@ function renderInsights() {
       <div class="body">
         <h3>${s.city_name_zh || s.city_code} ${prio[s.priority] || ''} ${conf}</h3>
         <p class="lead">${s.summary || ''}</p>
-        <div class="evidence-blocks">${evidenceHtml}${causesHtml}${actionsHtml}</div>
+        <div class="evidence-blocks">${evidenceHtml}${backgroundHtml}${causesHtml}${actionsHtml}</div>
       </div>
     </div>`;
   }).join('');
