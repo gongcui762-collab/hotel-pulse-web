@@ -5,6 +5,7 @@
  */
 
 import { renderHeatmap } from './tabs/heatmap.js';
+import { renderHistory } from './tabs/history.js';
 import { renderDrilldown, prefillDrilldown } from './tabs/drilldown.js';
 import { renderDataHealth } from './tabs/data-health.js';
 
@@ -69,6 +70,7 @@ function renderAll() {
     document.getElementById('heatmap-plot').innerHTML = `<div class="error-msg">热度图渲染失败：${e.message}</div>`;
   }
   renderSpeedTable();
+  try { renderHistory(state); } catch (e) { console.warn('renderHistory:', e); }
   try { renderDrilldown(state); } catch {}
   try { renderDataHealth(state); } catch {}
   renderFooter();
