@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-11T04:54:22+08:00",
-  "snapshot_date": "2026-06-10",
+  "generated_at": "2026-06-11T05:05:43+08:00",
+  "snapshot_date": "2026-06-11",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 34,
-  "signal_count_filtered": 8,
+  "signal_count_raw": 8,
+  "signal_count_filtered": 6,
   "signals": [
     {
       "type": "event_upcoming",
@@ -17,7 +17,7 @@
       "city_name_zh": "釜山",
       "checkin_start": "2026-06-12",
       "checkin_end": "2026-06-13",
-      "heat_current": 39.3,
+      "heat_current": 47.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -28,7 +28,7 @@
       "summary": "🎵 釜山 BTS 釜山周年庆演唱会 2026-06-12~2026-06-13",
       "evidence": [
         "BTS 釜山周年庆 6/12（周五）-13（周六）两场，粉丝涌入致酒店售罄率暴涨",
-        "事件期间当前热度 39.3",
+        "事件期间当前热度 47.0",
         "距事件开始还有 1 天"
       ],
       "background": [
@@ -52,7 +52,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-06-19",
       "checkin_end": "2026-06-22",
-      "heat_current": 46.2,
+      "heat_current": null,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -63,7 +63,6 @@
       "summary": "🎉 大阪 中国端午节假期 2026-06-19~2026-06-22",
       "evidence": [
         "中国三天小长假，日本是端午短途出境首选",
-        "事件期间当前热度 46.2",
         "距事件开始还有 8 天"
       ],
       "background": [
@@ -87,7 +86,7 @@
       "city_name_zh": "东京",
       "checkin_start": "2026-06-19",
       "checkin_end": "2026-06-22",
-      "heat_current": 53.4,
+      "heat_current": null,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -98,7 +97,6 @@
       "summary": "🎉 东京 中国端午节假期 2026-06-19~2026-06-22",
       "evidence": [
         "中国三天小长假，日本是端午短途出境首选",
-        "事件期间当前热度 53.4",
         "距事件开始还有 8 天"
       ],
       "background": [
@@ -122,7 +120,7 @@
       "city_name_zh": "京都",
       "checkin_start": "2026-06-19",
       "checkin_end": "2026-06-22",
-      "heat_current": 37.8,
+      "heat_current": null,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -133,7 +131,6 @@
       "summary": "🎉 京都 中国端午节假期 2026-06-19~2026-06-22",
       "evidence": [
         "中国三天小长假，日本是端午短途出境首选",
-        "事件期间当前热度 37.8",
         "距事件开始还有 8 天"
       ],
       "background": [
@@ -161,7 +158,7 @@
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 8,
+      "consecutive_days": 9,
       "snapshot_dates": [
         "2026-05-22",
         "2026-05-24",
@@ -170,14 +167,15 @@
         "2026-06-07",
         "2026-06-08",
         "2026-06-09",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-11"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "巴厘岛 连续 9 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
       "evidence": [
-        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 67.5",
-        "持续日期：2026-05-22 → 2026-05-24 → 2026-06-04 → 2026-06-06 → 2026-06-07 → 2026-06-08 → 2026-06-09 → 2026-06-10"
+        "连续 9 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "持续日期：2026-05-22 → 2026-05-24 → 2026-06-04 → 2026-06-06 → 2026-06-07 → 2026-06-08 → 2026-06-09 → 2026-06-10 → 2026-06-11"
       ],
       "background": [],
       "causes": [],
@@ -187,101 +185,31 @@
       ]
     },
     {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "phuket",
-      "city_name_zh": "普吉",
-      "checkin_start": "2026-08-19",
-      "checkin_end": "2026-08-19",
-      "heat_current": 67.5,
+      "type": "anomaly_sold_out",
+      "priority": "mid",
+      "confidence": "mid",
+      "city_code": "chiangmai",
+      "city_name_zh": "清迈",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 62.6,
       "heat_change_7d": null,
       "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 4,
-      "snapshot_dates": [
-        "2026-06-07",
-        "2026-06-08",
-        "2026-06-09",
-        "2026-06-10"
-      ],
+      "sold_out_rate": 0.6,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "普吉 连续 4 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "清迈 售罄率 60% 异常偏高",
       "evidence": [
-        "连续 4 个采集日窗口内平均热度 ≥ 65，当前 67.5",
-        "持续日期：2026-06-07 → 2026-06-08 → 2026-06-09 → 2026-06-10"
+        "售罄率 60%，远高于历史均值",
+        "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
       ],
       "causes": [
-        "中泰互免签证持续拉高住宿需求"
-      ],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "high",
-      "confidence": "mid",
-      "city_code": "seoul",
-      "city_name_zh": "首尔",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 66.5,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.319,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "首尔 售罄率 32% 异常偏高",
-      "evidence": [
-        "售罄率 32%，远高于历史均值",
-        "🎉 韩国光复节（2026-08-15~2026-08-15）— 8/15 韩国光复节法定假日，国内旅游需求上升"
-      ],
-      "background": [
-        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
-      ],
-      "causes": [
-        "韩国光复节可能推升后续需求",
-        "中国客大规模转向韩国可能推升后续需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "high",
-      "confidence": "mid",
-      "city_code": "singapore",
-      "city_name_zh": "新加坡",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 32.5,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 1.0,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "新加坡 售罄率 100% 异常偏高",
-      "evidence": [
-        "售罄率 100%，远高于历史均值",
-        "🎉 新加坡国庆（2026-08-09~2026-08-09）— 新加坡 61 周年国庆，滨海湾烟花 + 阅兵，周边酒店溢价 20-30%"
-      ],
-      "background": [],
-      "causes": [
-        "新加坡国庆可能推升后续需求"
+        "中泰互免签证可能推升后续需求"
       ],
       "actions": [
         "紧急补充替代房源，扩大可售库存",
