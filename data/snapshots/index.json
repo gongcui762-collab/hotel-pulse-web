@@ -1,7 +1,21 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-11T04:55:32+08:00",
+  "generated_at": "2026-06-11T04:56:27+08:00",
   "snapshots": [
+    {
+      "date": "2026-06-11",
+      "cities": 0,
+      "hotels": 29,
+      "checkins": 0,
+      "kpi": {
+        "snapshot_date": "2026-06-11",
+        "cities_covered": 0,
+        "hotels_covered": 29,
+        "max_heat": null,
+        "outlier_count": 0,
+        "sold_out_count": 57
+      }
+    },
     {
       "date": "2026-06-10",
       "cities": 30,
@@ -18,6 +32,164 @@
         },
         "outlier_count": 0,
         "sold_out_count": 612
+      }
+    },
+    {
+      "date": "2026-06-09",
+      "cities": 24,
+      "hotels": 240,
+      "checkins": 40,
+      "kpi": {
+        "snapshot_date": "2026-06-09",
+        "cities_covered": 24,
+        "hotels_covered": 240,
+        "max_heat": {
+          "city": "seoul",
+          "ci": "2026-06-20",
+          "heat": 82.5
+        },
+        "outlier_count": 1086,
+        "sold_out_count": 874
+      }
+    },
+    {
+      "date": "2026-06-08",
+      "cities": 24,
+      "hotels": 240,
+      "checkins": 41,
+      "kpi": {
+        "snapshot_date": "2026-06-08",
+        "cities_covered": 24,
+        "hotels_covered": 240,
+        "max_heat": {
+          "city": "seoul",
+          "ci": "2026-06-20",
+          "heat": 84.2
+        },
+        "outlier_count": 1092,
+        "sold_out_count": 718
+      }
+    },
+    {
+      "date": "2026-06-07",
+      "cities": 20,
+      "hotels": 200,
+      "checkins": 40,
+      "kpi": {
+        "snapshot_date": "2026-06-07",
+        "cities_covered": 20,
+        "hotels_covered": 200,
+        "max_heat": {
+          "city": "seoul",
+          "ci": "2026-06-20",
+          "heat": 87.5
+        },
+        "outlier_count": 904,
+        "sold_out_count": 530
+      }
+    },
+    {
+      "date": "2026-06-06",
+      "cities": 20,
+      "hotels": 26,
+      "checkins": 41,
+      "kpi": {
+        "snapshot_date": "2026-06-06",
+        "cities_covered": 20,
+        "hotels_covered": 26,
+        "max_heat": {
+          "city": "busan",
+          "ci": "2026-06-13",
+          "heat": 84.2
+        },
+        "outlier_count": 104,
+        "sold_out_count": 41
+      }
+    },
+    {
+      "date": "2026-06-04",
+      "cities": 20,
+      "hotels": 200,
+      "checkins": 41,
+      "kpi": {
+        "snapshot_date": "2026-06-04",
+        "cities_covered": 20,
+        "hotels_covered": 200,
+        "max_heat": {
+          "city": "seoul",
+          "ci": "2026-06-20",
+          "heat": 85.0
+        },
+        "outlier_count": 983,
+        "sold_out_count": 346
+      }
+    },
+    {
+      "date": "2026-05-26",
+      "cities": 0,
+      "hotels": 41,
+      "checkins": 0,
+      "kpi": {
+        "snapshot_date": "2026-05-26",
+        "cities_covered": 0,
+        "hotels_covered": 41,
+        "max_heat": null,
+        "outlier_count": 0,
+        "sold_out_count": 16
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "cities": 20,
+      "hotels": 200,
+      "checkins": 53,
+      "kpi": {
+        "snapshot_date": "2026-05-24",
+        "cities_covered": 20,
+        "hotels_covered": 200,
+        "max_heat": {
+          "city": "osaka",
+          "ci": "2026-09-19",
+          "heat": 83.1
+        },
+        "outlier_count": 1178,
+        "sold_out_count": 551
+      }
+    },
+    {
+      "date": "2026-05-22",
+      "cities": 20,
+      "hotels": 200,
+      "checkins": 46,
+      "kpi": {
+        "snapshot_date": "2026-05-22",
+        "cities_covered": 20,
+        "hotels_covered": 200,
+        "max_heat": {
+          "city": "kyoto",
+          "ci": "2026-10-17",
+          "heat": 86.8
+        },
+        "outlier_count": 1070,
+        "sold_out_count": 493
+      }
+    },
+    {
+      "date": "2026-05-19",
+      "cities": 10,
+      "hotels": 100,
+      "checkins": 47,
+      "kpi": {
+        "snapshot_date": "2026-05-19",
+        "cities_covered": 10,
+        "hotels_covered": 100,
+        "max_heat": {
+          "city": "bangkok",
+          "ci": "2026-08-15",
+          "heat": 84.9
+        },
+        "outlier_count": 541,
+        "sold_out_count": 290
       }
     }
   ]
