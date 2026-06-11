@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-11T05:07:24+08:00",
+  "generated_at": "2026-06-11T11:21:47+08:00",
   "snapshots": [
     {
       "date": "2026-06-11",
       "cities": 4,
-      "hotels": 35,
+      "hotels": 47,
       "checkins": 39,
       "kpi": {
         "snapshot_date": "2026-06-11",
         "cities_covered": 4,
-        "hotels_covered": 35,
+        "hotels_covered": 47,
         "max_heat": {
           "city": "chiangmai",
           "ci": "2026-06-19",
           "heat": 82.5
         },
         "outlier_count": 0,
-        "sold_out_count": 57
+        "sold_out_count": 163
       }
     },
     {
