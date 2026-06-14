@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-14T11:55:41+08:00",
+  "generated_at": "2026-06-15T02:40:51+08:00",
   "snapshot_date": "2026-06-14",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 6,
-  "signal_count_filtered": 4,
+  "signal_count_raw": 23,
+  "signal_count_filtered": 8,
   "signals": [
     {
       "type": "event_upcoming",
@@ -17,7 +17,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-06-19",
       "checkin_end": "2026-06-22",
-      "heat_current": null,
+      "heat_current": 44.1,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 大阪 中国端午节假期 2026-06-19~2026-06-22",
       "evidence": [
-        "中国三天小长假，日本是端午短途出境首选；距事件还有 5 天"
+        "中国三天小长假，日本是端午短途出境首选；当前热度 44.1；距事件还有 4 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -50,7 +50,7 @@
       "city_name_zh": "东京",
       "checkin_start": "2026-06-19",
       "checkin_end": "2026-06-22",
-      "heat_current": null,
+      "heat_current": 53.9,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 东京 中国端午节假期 2026-06-19~2026-06-22",
       "evidence": [
-        "中国三天小长假，日本是端午短途出境首选；距事件还有 5 天"
+        "中国三天小长假，日本是端午短途出境首选；当前热度 53.9；距事件还有 4 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -83,7 +83,7 @@
       "city_name_zh": "京都",
       "checkin_start": "2026-06-19",
       "checkin_end": "2026-06-22",
-      "heat_current": null,
+      "heat_current": 35.6,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -93,7 +93,7 @@
       "hotels_total": 0,
       "summary": "🎉 京都 中国端午节假期 2026-06-19~2026-06-22",
       "evidence": [
-        "中国三天小长假，日本是端午短途出境首选；距事件还有 5 天"
+        "中国三天小长假，日本是端午短途出境首选；当前热度 35.6；距事件还有 4 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -114,9 +114,9 @@
       "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-07-04",
-      "checkin_end": "2026-07-04",
-      "heat_current": 67.0,
+      "checkin_start": "2026-07-08",
+      "checkin_end": "2026-07-08",
+      "heat_current": 69.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -135,9 +135,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.0",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.7",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.0",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 69.7",
         "持续日期：2026-06-04 → 2026-06-06 → 2026-06-07 → 2026-06-08 → 2026-06-09 → 2026-06-10 → 2026-06-11 → 2026-06-12 → 2026-06-13 → 2026-06-14"
       ],
       "background": [],
@@ -145,6 +145,157 @@
       "actions": [
         "提前锁定房源，与酒店谈判包房协议",
         "密切监控热度趋势，准备补贴预案"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "kotakinabalu",
+      "city_name_zh": "亚庇",
+      "checkin_start": "2026-07-31",
+      "checkin_end": "2026-07-31",
+      "heat_current": 68.4,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 7,
+      "snapshot_dates": [
+        "2026-06-08",
+        "2026-06-09",
+        "2026-06-10",
+        "2026-06-11",
+        "2026-06-12",
+        "2026-06-13",
+        "2026-06-14"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "亚庇 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.4",
+      "evidence": [
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 68.4",
+        "持续日期：2026-06-08 → 2026-06-09 → 2026-06-10 → 2026-06-11 → 2026-06-12 → 2026-06-13 → 2026-06-14"
+      ],
+      "background": [
+        "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
+      ],
+      "causes": [
+        "中马互免签证 + Visit Malaysia 2026持续拉高住宿需求"
+      ],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "kualalumpur",
+      "city_name_zh": "吉隆坡",
+      "checkin_start": "2026-07-22",
+      "checkin_end": "2026-07-22",
+      "heat_current": 66.7,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 5,
+      "snapshot_dates": [
+        "2026-06-10",
+        "2026-06-11",
+        "2026-06-12",
+        "2026-06-13",
+        "2026-06-14"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "吉隆坡 连续 5 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.7",
+      "evidence": [
+        "连续 5 个采集日窗口内平均热度 ≥ 65，当前 66.7",
+        "持续日期：2026-06-10 → 2026-06-11 → 2026-06-12 → 2026-06-13 → 2026-06-14"
+      ],
+      "background": [
+        "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
+      ],
+      "causes": [
+        "中马互免签证 + Visit Malaysia 2026持续拉高住宿需求"
+      ],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "phuket",
+      "city_name_zh": "普吉",
+      "checkin_start": "2026-08-08",
+      "checkin_end": "2026-08-08",
+      "heat_current": 68.8,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 3,
+      "snapshot_dates": [
+        "2026-06-12",
+        "2026-06-13",
+        "2026-06-14"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "普吉 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.8",
+      "evidence": [
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 68.8",
+        "持续日期：2026-06-12 → 2026-06-13 → 2026-06-14"
+      ],
+      "background": [
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ],
+      "causes": [
+        "中泰互免签证持续拉高住宿需求"
+      ],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "high",
+      "city_code": "busan",
+      "city_name_zh": "釜山",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 65.0,
+      "heat_change_7d": null,
+      "price_change_pct": 0.107,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 99,
+      "hotels_total": 171,
+      "summary": "釜山 7 天涨幅 +10.7%，99/171 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +10.7%，99/171 家酒店涨价",
+        "最大涨幅 190.2%",
+        "🎉 韩国光复节（2026-08-15~2026-08-15）— 8/15 韩国光复节法定假日，国内旅游需求上升"
+      ],
+      "background": [
+        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
+      ],
+      "causes": [
+        "韩国光复节带动需求上升",
+        "中国客大规模转向韩国带动需求上升"
+      ],
+      "actions": [
+        "启动价格预警，与供应商沟通锁价可能性",
+        "事件驱动型涨价，建议在事件前完成采购"
       ]
     }
   ]

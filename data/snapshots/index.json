@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-14T12:13:33+08:00",
+  "generated_at": "2026-06-15T02:40:51+08:00",
   "snapshots": [
     {
       "date": "2026-06-14",
-      "cities": 1,
-      "hotels": 1,
-      "checkins": 26,
+      "cities": 25,
+      "hotels": 245,
+      "checkins": 38,
       "kpi": {
         "snapshot_date": "2026-06-14",
-        "cities_covered": 1,
-        "hotels_covered": 1,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "bali",
-          "ci": "2026-06-15",
-          "heat": 90.0
+          "city": "seoul",
+          "ci": "2026-06-20",
+          "heat": 82.5
         },
-        "outlier_count": 0,
-        "sold_out_count": 0
+        "outlier_count": 832,
+        "sold_out_count": 495
       }
     },
     {
