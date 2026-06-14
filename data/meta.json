@@ -1,7 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-13T12:05:06+08:00",
+  "generated_at": "2026-06-14T12:13:33+08:00",
   "snapshot_dates": [
+    "2026-06-14",
     "2026-06-13",
     "2026-06-12",
     "2026-06-11",
@@ -16,8 +17,8 @@
     "2026-05-22",
     "2026-05-19"
   ],
-  "latest_snapshot": "2026-06-13",
-  "latest_complete_snapshot": "2026-06-13",
+  "latest_snapshot": "2026-06-14",
+  "latest_complete_snapshot": "2026-06-14",
   "cities": [
     {
       "code": "osaka",
@@ -4219,13 +4220,6 @@
       ],
       "date": "2026-07-24",
       "name_zh": "东京隅田川花火大会"
-    },
-    {
-      "affects": [
-        "busan"
-      ],
-      "date": "2026-06-13",
-      "name_zh": "BTS 釜山周年庆演唱会"
     },
     {
       "affects": [
