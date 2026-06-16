@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-16T11:30:08+08:00",
+  "generated_at": "2026-06-16T15:32:27+08:00",
   "snapshots": [
     {
       "date": "2026-06-16",
-      "cities": 12,
-      "hotels": 110,
-      "checkins": 37,
+      "cities": 25,
+      "hotels": 245,
+      "checkins": 38,
       "kpi": {
         "snapshot_date": "2026-06-16",
-        "cities_covered": 12,
-        "hotels_covered": 110,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "kotakinabalu",
+          "city": "seoul",
           "ci": "2026-06-19",
-          "heat": 89.6
+          "heat": 81.4
         },
-        "outlier_count": 0,
-        "sold_out_count": 105
+        "outlier_count": 928,
+        "sold_out_count": 416
       }
     },
     {
