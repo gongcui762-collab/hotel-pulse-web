@@ -1,23 +1,41 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-17T11:30:09+08:00",
+  "generated_at": "2026-06-18T11:30:08+08:00",
   "snapshots": [
+    {
+      "date": "2026-06-18",
+      "cities": 11,
+      "hotels": 107,
+      "checkins": 36,
+      "kpi": {
+        "snapshot_date": "2026-06-18",
+        "cities_covered": 11,
+        "hotels_covered": 107,
+        "max_heat": {
+          "city": "jeju",
+          "ci": "2026-07-18",
+          "heat": 74.9
+        },
+        "outlier_count": 0,
+        "sold_out_count": 81
+      }
+    },
     {
       "date": "2026-06-17",
       "cities": 8,
-      "hotels": 73,
+      "hotels": 92,
       "checkins": 37,
       "kpi": {
         "snapshot_date": "2026-06-17",
         "cities_covered": 8,
-        "hotels_covered": 73,
+        "hotels_covered": 92,
         "max_heat": {
           "city": "hochiminh",
           "ci": "2026-08-19",
           "heat": 86.9
         },
         "outlier_count": 0,
-        "sold_out_count": 60
+        "sold_out_count": 89
       }
     },
     {
