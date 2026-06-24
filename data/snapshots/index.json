@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-23T11:30:14+08:00",
+  "generated_at": "2026-06-24T11:30:09+08:00",
   "snapshots": [
+    {
+      "date": "2026-06-24",
+      "cities": 11,
+      "hotels": 100,
+      "checkins": 32,
+      "kpi": {
+        "snapshot_date": "2026-06-24",
+        "cities_covered": 11,
+        "hotels_covered": 100,
+        "max_heat": {
+          "city": "jeju",
+          "ci": "2026-07-04",
+          "heat": 90.0
+        },
+        "outlier_count": 0,
+        "sold_out_count": 115
+      }
+    },
     {
       "date": "2026-06-23",
       "cities": 25,
