@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-06-24T11:30:09+08:00",
+  "generated_at": "2026-06-24T14:34:06+08:00",
   "snapshots": [
     {
       "date": "2026-06-24",
-      "cities": 11,
-      "hotels": 100,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 32,
       "kpi": {
         "snapshot_date": "2026-06-24",
-        "cities_covered": 11,
-        "hotels_covered": 100,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "jeju",
-          "ci": "2026-07-04",
-          "heat": 90.0
+          "city": "bali",
+          "ci": "2026-06-27",
+          "heat": 75.8
         },
-        "outlier_count": 0,
-        "sold_out_count": 115
+        "outlier_count": 826,
+        "sold_out_count": 368
       }
     },
     {
