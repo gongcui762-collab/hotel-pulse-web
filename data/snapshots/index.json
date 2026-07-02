@@ -1,23 +1,41 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-01T11:30:09+08:00",
+  "generated_at": "2026-07-02T11:30:07+08:00",
   "snapshots": [
+    {
+      "date": "2026-07-02",
+      "cities": 10,
+      "hotels": 97,
+      "checkins": 27,
+      "kpi": {
+        "snapshot_date": "2026-07-02",
+        "cities_covered": 10,
+        "hotels_covered": 97,
+        "max_heat": {
+          "city": "jakarta",
+          "ci": "2026-08-29",
+          "heat": 72.4
+        },
+        "outlier_count": 0,
+        "sold_out_count": 90
+      }
+    },
     {
       "date": "2026-07-01",
       "cities": 12,
-      "hotels": 111,
+      "hotels": 245,
       "checkins": 29,
       "kpi": {
         "snapshot_date": "2026-07-01",
         "cities_covered": 12,
-        "hotels_covered": 111,
+        "hotels_covered": 245,
         "max_heat": {
           "city": "kotakinabalu",
           "ci": "2026-08-05",
           "heat": 90.0
         },
         "outlier_count": 0,
-        "sold_out_count": 78
+        "sold_out_count": 188
       }
     },
     {
