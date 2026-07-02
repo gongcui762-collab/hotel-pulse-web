@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-02T11:30:06+08:00",
+  "generated_at": "2026-07-02T15:39:11+08:00",
   "snapshot_date": "2026-07-02",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 11,
-  "signal_count_filtered": 2,
+  "signal_count_raw": 23,
+  "signal_count_filtered": 4,
   "signals": [
     {
       "type": "event_upcoming",
@@ -17,7 +17,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-07-15",
       "checkin_end": "2026-07-17",
-      "heat_current": null,
+      "heat_current": 35.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 大阪 大阪天神祭 2026-07-15~2026-07-17",
       "evidence": [
-        "日本三大祭之一，每年 100 万人参加，周边酒店翻倍；距事件还有 13 天"
+        "日本三大祭之一，每年 100 万人参加，周边酒店翻倍；当前热度 35.7；距事件还有 13 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -48,9 +48,9 @@
       "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-07-18",
-      "checkin_end": "2026-07-18",
-      "heat_current": 68.1,
+      "checkin_start": "2026-08-07",
+      "checkin_end": "2026-08-07",
+      "heat_current": 70.4,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -69,9 +69,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.1",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.4",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.1",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.4",
         "持续日期：2026-06-22 → 2026-06-23 → 2026-06-24 → 2026-06-25 → 2026-06-26 → 2026-06-27 → 2026-06-29 → 2026-06-30 → 2026-07-01 → 2026-07-02"
       ],
       "background": [],
@@ -79,6 +79,94 @@
       "actions": [
         "提前锁定房源，与酒店谈判包房协议",
         "密切监控热度趋势，准备补贴预案"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "jeju",
+      "city_name_zh": "济州",
+      "checkin_start": "2026-07-08",
+      "checkin_end": "2026-07-08",
+      "heat_current": 66.5,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 10,
+      "snapshot_dates": [
+        "2026-06-22",
+        "2026-06-23",
+        "2026-06-24",
+        "2026-06-25",
+        "2026-06-26",
+        "2026-06-27",
+        "2026-06-29",
+        "2026-06-30",
+        "2026-07-01",
+        "2026-07-02"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.5",
+      "evidence": [
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 66.5",
+        "持续日期：2026-06-22 → 2026-06-23 → 2026-06-24 → 2026-06-25 → 2026-06-26 → 2026-06-27 → 2026-06-29 → 2026-06-30 → 2026-07-01 → 2026-07-02"
+      ],
+      "background": [
+        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
+      ],
+      "causes": [
+        "中国客大规模转向韩国持续拉高住宿需求"
+      ],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "kotakinabalu",
+      "city_name_zh": "亚庇",
+      "checkin_start": "2026-08-15",
+      "checkin_end": "2026-08-15",
+      "heat_current": 67.7,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 10,
+      "snapshot_dates": [
+        "2026-06-22",
+        "2026-06-23",
+        "2026-06-24",
+        "2026-06-25",
+        "2026-06-26",
+        "2026-06-27",
+        "2026-06-29",
+        "2026-06-30",
+        "2026-07-01",
+        "2026-07-02"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.7",
+      "evidence": [
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.7",
+        "持续日期：2026-06-22 → 2026-06-23 → 2026-06-24 → 2026-06-25 → 2026-06-26 → 2026-06-27 → 2026-06-29 → 2026-06-30 → 2026-07-01 → 2026-07-02"
+      ],
+      "background": [
+        "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
+      ],
+      "causes": [
+        "中马互免签证 + Visit Malaysia 2026持续拉高住宿需求"
+      ],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
       ]
     }
   ]
