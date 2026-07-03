@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-03T11:34:17+08:00",
+  "generated_at": "2026-07-03T14:30:38+08:00",
   "snapshots": [
     {
       "date": "2026-07-03",
-      "cities": 13,
-      "hotels": 123,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 28,
       "kpi": {
         "snapshot_date": "2026-07-03",
-        "cities_covered": 13,
-        "hotels_covered": 123,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "kualalumpur",
-          "ci": "2026-08-29",
-          "heat": 85.0
+          "city": "seoul",
+          "ci": "2026-07-11",
+          "heat": 77.5
         },
-        "outlier_count": 0,
-        "sold_out_count": 76
+        "outlier_count": 711,
+        "sold_out_count": 374
       }
     },
     {
