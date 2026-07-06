@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-05T23:09:33+08:00",
+  "generated_at": "2026-07-06T11:30:09+08:00",
   "snapshots": [
+    {
+      "date": "2026-07-06",
+      "cities": 19,
+      "hotels": 182,
+      "checkins": 26,
+      "kpi": {
+        "snapshot_date": "2026-07-06",
+        "cities_covered": 19,
+        "hotels_covered": 182,
+        "max_heat": {
+          "city": "pattaya",
+          "ci": "2026-08-29",
+          "heat": 86.8
+        },
+        "outlier_count": 0,
+        "sold_out_count": 155
+      }
+    },
     {
       "date": "2026-07-04",
       "cities": 25,
