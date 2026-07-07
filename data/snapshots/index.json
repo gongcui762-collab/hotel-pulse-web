@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-06T14:25:06+08:00",
+  "generated_at": "2026-07-07T11:30:11+08:00",
   "snapshots": [
+    {
+      "date": "2026-07-07",
+      "cities": 20,
+      "hotels": 195,
+      "checkins": 26,
+      "kpi": {
+        "snapshot_date": "2026-07-07",
+        "cities_covered": 20,
+        "hotels_covered": 195,
+        "max_heat": {
+          "city": "phuket",
+          "ci": "2026-08-22",
+          "heat": 81.4
+        },
+        "outlier_count": 0,
+        "sold_out_count": 133
+      }
+    },
     {
       "date": "2026-07-06",
       "cities": 25,
