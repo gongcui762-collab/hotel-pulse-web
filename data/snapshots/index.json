@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-08T14:24:18+08:00",
+  "generated_at": "2026-07-09T11:30:09+08:00",
   "snapshots": [
+    {
+      "date": "2026-07-09",
+      "cities": 18,
+      "hotels": 175,
+      "checkins": 25,
+      "kpi": {
+        "snapshot_date": "2026-07-09",
+        "cities_covered": 18,
+        "hotels_covered": 175,
+        "max_heat": {
+          "city": "osaka",
+          "ci": "2026-09-05",
+          "heat": 80.0
+        },
+        "outlier_count": 0,
+        "sold_out_count": 126
+      }
+    },
     {
       "date": "2026-07-08",
       "cities": 25,
