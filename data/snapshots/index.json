@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-09T11:30:09+08:00",
+  "generated_at": "2026-07-09T13:27:28+08:00",
   "snapshots": [
     {
       "date": "2026-07-09",
-      "cities": 18,
-      "hotels": 175,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 25,
       "kpi": {
         "snapshot_date": "2026-07-09",
-        "cities_covered": 18,
-        "hotels_covered": 175,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "osaka",
+          "city": "seoul",
           "ci": "2026-09-05",
-          "heat": 80.0
+          "heat": 78.6
         },
-        "outlier_count": 0,
-        "sold_out_count": 126
+        "outlier_count": 727,
+        "sold_out_count": 312
       }
     },
     {

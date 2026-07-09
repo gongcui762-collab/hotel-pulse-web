@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-09T11:30:08+08:00",
+  "generated_at": "2026-07-09T13:27:26+08:00",
   "snapshot_date": "2026-07-09",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 23,
+  "signal_count_raw": 31,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -17,7 +17,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-07-15",
       "checkin_end": "2026-07-17",
-      "heat_current": 49.7,
+      "heat_current": 42.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 大阪 大阪天神祭 2026-07-15~2026-07-17",
       "evidence": [
-        "日本三大祭之一，每年 100 万人参加，周边酒店翻倍；当前热度 49.7；距事件还有 6 天"
+        "日本三大祭之一，每年 100 万人参加，周边酒店翻倍；当前热度 42.8；距事件还有 6 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -50,7 +50,7 @@
       "city_name_zh": "普吉",
       "checkin_start": "2026-07-19",
       "checkin_end": "2026-07-20",
-      "heat_current": null,
+      "heat_current": 77.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 普吉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa) 2026-07-19~2026-07-20",
       "evidence": [
-        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 10 天"
+        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；当前热度 77.5；距事件还有 10 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -143,7 +143,7 @@
       "city_name_zh": "巴厘岛",
       "checkin_start": "2026-07-25",
       "checkin_end": "2026-07-25",
-      "heat_current": 70.0,
+      "heat_current": 71.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -162,9 +162,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.0",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 71.0",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.0",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 71.0",
         "持续日期：2026-06-29 → 2026-06-30 → 2026-07-01 → 2026-07-02 → 2026-07-03 → 2026-07-04 → 2026-07-06 → 2026-07-07 → 2026-07-08 → 2026-07-09"
       ],
       "background": [],
@@ -180,9 +180,9 @@
       "confidence": "high",
       "city_code": "jeju",
       "city_name_zh": "济州",
-      "checkin_start": "2026-07-17",
-      "checkin_end": "2026-07-17",
-      "heat_current": 66.9,
+      "checkin_start": "2026-07-13",
+      "checkin_end": "2026-07-13",
+      "heat_current": 67.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -201,9 +201,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.9",
+      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.0",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 66.9",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.0",
         "持续日期：2026-06-29 → 2026-06-30 → 2026-07-01 → 2026-07-02 → 2026-07-03 → 2026-07-04 → 2026-07-06 → 2026-07-07 → 2026-07-08 → 2026-07-09"
       ],
       "background": [
@@ -224,9 +224,9 @@
       "confidence": "high",
       "city_code": "kotakinabalu",
       "city_name_zh": "亚庇",
-      "checkin_start": "2026-07-10",
-      "checkin_end": "2026-07-10",
-      "heat_current": 67.5,
+      "checkin_start": "2026-07-11",
+      "checkin_end": "2026-07-11",
+      "heat_current": 68.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -245,9 +245,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.7",
         "持续日期：2026-06-29 → 2026-06-30 → 2026-07-01 → 2026-07-02 → 2026-07-03 → 2026-07-04 → 2026-07-06 → 2026-07-07 → 2026-07-08 → 2026-07-09"
       ],
       "background": [
@@ -268,8 +268,8 @@
       "confidence": "high",
       "city_code": "kualalumpur",
       "city_name_zh": "吉隆坡",
-      "checkin_start": "2026-08-29",
-      "checkin_end": "2026-08-29",
+      "checkin_start": "2026-07-15",
+      "checkin_end": "2026-07-15",
       "heat_current": 67.4,
       "heat_change_7d": null,
       "price_change_pct": null,
