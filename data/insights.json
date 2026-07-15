@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-15T11:30:09+08:00",
+  "generated_at": "2026-07-15T13:09:11+08:00",
   "snapshot_date": "2026-07-15",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 31,
+  "signal_count_raw": 37,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -17,7 +17,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-07-15",
       "checkin_end": "2026-07-17",
-      "heat_current": 51.3,
+      "heat_current": 50.3,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 大阪 大阪天神祭 2026-07-15~2026-07-17",
       "evidence": [
-        "日本三大祭之一，每年 100 万人参加，周边酒店翻倍；当前热度 51.3；距事件还有 0 天"
+        "日本三大祭之一，每年 100 万人参加，周边酒店翻倍；当前热度 50.3；距事件还有 0 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -141,9 +141,9 @@
       "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-07-22",
-      "checkin_end": "2026-07-22",
-      "heat_current": 67.9,
+      "checkin_start": "2026-08-07",
+      "checkin_end": "2026-08-07",
+      "heat_current": 68.2,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -162,9 +162,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.9",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.2",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.9",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.2",
         "持续日期：2026-07-04 → 2026-07-06 → 2026-07-07 → 2026-07-08 → 2026-07-09 → 2026-07-10 → 2026-07-11 → 2026-07-13 → 2026-07-14 → 2026-07-15"
       ],
       "background": [],
@@ -180,9 +180,9 @@
       "confidence": "high",
       "city_code": "busan",
       "city_name_zh": "釜山",
-      "checkin_start": "2026-08-15",
-      "checkin_end": "2026-08-15",
-      "heat_current": 67.2,
+      "checkin_start": "2026-07-18",
+      "checkin_end": "2026-07-18",
+      "heat_current": 68.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -200,17 +200,15 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "釜山 连续 9 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.2",
+      "summary": "釜山 连续 9 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.8",
       "evidence": [
-        "连续 9 个采集日窗口内平均热度 ≥ 65，当前 67.2",
-        "持续日期：2026-07-06 → 2026-07-07 → 2026-07-08 → 2026-07-09 → 2026-07-10 → 2026-07-11 → 2026-07-13 → 2026-07-14 → 2026-07-15",
-        "🎉 韩国光复节（2026-08-15~2026-08-15）— 8/15 韩国光复节法定假日，国内旅游需求上升"
+        "连续 9 个采集日窗口内平均热度 ≥ 65，当前 68.8",
+        "持续日期：2026-07-06 → 2026-07-07 → 2026-07-08 → 2026-07-09 → 2026-07-10 → 2026-07-11 → 2026-07-13 → 2026-07-14 → 2026-07-15"
       ],
       "background": [
         "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
       ],
       "causes": [
-        "韩国光复节持续拉高住宿需求",
         "中国客大规模转向韩国持续拉高住宿需求"
       ],
       "actions": [
@@ -227,7 +225,7 @@
       "city_name_zh": "胡志明",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
-      "heat_current": 56.5,
+      "heat_current": 56.7,
       "heat_change_7d": null,
       "price_change_pct": 0.578,
       "sold_out_rate": null,
@@ -256,7 +254,7 @@
       "city_name_zh": "香港",
       "checkin_start": "2026-08-08",
       "checkin_end": "2026-08-08",
-      "heat_current": 66.4,
+      "heat_current": 67.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -272,9 +270,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "香港 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.4",
+      "summary": "香港 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.0",
       "evidence": [
-        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 66.4",
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 67.0",
         "持续日期：2026-07-08 → 2026-07-09 → 2026-07-10 → 2026-07-11 → 2026-07-13 → 2026-07-14 → 2026-07-15"
       ],
       "background": [],
