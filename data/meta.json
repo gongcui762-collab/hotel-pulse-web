@@ -1,7 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-16T15:18:16+08:00",
+  "generated_at": "2026-07-17T11:48:26+08:00",
   "snapshot_dates": [
+    "2026-07-17",
     "2026-07-16",
     "2026-07-15",
     "2026-07-14",
@@ -44,8 +45,8 @@
     "2026-05-22",
     "2026-05-19"
   ],
-  "latest_snapshot": "2026-07-16",
-  "latest_complete_snapshot": "2026-07-16",
+  "latest_snapshot": "2026-07-17",
+  "latest_complete_snapshot": "2026-07-17",
   "cities": [
     {
       "code": "osaka",
@@ -4206,13 +4207,6 @@
     }
   ],
   "holidays_local": [
-    {
-      "affects": [
-        "osaka"
-      ],
-      "date": "2026-07-16",
-      "name_zh": "大阪天神祭"
-    },
     {
       "affects": [
         "osaka"

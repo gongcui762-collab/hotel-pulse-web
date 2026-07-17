@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-16T15:18:14+08:00",
-  "snapshot_date": "2026-07-16",
+  "generated_at": "2026-07-17T11:32:40+08:00",
+  "snapshot_date": "2026-07-17",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 35,
-  "signal_count_filtered": 8,
+  "signal_count_raw": 7,
+  "signal_count_filtered": 5,
   "signals": [
     {
       "type": "event_upcoming",
@@ -17,7 +17,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-07-15",
       "checkin_end": "2026-07-17",
-      "heat_current": 48.9,
+      "heat_current": null,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 大阪 大阪天神祭 2026-07-15~2026-07-17",
       "evidence": [
-        "日本三大祭之一，每年 100 万人参加，周边酒店翻倍；当前热度 48.9"
+        "日本三大祭之一，每年 100 万人参加，周边酒店翻倍"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -50,7 +50,7 @@
       "city_name_zh": "普吉",
       "checkin_start": "2026-07-19",
       "checkin_end": "2026-07-20",
-      "heat_current": 77.9,
+      "heat_current": null,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 普吉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa) 2026-07-19~2026-07-20",
       "evidence": [
-        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；当前热度 77.9；距事件还有 3 天"
+        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 2 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -81,7 +81,7 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2026-07-19",
       "checkin_end": "2026-07-20",
-      "heat_current": 27.6,
+      "heat_current": null,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -91,7 +91,7 @@
       "hotels_total": 0,
       "summary": "🎉 曼谷 泰国守夏节 (Asanha Bucha + Wan Khao Phansa) 2026-07-19~2026-07-20",
       "evidence": [
-        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；当前热度 27.6；距事件还有 3 天"
+        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 2 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -112,7 +112,7 @@
       "city_name_zh": "清迈",
       "checkin_start": "2026-07-19",
       "checkin_end": "2026-07-20",
-      "heat_current": 64.7,
+      "heat_current": null,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -122,7 +122,7 @@
       "hotels_total": 0,
       "summary": "🎉 清迈 泰国守夏节 (Asanha Bucha + Wan Khao Phansa) 2026-07-19~2026-07-20",
       "evidence": [
-        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；当前热度 64.7；距事件还有 3 天"
+        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 2 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -136,152 +136,32 @@
       ]
     },
     {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
+      "type": "anomaly_sold_out",
+      "priority": "mid",
+      "confidence": "mid",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-07-31",
-      "checkin_end": "2026-07-31",
-      "heat_current": 68.9,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-07-06",
-        "2026-07-07",
-        "2026-07-08",
-        "2026-07-09",
-        "2026-07-10",
-        "2026-07-11",
-        "2026-07-13",
-        "2026-07-14",
-        "2026-07-15",
-        "2026-07-16"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.9",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.9",
-        "持续日期：2026-07-06 → 2026-07-07 → 2026-07-08 → 2026-07-09 → 2026-07-10 → 2026-07-11 → 2026-07-13 → 2026-07-14 → 2026-07-15 → 2026-07-16"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "busan",
-      "city_name_zh": "釜山",
-      "checkin_start": "2026-08-01",
-      "checkin_end": "2026-08-01",
-      "heat_current": 69.3,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-07-06",
-        "2026-07-07",
-        "2026-07-08",
-        "2026-07-09",
-        "2026-07-10",
-        "2026-07-11",
-        "2026-07-13",
-        "2026-07-14",
-        "2026-07-15",
-        "2026-07-16"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.3",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 69.3",
-        "持续日期：2026-07-06 → 2026-07-07 → 2026-07-08 → 2026-07-09 → 2026-07-10 → 2026-07-11 → 2026-07-13 → 2026-07-14 → 2026-07-15 → 2026-07-16"
-      ],
-      "background": [
-        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
-      ],
-      "causes": [
-        "中国客大规模转向韩国持续拉高住宿需求"
-      ],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "surge",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "hochiminh",
-      "city_name_zh": "胡志明",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
-      "heat_current": 45.1,
+      "heat_current": 32.5,
       "heat_change_7d": null,
-      "price_change_pct": 0.328,
-      "sold_out_rate": null,
+      "price_change_pct": null,
+      "sold_out_rate": 1.0,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 58,
-      "hotels_total": 150,
-      "summary": "胡志明 7 天涨幅 +32.8%，58/150 家涨价",
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "巴厘岛 售罄率 100% 异常偏高",
       "evidence": [
-        "7 天内平均涨幅 +32.8%，58/150 家酒店涨价",
-        "最大涨幅 4710.2%"
+        "售罄率 100%，远高于历史均值"
       ],
       "background": [],
       "causes": [
-        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
+        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
       ],
       "actions": [
-        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "hongkong",
-      "city_name_zh": "香港",
-      "checkin_start": "2026-07-25",
-      "checkin_end": "2026-07-25",
-      "heat_current": 66.4,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 8,
-      "snapshot_dates": [
-        "2026-07-08",
-        "2026-07-09",
-        "2026-07-10",
-        "2026-07-11",
-        "2026-07-13",
-        "2026-07-14",
-        "2026-07-15",
-        "2026-07-16"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "香港 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.4",
-      "evidence": [
-        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 66.4",
-        "持续日期：2026-07-08 → 2026-07-09 → 2026-07-10 → 2026-07-11 → 2026-07-13 → 2026-07-14 → 2026-07-15 → 2026-07-16"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
+        "紧急补充替代房源，扩大可售库存",
+        "联系酒店确认是否有取消释放房间的可能"
       ]
     }
   ]
