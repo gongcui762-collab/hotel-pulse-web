@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-18T11:42:03+08:00",
+  "generated_at": "2026-07-19T12:25:06+08:00",
   "snapshot_date": "2026-07-17",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 7,
+  "signal_count_raw": 8,
   "signal_count_filtered": 5,
   "signals": [
     {
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 普吉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa) 2026-07-19~2026-07-20",
       "evidence": [
-        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 1 天"
+        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 0 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -91,7 +91,7 @@
       "hotels_total": 0,
       "summary": "🎉 曼谷 泰国守夏节 (Asanha Bucha + Wan Khao Phansa) 2026-07-19~2026-07-20",
       "evidence": [
-        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 1 天"
+        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 0 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -122,7 +122,7 @@
       "hotels_total": 0,
       "summary": "🎉 清迈 泰国守夏节 (Asanha Bucha + Wan Khao Phansa) 2026-07-19~2026-07-20",
       "evidence": [
-        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 1 天"
+        "佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求；距事件还有 0 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -136,32 +136,32 @@
       ]
     },
     {
-      "type": "anomaly_sold_out",
-      "priority": "mid",
-      "confidence": "mid",
+      "type": "surge",
+      "priority": "high",
+      "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
       "heat_current": 32.5,
       "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 1.0,
+      "price_change_pct": 0.202,
+      "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "巴厘岛 售罄率 100% 异常偏高",
+      "hotels_up_count": 46,
+      "hotels_total": 100,
+      "summary": "巴厘岛 7 天涨幅 +20.2%，46/100 家涨价",
       "evidence": [
-        "售罄率 100%，远高于历史均值"
+        "7 天内平均涨幅 +20.2%，46/100 家酒店涨价",
+        "最大涨幅 626.3%"
       ],
       "background": [],
       "causes": [
-        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
+        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
       ],
       "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价"
       ]
     }
   ]
