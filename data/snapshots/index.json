@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-20T11:32:13+08:00",
+  "generated_at": "2026-07-20T14:00:34+08:00",
   "snapshots": [
     {
       "date": "2026-07-20",
       "cities": 25,
-      "hotels": 237,
+      "hotels": 245,
       "checkins": 20,
       "kpi": {
         "snapshot_date": "2026-07-20",
         "cities_covered": 25,
-        "hotels_covered": 237,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "singapore",
-          "ci": "2026-08-19",
-          "heat": 73.1
+          "city": "seoul",
+          "ci": "2026-09-05",
+          "heat": 81.4
         },
-        "outlier_count": 0,
-        "sold_out_count": 209
+        "outlier_count": 729,
+        "sold_out_count": 356
       }
     },
     {
