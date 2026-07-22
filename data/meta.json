@@ -1,7 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T14:38:27+08:00",
+  "generated_at": "2026-07-22T11:30:08+08:00",
   "snapshot_dates": [
+    "2026-07-22",
     "2026-07-21",
     "2026-07-20",
     "2026-07-17",
@@ -47,8 +48,8 @@
     "2026-05-22",
     "2026-05-19"
   ],
-  "latest_snapshot": "2026-07-21",
-  "latest_complete_snapshot": "2026-07-21",
+  "latest_snapshot": "2026-07-22",
+  "latest_complete_snapshot": "2026-07-22",
   "cities": [
     {
       "code": "osaka",
@@ -4249,6 +4250,13 @@
         "osaka"
       ],
       "date": "2026-09-19",
+      "name_zh": "阪神虎 vs 巨人队主场赛事"
+    },
+    {
+      "affects": [
+        "osaka"
+      ],
+      "date": "2026-09-20",
       "name_zh": "阪神虎 vs 巨人队主场赛事"
     }
   ],
