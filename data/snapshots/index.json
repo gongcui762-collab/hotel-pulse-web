@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-23T11:30:08+08:00",
+  "generated_at": "2026-07-23T14:45:19+08:00",
   "snapshots": [
     {
       "date": "2026-07-23",
-      "cities": 10,
-      "hotels": 91,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 20,
       "kpi": {
         "snapshot_date": "2026-07-23",
-        "cities_covered": 10,
-        "hotels_covered": 91,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "jakarta",
-          "ci": "2026-08-19",
-          "heat": 89.9
+          "city": "seoul",
+          "ci": "2026-09-12",
+          "heat": 78.6
         },
-        "outlier_count": 0,
-        "sold_out_count": 92
+        "outlier_count": 786,
+        "sold_out_count": 404
       }
     },
     {
