@@ -1,7 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T16:26:45+08:00",
+  "generated_at": "2026-07-23T11:30:08+08:00",
   "snapshot_dates": [
+    "2026-07-23",
     "2026-07-22",
     "2026-07-21",
     "2026-07-20",
@@ -48,8 +49,8 @@
     "2026-05-22",
     "2026-05-19"
   ],
-  "latest_snapshot": "2026-07-22",
-  "latest_complete_snapshot": "2026-07-22",
+  "latest_snapshot": "2026-07-23",
+  "latest_complete_snapshot": "2026-07-23",
   "cities": [
     {
       "code": "osaka",
@@ -4210,13 +4211,6 @@
     }
   ],
   "holidays_local": [
-    {
-      "affects": [
-        "tokyo"
-      ],
-      "date": "2026-07-22",
-      "name_zh": "东京隅田川花火大会"
-    },
     {
       "affects": [
         "tokyo"

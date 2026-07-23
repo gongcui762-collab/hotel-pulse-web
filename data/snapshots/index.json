@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T16:26:45+08:00",
+  "generated_at": "2026-07-23T11:30:08+08:00",
   "snapshots": [
+    {
+      "date": "2026-07-23",
+      "cities": 10,
+      "hotels": 91,
+      "checkins": 20,
+      "kpi": {
+        "snapshot_date": "2026-07-23",
+        "cities_covered": 10,
+        "hotels_covered": 91,
+        "max_heat": {
+          "city": "jakarta",
+          "ci": "2026-08-19",
+          "heat": 89.9
+        },
+        "outlier_count": 0,
+        "sold_out_count": 92
+      }
+    },
     {
       "date": "2026-07-22",
       "cities": 25,
