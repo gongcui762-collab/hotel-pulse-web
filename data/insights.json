@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-25T11:48:00+08:00",
+  "generated_at": "2026-07-26T11:51:55+08:00",
   "snapshot_date": "2026-07-25",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 3,
+  "signal_count_raw": 2,
   "signal_count_filtered": 1,
   "signals": [
     {
