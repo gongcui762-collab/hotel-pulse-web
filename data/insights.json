@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-30T11:30:09+08:00",
+  "generated_at": "2026-07-30T15:31:21+08:00",
   "snapshot_date": "2026-07-30",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 30,
+  "signal_count_raw": 42,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -47,7 +47,7 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2026-08-12",
       "checkin_end": "2026-08-12",
-      "heat_current": 58.3,
+      "heat_current": 46.9,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -57,7 +57,7 @@
       "hotels_total": 0,
       "summary": "🎉 曼谷 泰国母亲节 (Queen's Birthday) 2026-08-12~2026-08-12",
       "evidence": [
-        "泰国法定假日，国内旅游需求上升；当前热度 58.3；距事件还有 13 天"
+        "泰国法定假日，国内旅游需求上升；当前热度 46.9；距事件还有 13 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -80,7 +80,7 @@
       "city_name_zh": "芭堤雅",
       "checkin_start": "2026-08-12",
       "checkin_end": "2026-08-12",
-      "heat_current": null,
+      "heat_current": 37.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -90,7 +90,7 @@
       "hotels_total": 0,
       "summary": "🎉 芭堤雅 泰国母亲节 (Queen's Birthday) 2026-08-12~2026-08-12",
       "evidence": [
-        "泰国法定假日，国内旅游需求上升；距事件还有 13 天"
+        "泰国法定假日，国内旅游需求上升；当前热度 37.8；距事件还有 13 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -113,7 +113,7 @@
       "city_name_zh": "东京",
       "checkin_start": "2026-08-13",
       "checkin_end": "2026-08-16",
-      "heat_current": null,
+      "heat_current": 72.1,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -123,7 +123,7 @@
       "hotels_total": 0,
       "summary": "🎉 东京 日本盂兰盆节 2026-08-13~2026-08-16",
       "evidence": [
-        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；距事件还有 14 天"
+        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；当前热度 72.1；距事件还有 14 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -146,7 +146,7 @@
       "city_name_zh": "巴厘岛",
       "checkin_start": "2026-08-07",
       "checkin_end": "2026-08-07",
-      "heat_current": 70.7,
+      "heat_current": 71.4,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -165,9 +165,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.7",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 71.4",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.7",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 71.4",
         "持续日期：2026-07-17 → 2026-07-20 → 2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30"
       ],
       "background": [],
@@ -185,7 +185,7 @@
       "city_name_zh": "釜山",
       "checkin_start": "2026-08-15",
       "checkin_end": "2026-08-15",
-      "heat_current": 67.5,
+      "heat_current": 69.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -204,9 +204,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.7",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 69.7",
         "持续日期：2026-07-17 → 2026-07-20 → 2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30",
         "🎉 韩国光复节（2026-08-15~2026-08-15）— 8/15 韩国光复节法定假日，国内旅游需求上升"
       ],
@@ -229,9 +229,9 @@
       "confidence": "high",
       "city_code": "hongkong",
       "city_name_zh": "香港",
-      "checkin_start": "2026-08-07",
-      "checkin_end": "2026-08-07",
-      "heat_current": 66.1,
+      "checkin_start": "2026-08-08",
+      "checkin_end": "2026-08-08",
+      "heat_current": 67.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -250,9 +250,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "香港 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.1",
+      "summary": "香港 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.0",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 66.1",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.0",
         "持续日期：2026-07-17 → 2026-07-20 → 2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30"
       ],
       "background": [],
@@ -270,7 +270,7 @@
       "city_name_zh": "济州",
       "checkin_start": "2026-08-01",
       "checkin_end": "2026-08-01",
-      "heat_current": 67.5,
+      "heat_current": 68.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -289,9 +289,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.0",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.0",
         "持续日期：2026-07-17 → 2026-07-20 → 2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30"
       ],
       "background": [
