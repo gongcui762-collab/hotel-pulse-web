@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-31T11:30:10+08:00",
+  "generated_at": "2026-07-31T11:34:33+08:00",
   "snapshot_date": "2026-07-31",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 41,
+  "signal_count_raw": 40,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -144,9 +144,9 @@
       "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-08-12",
-      "checkin_end": "2026-08-12",
-      "heat_current": 70.7,
+      "checkin_start": "2026-08-08",
+      "checkin_end": "2026-08-08",
+      "heat_current": 70.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -165,9 +165,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.7",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.8",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.7",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.8",
         "持续日期：2026-07-20 → 2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31"
       ],
       "background": [],
@@ -185,7 +185,7 @@
       "city_name_zh": "釜山",
       "checkin_start": "2026-08-15",
       "checkin_end": "2026-08-15",
-      "heat_current": 70.7,
+      "heat_current": 70.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -204,9 +204,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.7",
+      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.5",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.7",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.5",
         "持续日期：2026-07-20 → 2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31",
         "🎉 韩国光复节（2026-08-15~2026-08-15）— 8/15 韩国光复节法定假日，国内旅游需求上升"
       ],
@@ -270,7 +270,7 @@
       "city_name_zh": "济州",
       "checkin_start": "2026-08-03",
       "checkin_end": "2026-08-03",
-      "heat_current": 68.8,
+      "heat_current": 68.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -289,9 +289,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.8",
+      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.5",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.8",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.5",
         "持续日期：2026-07-20 → 2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31"
       ],
       "background": [
