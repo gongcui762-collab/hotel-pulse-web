@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-02T11:50:37+08:00",
+  "generated_at": "2026-08-03T11:30:13+08:00",
   "snapshots": [
     {
       "date": "2026-08-01",
       "cities": 8,
-      "hotels": 92,
+      "hotels": 245,
       "checkins": 18,
       "kpi": {
         "snapshot_date": "2026-08-01",
         "cities_covered": 8,
-        "hotels_covered": 92,
+        "hotels_covered": 245,
         "max_heat": {
           "city": "hochiminh",
           "ci": "2026-09-19",
           "heat": 71.9
         },
         "outlier_count": 0,
-        "sold_out_count": 55
+        "sold_out_count": 241
       }
     },
     {
