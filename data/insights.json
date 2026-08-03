@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-03T11:30:09+08:00",
+  "generated_at": "2026-08-03T11:47:06+08:00",
   "snapshot_date": "2026-08-01",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 23,
+  "signal_count_raw": 46,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -47,7 +47,7 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2026-08-12",
       "checkin_end": "2026-08-12",
-      "heat_current": 52.6,
+      "heat_current": 49.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -57,7 +57,7 @@
       "hotels_total": 0,
       "summary": "🎉 曼谷 泰国母亲节 (Queen's Birthday) 2026-08-12~2026-08-12",
       "evidence": [
-        "泰国法定假日，国内旅游需求上升；当前热度 52.6；距事件还有 9 天"
+        "泰国法定假日，国内旅游需求上升；当前热度 49.5；距事件还有 9 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -80,7 +80,7 @@
       "city_name_zh": "芭堤雅",
       "checkin_start": "2026-08-12",
       "checkin_end": "2026-08-12",
-      "heat_current": null,
+      "heat_current": 31.9,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -90,7 +90,7 @@
       "hotels_total": 0,
       "summary": "🎉 芭堤雅 泰国母亲节 (Queen's Birthday) 2026-08-12~2026-08-12",
       "evidence": [
-        "泰国法定假日，国内旅游需求上升；距事件还有 9 天"
+        "泰国法定假日，国内旅游需求上升；当前热度 31.9；距事件还有 9 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -113,7 +113,7 @@
       "city_name_zh": "东京",
       "checkin_start": "2026-08-13",
       "checkin_end": "2026-08-16",
-      "heat_current": null,
+      "heat_current": 76.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -123,7 +123,7 @@
       "hotels_total": 0,
       "summary": "🎉 东京 日本盂兰盆节 2026-08-13~2026-08-16",
       "evidence": [
-        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；距事件还有 10 天"
+        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；当前热度 76.0；距事件还有 10 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -144,9 +144,9 @@
       "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-08-28",
-      "checkin_end": "2026-08-28",
-      "heat_current": 67.8,
+      "checkin_start": "2026-08-12",
+      "checkin_end": "2026-08-12",
+      "heat_current": 69.1,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -165,9 +165,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.8",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.1",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.8",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 69.1",
         "持续日期：2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31 → 2026-08-01"
       ],
       "background": [],
@@ -185,7 +185,7 @@
       "city_name_zh": "釜山",
       "checkin_start": "2026-08-15",
       "checkin_end": "2026-08-15",
-      "heat_current": 67.5,
+      "heat_current": 70.1,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -204,9 +204,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.1",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.1",
         "持续日期：2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31 → 2026-08-01",
         "🎉 韩国光复节（2026-08-15~2026-08-15）— 8/15 韩国光复节法定假日，国内旅游需求上升"
       ],
@@ -224,70 +224,85 @@
       ]
     },
     {
-      "type": "surge",
+      "type": "consecutive_high",
       "priority": "high",
       "confidence": "high",
-      "city_code": "chiangmai",
-      "city_name_zh": "清迈",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 63.5,
+      "city_code": "hongkong",
+      "city_name_zh": "香港",
+      "checkin_start": "2026-08-08",
+      "checkin_end": "2026-08-08",
+      "heat_current": 69.6,
       "heat_change_7d": null,
-      "price_change_pct": 0.229,
+      "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 81,
-      "hotels_total": 105,
-      "summary": "清迈 7 天涨幅 +22.9%，81/105 家涨价",
+      "consecutive_days": 10,
+      "snapshot_dates": [
+        "2026-07-21",
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "香港 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.6",
       "evidence": [
-        "7 天内平均涨幅 +22.9%，81/105 家酒店涨价",
-        "最大涨幅 584.0%",
-        "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求"
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 69.6",
+        "持续日期：2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31 → 2026-08-01"
       ],
-      "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
-      ],
-      "causes": [
-        "中泰互免签证带动需求上升"
-      ],
+      "background": [],
+      "causes": [],
       "actions": [
-        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价",
-        "事件驱动型涨价，建议在事件前完成采购"
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案"
       ]
     },
     {
-      "type": "surge",
-      "priority": "mid",
+      "type": "consecutive_high",
+      "priority": "high",
       "confidence": "high",
-      "city_code": "bangkok",
-      "city_name_zh": "曼谷",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 61.4,
+      "city_code": "jeju",
+      "city_name_zh": "济州",
+      "checkin_start": "2026-08-12",
+      "checkin_end": "2026-08-12",
+      "heat_current": 69.1,
       "heat_change_7d": null,
-      "price_change_pct": 0.123,
+      "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 83,
-      "hotels_total": 117,
-      "summary": "曼谷 7 天涨幅 +12.3%，83/117 家涨价",
+      "consecutive_days": 10,
+      "snapshot_dates": [
+        "2026-07-21",
+        "2026-07-22",
+        "2026-07-23",
+        "2026-07-24",
+        "2026-07-25",
+        "2026-07-28",
+        "2026-07-29",
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.1",
       "evidence": [
-        "7 天内平均涨幅 +12.3%，83/117 家酒店涨价",
-        "最大涨幅 198.5%",
-        "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求",
-        "🎉 泰国母亲节 (Queen's Birthday)（2026-08-12~2026-08-12）— 泰国法定假日，国内旅游需求上升"
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 69.1",
+        "持续日期：2026-07-21 → 2026-07-22 → 2026-07-23 → 2026-07-24 → 2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31 → 2026-08-01"
       ],
       "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
       ],
       "causes": [
-        "泰国母亲节 (Queen's Birthday)带动需求上升",
-        "中泰互免签证带动需求上升"
+        "中国客大规模转向韩国持续拉高住宿需求"
       ],
       "actions": [
-        "启动价格预警，与供应商沟通锁价可能性",
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案",
         "事件驱动型涨价，建议在事件前完成采购"
       ]
     }
