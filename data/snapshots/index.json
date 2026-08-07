@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-06T12:58:32+08:00",
+  "generated_at": "2026-08-07T11:30:13+08:00",
   "snapshots": [
+    {
+      "date": "2026-08-07",
+      "cities": 16,
+      "hotels": 152,
+      "checkins": 18,
+      "kpi": {
+        "snapshot_date": "2026-08-07",
+        "cities_covered": 16,
+        "hotels_covered": 152,
+        "max_heat": {
+          "city": "macao",
+          "ci": "2026-08-28",
+          "heat": 89.7
+        },
+        "outlier_count": 0,
+        "sold_out_count": 203
+      }
+    },
     {
       "date": "2026-08-06",
       "cities": 25,
