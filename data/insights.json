@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-07T11:30:10+08:00",
+  "generated_at": "2026-08-07T13:39:28+08:00",
   "snapshot_date": "2026-08-07",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 35,
+  "signal_count_raw": 46,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -47,7 +47,7 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2026-08-12",
       "checkin_end": "2026-08-12",
-      "heat_current": 66.7,
+      "heat_current": 66.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -57,7 +57,7 @@
       "hotels_total": 0,
       "summary": "🎉 曼谷 泰国母亲节 (Queen's Birthday) 2026-08-12~2026-08-12",
       "evidence": [
-        "泰国法定假日，国内旅游需求上升；当前热度 66.7；距事件还有 5 天"
+        "泰国法定假日，国内旅游需求上升；当前热度 66.5；距事件还有 5 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -80,7 +80,7 @@
       "city_name_zh": "芭堤雅",
       "checkin_start": "2026-08-12",
       "checkin_end": "2026-08-12",
-      "heat_current": null,
+      "heat_current": 36.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -90,7 +90,7 @@
       "hotels_total": 0,
       "summary": "🎉 芭堤雅 泰国母亲节 (Queen's Birthday) 2026-08-12~2026-08-12",
       "evidence": [
-        "泰国法定假日，国内旅游需求上升；距事件还有 5 天"
+        "泰国法定假日，国内旅游需求上升；当前热度 36.8；距事件还有 5 天"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -113,7 +113,7 @@
       "city_name_zh": "东京",
       "checkin_start": "2026-08-13",
       "checkin_end": "2026-08-16",
-      "heat_current": null,
+      "heat_current": 73.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -123,7 +123,7 @@
       "hotels_total": 0,
       "summary": "🎉 东京 日本盂兰盆节 2026-08-13~2026-08-16",
       "evidence": [
-        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；距事件还有 6 天"
+        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；当前热度 73.0；距事件还有 6 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -146,7 +146,7 @@
       "city_name_zh": "巴厘岛",
       "checkin_start": "2026-08-08",
       "checkin_end": "2026-08-08",
-      "heat_current": 70.7,
+      "heat_current": 72.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -165,9 +165,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.7",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 72.0",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.7",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 72.0",
         "持续日期：2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31 → 2026-08-01 → 2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07"
       ],
       "background": [],
@@ -185,17 +185,17 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
-      "heat_current": 66.2,
+      "heat_current": 60.2,
       "heat_change_7d": null,
-      "price_change_pct": 0.235,
+      "price_change_pct": 0.233,
       "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
       "hotels_up_count": 69,
       "hotels_total": 93,
-      "summary": "曼谷 7 天涨幅 +23.5%，69/93 家涨价",
+      "summary": "曼谷 7 天涨幅 +23.3%，69/93 家涨价",
       "evidence": [
-        "7 天内平均涨幅 +23.5%，69/93 家酒店涨价",
+        "7 天内平均涨幅 +23.3%，69/93 家酒店涨价",
         "最大涨幅 136.5%",
         "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求",
         "🎉 泰国母亲节 (Queen's Birthday)（2026-08-12~2026-08-12）— 泰国法定假日，国内旅游需求上升"
@@ -220,7 +220,7 @@
       "city_name_zh": "釜山",
       "checkin_start": "2026-08-15",
       "checkin_end": "2026-08-15",
-      "heat_current": 67.5,
+      "heat_current": 69.1,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -239,9 +239,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.1",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 69.1",
         "持续日期：2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31 → 2026-08-01 → 2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07",
         "🎉 韩国光复节（2026-08-15~2026-08-15）— 8/15 韩国光复节法定假日，国内旅游需求上升"
       ],
@@ -259,42 +259,32 @@
       ]
     },
     {
-      "type": "consecutive_high",
+      "type": "surge",
       "priority": "high",
       "confidence": "high",
       "city_code": "hongkong",
       "city_name_zh": "香港",
-      "checkin_start": "2026-08-07",
-      "checkin_end": "2026-08-07",
-      "heat_current": 67.0,
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 64.7,
       "heat_change_7d": null,
-      "price_change_pct": null,
+      "price_change_pct": 0.199,
       "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-07-25",
-        "2026-07-28",
-        "2026-07-29",
-        "2026-07-30",
-        "2026-07-31",
-        "2026-08-01",
-        "2026-08-04",
-        "2026-08-05",
-        "2026-08-06",
-        "2026-08-07"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "香港 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.0",
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 87,
+      "hotels_total": 106,
+      "summary": "香港 7 天涨幅 +19.9%，87/106 家涨价",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.0",
-        "持续日期：2026-07-25 → 2026-07-28 → 2026-07-29 → 2026-07-30 → 2026-07-31 → 2026-08-01 → 2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07"
+        "7 天内平均涨幅 +19.9%，87/106 家酒店涨价",
+        "最大涨幅 149.7%"
       ],
       "background": [],
-      "causes": [],
+      "causes": [
+        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
+      ],
       "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
+        "启动价格预警，与供应商沟通锁价可能性"
       ]
     }
   ]

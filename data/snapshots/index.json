@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-07T11:30:13+08:00",
+  "generated_at": "2026-08-07T13:39:31+08:00",
   "snapshots": [
     {
       "date": "2026-08-07",
-      "cities": 16,
-      "hotels": 152,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 18,
       "kpi": {
         "snapshot_date": "2026-08-07",
-        "cities_covered": 16,
-        "hotels_covered": 152,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "macao",
-          "ci": "2026-08-28",
-          "heat": 89.7
+          "city": "kualalumpur",
+          "ci": "2026-08-07",
+          "heat": 81.8
         },
-        "outlier_count": 0,
-        "sold_out_count": 203
+        "outlier_count": 815,
+        "sold_out_count": 576
       }
     },
     {
