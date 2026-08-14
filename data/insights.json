@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-13T11:39:23+08:00",
+  "generated_at": "2026-08-14T08:57:59+08:00",
   "snapshot_date": "2026-08-11",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 13,
-  "signal_count_filtered": 5,
+  "signal_count_raw": 48,
+  "signal_count_filtered": 8,
   "signals": [
     {
       "type": "event_upcoming",
@@ -17,7 +17,7 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2026-08-12",
       "checkin_end": "2026-08-12",
-      "heat_current": null,
+      "heat_current": 76.6,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 曼谷 泰国母亲节 (Queen's Birthday) 2026-08-12~2026-08-12",
       "evidence": [
-        "泰国法定假日，国内旅游需求上升"
+        "泰国法定假日，国内旅游需求上升；当前热度 76.6"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -50,7 +50,7 @@
       "city_name_zh": "芭堤雅",
       "checkin_start": "2026-08-12",
       "checkin_end": "2026-08-12",
-      "heat_current": null,
+      "heat_current": 50.9,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 芭堤雅 泰国母亲节 (Queen's Birthday) 2026-08-12~2026-08-12",
       "evidence": [
-        "泰国法定假日，国内旅游需求上升"
+        "泰国法定假日，国内旅游需求上升；当前热度 50.9"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
@@ -83,7 +83,7 @@
       "city_name_zh": "东京",
       "checkin_start": "2026-08-13",
       "checkin_end": "2026-08-16",
-      "heat_current": null,
+      "heat_current": 69.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -93,7 +93,7 @@
       "hotels_total": 0,
       "summary": "🎉 东京 日本盂兰盆节 2026-08-13~2026-08-16",
       "evidence": [
-        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；距事件还有 0 天"
+        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；当前热度 69.5"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -116,7 +116,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-08-13",
       "checkin_end": "2026-08-16",
-      "heat_current": null,
+      "heat_current": 62.1,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -126,7 +126,7 @@
       "hotels_total": 0,
       "summary": "🎉 大阪 日本盂兰盆节 2026-08-13~2026-08-16",
       "evidence": [
-        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；距事件还有 0 天"
+        "日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点；当前热度 62.1"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -143,10 +143,10 @@
     },
     {
       "type": "anomaly_sold_out",
-      "priority": "mid",
+      "priority": "high",
       "confidence": "mid",
-      "city_code": "bali",
-      "city_name_zh": "巴厘岛",
+      "city_code": "bangkok",
+      "city_name_zh": "曼谷",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
       "heat_current": 32.5,
@@ -157,17 +157,129 @@
       "snapshot_dates": [],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 售罄率 100% 异常偏高",
+      "summary": "曼谷 售罄率 100% 异常偏高",
       "evidence": [
-        "售罄率 100%，远高于历史均值"
+        "售罄率 100%，远高于历史均值",
+        "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求",
+        "🎉 泰国母亲节 (Queen's Birthday)（2026-08-12~2026-08-12）— 泰国法定假日，国内旅游需求上升"
       ],
-      "background": [],
+      "background": [
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ],
       "causes": [
-        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
+        "泰国母亲节 (Queen's Birthday)可能推升后续需求",
+        "中泰互免签证可能推升后续需求"
       ],
       "actions": [
         "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
+        "联系酒店确认是否有取消释放房间的可能",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "busan",
+      "city_name_zh": "釜山",
+      "checkin_start": "2026-08-14",
+      "checkin_end": "2026-08-14",
+      "heat_current": 78.4,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 10,
+      "snapshot_dates": [
+        "2026-07-30",
+        "2026-07-31",
+        "2026-08-01",
+        "2026-08-04",
+        "2026-08-05",
+        "2026-08-06",
+        "2026-08-07",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-11"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 78.4",
+      "evidence": [
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 78.4",
+        "持续日期：2026-07-30 → 2026-07-31 → 2026-08-01 → 2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11"
+      ],
+      "background": [
+        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
+      ],
+      "causes": [
+        "中国客大规模转向韩国持续拉高住宿需求"
+      ],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "chiangmai",
+      "city_name_zh": "清迈",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 68.0,
+      "heat_change_7d": null,
+      "price_change_pct": 0.212,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 60,
+      "hotels_total": 74,
+      "summary": "清迈 7 天涨幅 +21.2%，60/74 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +21.2%，60/74 家酒店涨价",
+        "最大涨幅 145.6%",
+        "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求"
+      ],
+      "background": [
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ],
+      "causes": [
+        "中泰互免签证带动需求上升"
+      ],
+      "actions": [
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "hongkong",
+      "city_name_zh": "香港",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 67.4,
+      "heat_change_7d": null,
+      "price_change_pct": 0.194,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 66,
+      "hotels_total": 83,
+      "summary": "香港 7 天涨幅 +19.4%，66/83 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +19.4%，66/83 家酒店涨价",
+        "最大涨幅 317.8%"
+      ],
+      "background": [],
+      "causes": [
+        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
+      ],
+      "actions": [
+        "启动价格预警，与供应商沟通锁价可能性"
       ]
     }
   ]
