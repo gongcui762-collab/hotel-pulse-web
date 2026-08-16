@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T11:44:32+08:00",
+  "generated_at": "2026-08-16T12:10:37+08:00",
   "snapshot_date": "2026-08-15",
   "window": {
     "start": "2026-07-01",
@@ -151,15 +151,15 @@
       "checkin_end": "2026-08-31",
       "heat_current": 79.5,
       "heat_change_7d": null,
-      "price_change_pct": 0.176,
+      "price_change_pct": 0.178,
       "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 22,
-      "hotels_total": 32,
-      "summary": "巴厘岛 7 天涨幅 +17.6%，22/32 家涨价",
+      "hotels_up_count": 26,
+      "hotels_total": 37,
+      "summary": "巴厘岛 7 天涨幅 +17.8%，26/37 家涨价",
       "evidence": [
-        "7 天内平均涨幅 +17.6%，22/32 家酒店涨价",
+        "7 天内平均涨幅 +17.8%，26/37 家酒店涨价",
         "最大涨幅 108.7%"
       ],
       "background": [],
