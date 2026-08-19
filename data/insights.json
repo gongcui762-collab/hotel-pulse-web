@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-18T14:24:41+08:00",
-  "snapshot_date": "2026-08-18",
+  "generated_at": "2026-08-19T11:30:11+08:00",
+  "snapshot_date": "2026-08-19",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 28,
+  "signal_count_raw": 39,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -17,7 +17,7 @@
       "city_name_zh": "吉隆坡",
       "checkin_start": "2026-08-31",
       "checkin_end": "2026-08-31",
-      "heat_current": 69.5,
+      "heat_current": 63.2,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 吉隆坡 马来西亚国庆 (Hari Merdeka) 2026-08-31~2026-08-31",
       "evidence": [
-        "马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花；当前热度 69.5；距事件还有 13 天"
+        "马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花；当前热度 63.2；距事件还有 12 天"
       ],
       "background": [
         "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
@@ -50,7 +50,7 @@
       "city_name_zh": "亚庇",
       "checkin_start": "2026-08-31",
       "checkin_end": "2026-08-31",
-      "heat_current": 69.5,
+      "heat_current": 71.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 亚庇 马来西亚国庆 (Hari Merdeka) 2026-08-31~2026-08-31",
       "evidence": [
-        "马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花；当前热度 69.5；距事件还有 13 天"
+        "马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花；当前热度 71.5；距事件还有 12 天"
       ],
       "background": [
         "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
@@ -79,72 +79,29 @@
       "type": "consecutive_high",
       "priority": "high",
       "confidence": "high",
-      "city_code": "busan",
-      "city_name_zh": "釜山",
-      "checkin_start": "2026-08-29",
-      "checkin_end": "2026-08-29",
-      "heat_current": 67.5,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-08-01",
-        "2026-08-04",
-        "2026-08-05",
-        "2026-08-06",
-        "2026-08-07",
-        "2026-08-08",
-        "2026-08-09",
-        "2026-08-11",
-        "2026-08-15",
-        "2026-08-18"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "釜山 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.5",
-        "持续日期：2026-08-01 → 2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18"
-      ],
-      "background": [
-        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
-      ],
-      "causes": [
-        "中国客大规模转向韩国持续拉高住宿需求"
-      ],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
       "city_code": "jeju",
       "city_name_zh": "济州",
-      "checkin_start": "2026-08-24",
-      "checkin_end": "2026-08-24",
-      "heat_current": 68.1,
+      "checkin_start": "2026-08-21",
+      "checkin_end": "2026-08-21",
+      "heat_current": 67.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 5,
+      "consecutive_days": 6,
       "snapshot_dates": [
         "2026-08-08",
         "2026-08-09",
         "2026-08-11",
         "2026-08-15",
-        "2026-08-18"
+        "2026-08-18",
+        "2026-08-19"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "济州 连续 5 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.1",
+      "summary": "济州 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.8",
       "evidence": [
-        "连续 5 个采集日窗口内平均热度 ≥ 65，当前 68.1",
-        "持续日期：2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18"
+        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 67.8",
+        "持续日期：2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19"
       ],
       "background": [
         "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
@@ -164,15 +121,14 @@
       "confidence": "high",
       "city_code": "kotakinabalu",
       "city_name_zh": "亚庇",
-      "checkin_start": "2026-08-19",
-      "checkin_end": "2026-08-19",
-      "heat_current": 68.1,
+      "checkin_start": "2026-08-22",
+      "checkin_end": "2026-08-22",
+      "heat_current": 68.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
       "consecutive_days": 10,
       "snapshot_dates": [
-        "2026-08-01",
         "2026-08-04",
         "2026-08-05",
         "2026-08-06",
@@ -181,14 +137,15 @@
         "2026-08-09",
         "2026-08-11",
         "2026-08-15",
-        "2026-08-18"
+        "2026-08-18",
+        "2026-08-19"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.1",
+      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.8",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.1",
-        "持续日期：2026-08-01 → 2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18"
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.8",
+        "持续日期：2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19"
       ],
       "background": [
         "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
@@ -208,27 +165,28 @@
       "confidence": "high",
       "city_code": "kualalumpur",
       "city_name_zh": "吉隆坡",
-      "checkin_start": "2026-08-21",
-      "checkin_end": "2026-08-21",
-      "heat_current": 68.1,
+      "checkin_start": "2026-08-19",
+      "checkin_end": "2026-08-19",
+      "heat_current": 65.6,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "snapshot_dates": [
         "2026-08-07",
         "2026-08-08",
         "2026-08-09",
         "2026-08-11",
         "2026-08-15",
-        "2026-08-18"
+        "2026-08-18",
+        "2026-08-19"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "吉隆坡 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.1",
+      "summary": "吉隆坡 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 65.6",
       "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 68.1",
-        "持续日期：2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18"
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 65.6",
+        "持续日期：2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19"
       ],
       "background": [
         "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
@@ -246,56 +204,16 @@
       "type": "consecutive_high",
       "priority": "high",
       "confidence": "high",
-      "city_code": "phuket",
-      "city_name_zh": "普吉",
-      "checkin_start": "2026-08-19",
-      "checkin_end": "2026-08-19",
-      "heat_current": 68.5,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 5,
-      "snapshot_dates": [
-        "2026-08-08",
-        "2026-08-09",
-        "2026-08-11",
-        "2026-08-15",
-        "2026-08-18"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "普吉 连续 5 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.5",
-      "evidence": [
-        "连续 5 个采集日窗口内平均热度 ≥ 65，当前 68.5",
-        "持续日期：2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18"
-      ],
-      "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
-      ],
-      "causes": [
-        "中泰互免签证持续拉高住宿需求"
-      ],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
       "city_code": "seoul",
       "city_name_zh": "首尔",
       "checkin_start": "2026-08-22",
       "checkin_end": "2026-08-22",
-      "heat_current": 68.7,
+      "heat_current": 68.3,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
       "consecutive_days": 10,
       "snapshot_dates": [
-        "2026-08-01",
         "2026-08-04",
         "2026-08-05",
         "2026-08-06",
@@ -304,14 +222,15 @@
         "2026-08-09",
         "2026-08-11",
         "2026-08-15",
-        "2026-08-18"
+        "2026-08-18",
+        "2026-08-19"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "首尔 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
+      "summary": "首尔 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.3",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.7",
-        "持续日期：2026-08-01 → 2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18"
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.3",
+        "持续日期：2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19"
       ],
       "background": [
         "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
@@ -322,6 +241,71 @@
       "actions": [
         "提前锁定房源，与酒店谈判包房协议",
         "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "high",
+      "city_code": "busan",
+      "city_name_zh": "釜山",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 61.7,
+      "heat_change_7d": null,
+      "price_change_pct": -0.122,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 3,
+      "hotels_total": 21,
+      "summary": "釜山 7 天降幅 -12.2%，18/21 家降价",
+      "evidence": [
+        "7 天内平均降幅 -12.2%，18/21 家酒店降价",
+        "🎉 韩国光复节（2026-08-15~2026-08-15）— 8/15 韩国光复节法定假日，国内旅游需求上升"
+      ],
+      "background": [
+        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
+      ],
+      "causes": [
+        "韩国光复节可能推升后续需求",
+        "中国客大规模转向韩国可能推升后续需求"
+      ],
+      "actions": [
+        "价格回落窗口，可考虑趁低价锁定库存",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "high",
+      "city_code": "chiangmai",
+      "city_name_zh": "清迈",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 21.3,
+      "heat_change_7d": null,
+      "price_change_pct": -0.125,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 10,
+      "hotels_total": 53,
+      "summary": "清迈 7 天降幅 -12.5%，43/53 家降价",
+      "evidence": [
+        "7 天内平均降幅 -12.5%，43/53 家酒店降价",
+        "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求"
+      ],
+      "background": [
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ],
+      "causes": [
+        "中泰互免签证可能推升后续需求"
+      ],
+      "actions": [
+        "价格回落窗口，可考虑趁低价锁定库存",
         "事件驱动型涨价，建议在事件前完成采购"
       ]
     }
