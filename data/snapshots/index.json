@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T11:30:14+08:00",
+  "generated_at": "2026-08-19T11:33:35+08:00",
   "snapshots": [
     {
       "date": "2026-08-19",
@@ -16,8 +16,8 @@
           "ci": "2026-10-03",
           "heat": 83.7
         },
-        "outlier_count": 723,
-        "sold_out_count": 393
+        "outlier_count": 702,
+        "sold_out_count": 381
       }
     },
     {

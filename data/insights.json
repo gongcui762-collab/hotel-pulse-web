@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T11:30:11+08:00",
+  "generated_at": "2026-08-19T11:33:32+08:00",
   "snapshot_date": "2026-08-19",
   "window": {
     "start": "2026-07-01",
@@ -121,9 +121,9 @@
       "confidence": "high",
       "city_code": "kotakinabalu",
       "city_name_zh": "亚庇",
-      "checkin_start": "2026-08-22",
-      "checkin_end": "2026-08-22",
-      "heat_current": 68.8,
+      "checkin_start": "2026-08-19",
+      "checkin_end": "2026-08-19",
+      "heat_current": 68.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -142,9 +142,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.8",
+      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.5",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.8",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.5",
         "持续日期：2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19"
       ],
       "background": [
@@ -208,7 +208,7 @@
       "city_name_zh": "首尔",
       "checkin_start": "2026-08-22",
       "checkin_end": "2026-08-22",
-      "heat_current": 68.3,
+      "heat_current": 68.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -227,9 +227,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "首尔 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.3",
+      "summary": "首尔 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.3",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.7",
         "持续日期：2026-08-04 → 2026-08-05 → 2026-08-06 → 2026-08-07 → 2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19"
       ],
       "background": [
@@ -252,7 +252,7 @@
       "city_name_zh": "釜山",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
-      "heat_current": 61.7,
+      "heat_current": 61.4,
       "heat_change_7d": null,
       "price_change_pct": -0.122,
       "sold_out_rate": null,
@@ -285,7 +285,7 @@
       "city_name_zh": "清迈",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
-      "heat_current": 21.3,
+      "heat_current": 21.0,
       "heat_change_7d": null,
       "price_change_pct": -0.125,
       "sold_out_rate": null,
