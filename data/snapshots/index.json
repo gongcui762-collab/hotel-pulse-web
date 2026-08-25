@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-24T12:34:26+08:00",
+  "generated_at": "2026-08-25T11:30:16+08:00",
   "snapshots": [
+    {
+      "date": "2026-08-25",
+      "cities": 25,
+      "hotels": 245,
+      "checkins": 17,
+      "kpi": {
+        "snapshot_date": "2026-08-25",
+        "cities_covered": 25,
+        "hotels_covered": 245,
+        "max_heat": {
+          "city": "singapore",
+          "ci": "2026-08-29",
+          "heat": 70.6
+        },
+        "outlier_count": 0,
+        "sold_out_count": 174
+      }
+    },
     {
       "date": "2026-08-22",
       "cities": 25,
