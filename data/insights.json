@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T11:30:11+08:00",
-  "snapshot_date": "2026-08-25",
+  "generated_at": "2026-08-26T11:30:10+08:00",
+  "snapshot_date": "2026-08-26",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 29,
-  "signal_count_filtered": 7,
+  "signal_count_raw": 25,
+  "signal_count_filtered": 8,
   "signals": [
     {
       "type": "event_upcoming",
@@ -17,7 +17,7 @@
       "city_name_zh": "吉隆坡",
       "checkin_start": "2026-08-31",
       "checkin_end": "2026-08-31",
-      "heat_current": 47.1,
+      "heat_current": 59.4,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 吉隆坡 马来西亚国庆 (Hari Merdeka) 2026-08-31~2026-08-31",
       "evidence": [
-        "马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花；当前热度 47.1；距事件还有 6 天"
+        "马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花；当前热度 59.4；距事件还有 5 天"
       ],
       "background": [
         "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
@@ -50,7 +50,7 @@
       "city_name_zh": "亚庇",
       "checkin_start": "2026-08-31",
       "checkin_end": "2026-08-31",
-      "heat_current": 78.2,
+      "heat_current": 78.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 亚庇 马来西亚国庆 (Hari Merdeka) 2026-08-31~2026-08-31",
       "evidence": [
-        "马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花；当前热度 78.2；距事件还有 6 天"
+        "马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花；当前热度 78.0；距事件还有 5 天"
       ],
       "background": [
         "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
@@ -76,20 +76,83 @@
       ]
     },
     {
+      "type": "surge",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "bangkok",
+      "city_name_zh": "曼谷",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 57.2,
+      "heat_change_7d": null,
+      "price_change_pct": 0.221,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 30,
+      "hotels_total": 40,
+      "summary": "曼谷 7 天涨幅 +22.1%，30/40 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +22.1%，30/40 家酒店涨价",
+        "最大涨幅 122.0%",
+        "🎉 泰国守夏节 (Asanha Bucha + Wan Khao Phansa)（2026-07-19~2026-07-20）— 佛教节日，禁酒令生效，部分酒吧/夜生活场所关闭，但不影响酒店住宿需求",
+        "🎉 泰国母亲节 (Queen's Birthday)（2026-08-12~2026-08-12）— 泰国法定假日，国内旅游需求上升"
+      ],
+      "background": [
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ],
+      "causes": [
+        "泰国母亲节 (Queen's Birthday)带动需求上升",
+        "中泰互免签证带动需求上升"
+      ],
+      "actions": [
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "jakarta",
+      "city_name_zh": "雅加达",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 49.3,
+      "heat_change_7d": null,
+      "price_change_pct": 0.281,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 30,
+      "hotels_total": 39,
+      "summary": "雅加达 7 天涨幅 +28.1%，30/39 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +28.1%，30/39 家酒店涨价",
+        "最大涨幅 173.4%"
+      ],
+      "background": [],
+      "causes": [
+        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
+      ],
+      "actions": [
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价"
+      ]
+    },
+    {
       "type": "consecutive_high",
       "priority": "high",
       "confidence": "high",
       "city_code": "jeju",
       "city_name_zh": "济州",
-      "checkin_start": "2026-08-28",
-      "checkin_end": "2026-08-28",
-      "heat_current": 67.1,
+      "checkin_start": "2026-08-26",
+      "checkin_end": "2026-08-26",
+      "heat_current": 67.4,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
       "consecutive_days": 10,
       "snapshot_dates": [
-        "2026-08-08",
         "2026-08-09",
         "2026-08-11",
         "2026-08-15",
@@ -98,14 +161,15 @@
         "2026-08-20",
         "2026-08-21",
         "2026-08-22",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-08-26"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.1",
+      "summary": "济州 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.4",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.1",
-        "持续日期：2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19 → 2026-08-20 → 2026-08-21 → 2026-08-22 → 2026-08-25"
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.4",
+        "持续日期：2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19 → 2026-08-20 → 2026-08-21 → 2026-08-22 → 2026-08-25 → 2026-08-26"
       ],
       "background": [
         "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
@@ -125,15 +189,14 @@
       "confidence": "high",
       "city_code": "kotakinabalu",
       "city_name_zh": "亚庇",
-      "checkin_start": "2026-08-29",
-      "checkin_end": "2026-08-29",
-      "heat_current": 70.1,
+      "checkin_start": "2026-08-26",
+      "checkin_end": "2026-08-26",
+      "heat_current": 67.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
       "consecutive_days": 10,
       "snapshot_dates": [
-        "2026-08-08",
         "2026-08-09",
         "2026-08-11",
         "2026-08-15",
@@ -142,14 +205,15 @@
         "2026-08-20",
         "2026-08-21",
         "2026-08-22",
-        "2026-08-25"
+        "2026-08-25",
+        "2026-08-26"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.1",
+      "summary": "亚庇 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.1",
-        "持续日期：2026-08-08 → 2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19 → 2026-08-20 → 2026-08-21 → 2026-08-22 → 2026-08-25"
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "持续日期：2026-08-09 → 2026-08-11 → 2026-08-15 → 2026-08-18 → 2026-08-19 → 2026-08-20 → 2026-08-21 → 2026-08-22 → 2026-08-25 → 2026-08-26"
       ],
       "background": [
         "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
@@ -164,100 +228,64 @@
       ]
     },
     {
-      "type": "surge",
-      "priority": "mid",
-      "confidence": "high",
-      "city_code": "dubai",
-      "city_name_zh": "迪拜",
+      "type": "anomaly_sold_out",
+      "priority": "high",
+      "confidence": "mid",
+      "city_code": "kualalumpur",
+      "city_name_zh": "吉隆坡",
       "checkin_start": "2026-07-01",
       "checkin_end": "2026-08-31",
-      "heat_current": 7.5,
+      "heat_current": 56.3,
       "heat_change_7d": null,
-      "price_change_pct": -0.145,
+      "price_change_pct": null,
+      "sold_out_rate": 0.9,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "吉隆坡 售罄率 90% 异常偏高",
+      "evidence": [
+        "售罄率 90%，远高于历史均值",
+        "🎉 马来西亚国庆 (Hari Merdeka)（2026-08-31~2026-08-31）— 马来西亚 69 周年国庆，KLCC 区域庆典 + 烟花"
+      ],
+      "background": [
+        "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
+      ],
+      "causes": [
+        "马来西亚国庆 (Hari Merdeka)可能推升后续需求",
+        "中马互免签证 + Visit Malaysia 2026可能推升后续需求"
+      ],
+      "actions": [
+        "紧急补充替代房源，扩大可售库存",
+        "联系酒店确认是否有取消释放房间的可能",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "mid",
+      "city_code": "bali",
+      "city_name_zh": "巴厘岛",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 61.3,
+      "heat_change_7d": null,
+      "price_change_pct": 0.127,
       "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 12,
-      "hotels_total": 34,
-      "summary": "迪拜 7 天降幅 -14.5%，22/34 家降价",
+      "hotels_up_count": 11,
+      "hotels_total": 16,
+      "summary": "巴厘岛 7 天涨幅 +12.7%，11/16 家涨价",
       "evidence": [
-        "7 天内平均降幅 -14.5%，22/34 家酒店降价"
+        "7 天内平均涨幅 +12.7%，11/16 家酒店涨价",
+        "最大涨幅 67.0%"
       ],
       "background": [],
-      "causes": [
-        "可能为前期高位回落或淡季效应"
-      ],
+      "causes": [],
       "actions": [
-        "价格回落窗口，可考虑趁低价锁定库存"
-      ]
-    },
-    {
-      "type": "surge",
-      "priority": "mid",
-      "confidence": "high",
-      "city_code": "sapporo",
-      "city_name_zh": "札幌",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 7.5,
-      "heat_change_7d": null,
-      "price_change_pct": -0.161,
-      "sold_out_rate": null,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 3,
-      "hotels_total": 20,
-      "summary": "札幌 7 天降幅 -16.1%，17/20 家降价",
-      "evidence": [
-        "7 天内平均降幅 -16.1%，17/20 家酒店降价",
-        "🎉 日本盂兰盆节（2026-08-13~2026-08-16）— 日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点"
-      ],
-      "background": [
-        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
-      ],
-      "causes": [
-        "日本盂兰盆节可能推升后续需求",
-        "涉台外交风波 + 中国客断崖抑制需求"
-      ],
-      "actions": [
-        "价格回落窗口，可考虑趁低价锁定库存",
-        "降幅显著，建议评估是否为需求萎缩信号",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "surge",
-      "priority": "mid",
-      "confidence": "high",
-      "city_code": "tokyo",
-      "city_name_zh": "东京",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 35.1,
-      "heat_change_7d": null,
-      "price_change_pct": -0.103,
-      "sold_out_rate": null,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 7,
-      "hotels_total": 38,
-      "summary": "东京 7 天降幅 -10.3%，31/38 家降价",
-      "evidence": [
-        "7 天内平均降幅 -10.3%，31/38 家酒店降价",
-        "🎉 东京隅田川花火大会（2026-07-22~2026-07-24）— 东京最大花火大会，约 95 万人观赏，浅草/两国区酒店爆满",
-        "🎉 日本盂兰盆节（2026-08-13~2026-08-16）— 日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点"
-      ],
-      "background": [
-        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
-      ],
-      "causes": [
-        "东京隅田川花火大会可能推升后续需求",
-        "日本盂兰盆节可能推升后续需求",
-        "涉台外交风波 + 中国客断崖抑制需求"
-      ],
-      "actions": [
-        "价格回落窗口，可考虑趁低价锁定库存",
-        "事件驱动型涨价，建议在事件前完成采购"
+        "启动价格预警，与供应商沟通锁价可能性"
       ]
     }
   ]

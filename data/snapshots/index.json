@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T11:30:16+08:00",
+  "generated_at": "2026-08-26T11:30:13+08:00",
   "snapshots": [
+    {
+      "date": "2026-08-26",
+      "cities": 13,
+      "hotels": 115,
+      "checkins": 19,
+      "kpi": {
+        "snapshot_date": "2026-08-26",
+        "cities_covered": 13,
+        "hotels_covered": 115,
+        "max_heat": {
+          "city": "kualalumpur",
+          "ci": "2026-08-31",
+          "heat": 87.0
+        },
+        "outlier_count": 0,
+        "sold_out_count": 79
+      }
+    },
     {
       "date": "2026-08-25",
       "cities": 25,
