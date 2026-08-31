@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-31T11:30:11+08:00",
+  "generated_at": "2026-08-31T12:54:34+08:00",
   "snapshot_date": "2026-08-31",
   "window": {
     "start": "2026-07-01",
     "end": "2026-08-31"
   },
-  "signal_count_raw": 29,
+  "signal_count_raw": 30,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -153,42 +153,6 @@
       ]
     },
     {
-      "type": "anomaly_sold_out",
-      "priority": "high",
-      "confidence": "mid",
-      "city_code": "tokyo",
-      "city_name_zh": "东京",
-      "checkin_start": "2026-07-01",
-      "checkin_end": "2026-08-31",
-      "heat_current": 27.6,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.8,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "东京 售罄率 80% 异常偏高",
-      "evidence": [
-        "售罄率 80%，远高于历史均值",
-        "🎉 东京隅田川花火大会（2026-07-22~2026-07-24）— 东京最大花火大会，约 95 万人观赏，浅草/两国区酒店爆满",
-        "🎉 日本盂兰盆节（2026-08-13~2026-08-16）— 日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点"
-      ],
-      "background": [
-        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
-      ],
-      "causes": [
-        "东京隅田川花火大会可能推升后续需求",
-        "日本盂兰盆节可能推升后续需求",
-        "涉台外交风波 + 中国客断崖抑制需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
       "type": "surge",
       "priority": "mid",
       "confidence": "mid",
@@ -277,6 +241,40 @@
       "causes": [
         "马来西亚国庆 (Hari Merdeka)带动需求上升",
         "中马互免签证 + Visit Malaysia 2026带动需求上升"
+      ],
+      "actions": [
+        "启动价格预警，与供应商沟通锁价可能性",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "mid",
+      "city_code": "sapporo",
+      "city_name_zh": "札幌",
+      "checkin_start": "2026-07-01",
+      "checkin_end": "2026-08-31",
+      "heat_current": 12.5,
+      "heat_change_7d": null,
+      "price_change_pct": 0.109,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 3,
+      "hotels_total": 4,
+      "summary": "札幌 7 天涨幅 +10.9%，3/4 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +10.9%，3/4 家酒店涨价",
+        "最大涨幅 45.0%",
+        "🎉 日本盂兰盆节（2026-08-13~2026-08-16）— 日本最大的返乡+旅游高峰，国内游客叠加国际游客，酒店价格全年最高点"
+      ],
+      "background": [
+        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
+      ],
+      "causes": [
+        "日本盂兰盆节带动需求上升",
+        "涉台外交风波 + 中国客断崖抑制需求"
       ],
       "actions": [
         "启动价格预警，与供应商沟通锁价可能性",
