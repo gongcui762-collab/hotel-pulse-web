@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-02T11:30:15+08:00",
+  "generated_at": "2026-09-02T11:58:29+08:00",
   "snapshots": [
     {
       "date": "2026-09-02",
@@ -12,12 +12,12 @@
         "cities_covered": 25,
         "hotels_covered": 245,
         "max_heat": {
-          "city": "singapore",
-          "ci": "2026-09-02",
-          "heat": 70.6
+          "city": "kyoto",
+          "ci": "2026-10-03",
+          "heat": 81.7
         },
-        "outlier_count": 0,
-        "sold_out_count": 255
+        "outlier_count": 834,
+        "sold_out_count": 527
       }
     },
     {

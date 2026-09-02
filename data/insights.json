@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-02T11:30:11+08:00",
+  "generated_at": "2026-09-02T11:58:26+08:00",
   "snapshot_date": "2026-09-02",
   "window": {
     "start": "2026-09-15",
     "end": "2026-10-08"
   },
-  "signal_count_raw": 30,
+  "signal_count_raw": 26,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -114,9 +114,9 @@
       "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-09-25",
-      "checkin_end": "2026-09-25",
-      "heat_current": 70.2,
+      "checkin_start": "2026-09-26",
+      "checkin_end": "2026-09-26",
+      "heat_current": 71.2,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -134,9 +134,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 9 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.2",
+      "summary": "巴厘岛 连续 9 个 snapshot 窗口内平均热度 ≥ 65.0，当前 71.2",
       "evidence": [
-        "连续 9 个采集日窗口内平均热度 ≥ 65，当前 70.2",
+        "连续 9 个采集日窗口内平均热度 ≥ 65，当前 71.2",
         "持续日期：2026-08-22 → 2026-08-25 → 2026-08-26 → 2026-08-27 → 2026-08-28 → 2026-08-29 → 2026-08-31 → 2026-09-01 → 2026-09-02"
       ],
       "background": [],
@@ -154,7 +154,7 @@
       "city_name_zh": "香港",
       "checkin_start": "2026-10-02",
       "checkin_end": "2026-10-02",
-      "heat_current": 67.5,
+      "heat_current": 70.3,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -173,9 +173,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "香港 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "香港 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.3",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.3",
         "持续日期：2026-08-21 → 2026-08-22 → 2026-08-25 → 2026-08-26 → 2026-08-27 → 2026-08-28 → 2026-08-29 → 2026-08-31 → 2026-09-01 → 2026-09-02",
         "🎉 中国国庆黄金周（2026-10-01~2026-10-07）— 全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%"
       ],
@@ -195,9 +195,9 @@
       "confidence": "high",
       "city_code": "kotakinabalu",
       "city_name_zh": "亚庇",
-      "checkin_start": "2026-09-25",
-      "checkin_end": "2026-09-25",
-      "heat_current": 67.5,
+      "checkin_start": "2026-10-03",
+      "checkin_end": "2026-10-03",
+      "heat_current": 68.2,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -214,9 +214,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "亚庇 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "亚庇 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.2",
       "evidence": [
-        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 68.2",
         "持续日期：2026-08-25 → 2026-08-26 → 2026-08-27 → 2026-08-28 → 2026-08-29 → 2026-08-31 → 2026-09-01 → 2026-09-02"
       ],
       "background": [
@@ -237,9 +237,9 @@
       "confidence": "high",
       "city_code": "tokyo",
       "city_name_zh": "东京",
-      "checkin_start": "2026-09-19",
-      "checkin_end": "2026-09-19",
-      "heat_current": 66.9,
+      "checkin_start": "2026-10-03",
+      "checkin_end": "2026-10-03",
+      "heat_current": 69.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -251,20 +251,23 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "东京 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.9",
+      "summary": "东京 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.5",
       "evidence": [
-        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 66.9",
-        "持续日期：2026-08-31 → 2026-09-01 → 2026-09-02"
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 69.5",
+        "持续日期：2026-08-31 → 2026-09-01 → 2026-09-02",
+        "🎉 中国国庆黄金周（2026-10-01~2026-10-07）— 全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
       ],
       "causes": [
+        "中国国庆黄金周持续拉高住宿需求",
         "涉台外交风波 + 中国客断崖抑制需求"
       ],
       "actions": [
         "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
+        "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
       ]
     },
     {
@@ -275,17 +278,17 @@
       "city_name_zh": "澳门",
       "checkin_start": "2026-09-15",
       "checkin_end": "2026-10-08",
-      "heat_current": 58.9,
+      "heat_current": 61.8,
       "heat_change_7d": null,
-      "price_change_pct": 0.167,
+      "price_change_pct": 0.117,
       "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 26,
+      "hotels_up_count": 23,
       "hotels_total": 50,
-      "summary": "澳门 7 天涨幅 +16.7%，26/50 家涨价",
+      "summary": "澳门 7 天涨幅 +11.7%，23/50 家涨价",
       "evidence": [
-        "7 天内平均涨幅 +16.7%，26/50 家酒店涨价",
+        "7 天内平均涨幅 +11.7%，23/50 家酒店涨价",
         "最大涨幅 209.6%",
         "🎉 中国国庆黄金周（2026-10-01~2026-10-07）— 全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%"
       ],
