@@ -1,7 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-02T11:58:29+08:00",
+  "generated_at": "2026-09-03T14:06:13+08:00",
   "snapshot_dates": [
+    "2026-09-03",
     "2026-09-02",
     "2026-09-01",
     "2026-08-31",
@@ -77,8 +78,8 @@
     "2026-05-22",
     "2026-05-19"
   ],
-  "latest_snapshot": "2026-09-02",
-  "latest_complete_snapshot": "2026-09-02",
+  "latest_snapshot": "2026-09-03",
+  "latest_complete_snapshot": "2026-09-03",
   "cities": [
     {
       "code": "osaka",
