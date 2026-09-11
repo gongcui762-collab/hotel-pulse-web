@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-10T14:20:07+08:00",
+  "generated_at": "2026-09-11T11:30:15+08:00",
   "snapshots": [
+    {
+      "date": "2026-09-11",
+      "cities": 22,
+      "hotels": 206,
+      "checkins": 18,
+      "kpi": {
+        "snapshot_date": "2026-09-11",
+        "cities_covered": 22,
+        "hotels_covered": 206,
+        "max_heat": {
+          "city": "seoul",
+          "ci": "2026-09-12",
+          "heat": 90.0
+        },
+        "outlier_count": 0,
+        "sold_out_count": 348
+      }
+    },
     {
       "date": "2026-09-10",
       "cities": 25,
