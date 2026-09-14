@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-14T01:31:30+08:00",
+  "generated_at": "2026-09-14T11:30:14+08:00",
   "snapshots": [
+    {
+      "date": "2026-09-14",
+      "cities": 14,
+      "hotels": 137,
+      "checkins": 17,
+      "kpi": {
+        "snapshot_date": "2026-09-14",
+        "cities_covered": 14,
+        "hotels_covered": 137,
+        "max_heat": {
+          "city": "kyoto",
+          "ci": "2026-11-07",
+          "heat": 75.0
+        },
+        "outlier_count": 0,
+        "sold_out_count": 170
+      }
+    },
     {
       "date": "2026-09-12",
       "cities": 25,
