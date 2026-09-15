@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-15T11:30:12+08:00",
+  "generated_at": "2026-09-15T15:09:38+08:00",
   "snapshots": [
     {
       "date": "2026-09-15",
-      "cities": 13,
-      "hotels": 126,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 17,
       "kpi": {
         "snapshot_date": "2026-09-15",
-        "cities_covered": 13,
-        "hotels_covered": 126,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "kualalumpur",
-          "ci": "2026-11-07",
-          "heat": 81.4
+          "city": "osaka",
+          "ci": "2026-10-17",
+          "heat": 87.4
         },
-        "outlier_count": 0,
-        "sold_out_count": 155
+        "outlier_count": 982,
+        "sold_out_count": 743
       }
     },
     {
