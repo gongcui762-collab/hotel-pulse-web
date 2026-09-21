@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-21T11:30:10+08:00",
+  "generated_at": "2026-09-21T11:42:26+08:00",
   "snapshots": [
     {
       "date": "2026-09-21",
@@ -12,12 +12,12 @@
         "cities_covered": 25,
         "hotels_covered": 245,
         "max_heat": {
-          "city": "kualalumpur",
-          "ci": "2026-10-03",
-          "heat": 83.7
+          "city": "singapore",
+          "ci": "2026-10-09",
+          "heat": 80.1
         },
-        "outlier_count": 936,
-        "sold_out_count": 686
+        "outlier_count": 919,
+        "sold_out_count": 666
       }
     },
     {
