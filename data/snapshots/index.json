@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-23T11:58:56+08:00",
+  "generated_at": "2026-09-24T11:30:14+08:00",
   "snapshots": [
+    {
+      "date": "2026-09-24",
+      "cities": 12,
+      "hotels": 116,
+      "checkins": 18,
+      "kpi": {
+        "snapshot_date": "2026-09-24",
+        "cities_covered": 12,
+        "hotels_covered": 116,
+        "max_heat": {
+          "city": "kotakinabalu",
+          "ci": "2026-11-07",
+          "heat": 78.6
+        },
+        "outlier_count": 0,
+        "sold_out_count": 146
+      }
+    },
     {
       "date": "2026-09-23",
       "cities": 25,
