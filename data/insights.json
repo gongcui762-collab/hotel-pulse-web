@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-09-28T13:14:36+08:00",
-  "snapshot_date": "2026-09-28",
+  "generated_at": "2026-09-29T10:01:48+08:00",
+  "snapshot_date": "2026-09-29",
   "window": {
     "start": "2026-09-15",
     "end": "2026-10-08"
   },
-  "signal_count_raw": 23,
+  "signal_count_raw": 21,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -17,7 +17,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-10-01",
       "checkin_end": "2026-10-07",
-      "heat_current": 48.8,
+      "heat_current": 48.9,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 大阪 中国国庆黄金周 2026-10-01~2026-10-07",
       "evidence": [
-        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 48.8；距事件还有 3 天"
+        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 48.9；距事件还有 2 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 东京 中国国庆黄金周 2026-10-01~2026-10-07",
       "evidence": [
-        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 78.8；距事件还有 3 天"
+        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 78.8；距事件还有 2 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -83,7 +83,7 @@
       "city_name_zh": "京都",
       "checkin_start": "2026-10-01",
       "checkin_end": "2026-10-07",
-      "heat_current": 60.8,
+      "heat_current": 61.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -93,7 +93,7 @@
       "hotels_total": 0,
       "summary": "🎉 京都 中国国庆黄金周 2026-10-01~2026-10-07",
       "evidence": [
-        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 60.8；距事件还有 3 天"
+        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 61.8；距事件还有 2 天"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -116,7 +116,7 @@
       "city_name_zh": "首尔",
       "checkin_start": "2026-10-01",
       "checkin_end": "2026-10-07",
-      "heat_current": 81.1,
+      "heat_current": 80.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -126,7 +126,7 @@
       "hotels_total": 0,
       "summary": "🎉 首尔 中国国庆黄金周 2026-10-01~2026-10-07",
       "evidence": [
-        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 81.1；距事件还有 3 天"
+        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 80.8；距事件还有 2 天"
       ],
       "background": [
         "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
@@ -147,15 +147,14 @@
       "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-09-28",
-      "checkin_end": "2026-09-28",
-      "heat_current": 69.4,
+      "checkin_start": "2026-10-02",
+      "checkin_end": "2026-10-02",
+      "heat_current": 71.2,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
       "consecutive_days": 10,
       "snapshot_dates": [
-        "2026-09-17",
         "2026-09-18",
         "2026-09-19",
         "2026-09-21",
@@ -164,14 +163,15 @@
         "2026-09-24",
         "2026-09-25",
         "2026-09-26",
-        "2026-09-28"
+        "2026-09-28",
+        "2026-09-29"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 69.4",
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 71.2",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 69.4",
-        "持续日期：2026-09-17 → 2026-09-18 → 2026-09-19 → 2026-09-21 → 2026-09-22 → 2026-09-23 → 2026-09-24 → 2026-09-25 → 2026-09-26 → 2026-09-28"
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 71.2",
+        "持续日期：2026-09-18 → 2026-09-19 → 2026-09-21 → 2026-09-22 → 2026-09-23 → 2026-09-24 → 2026-09-25 → 2026-09-26 → 2026-09-28 → 2026-09-29"
       ],
       "background": [],
       "causes": [],
@@ -184,32 +184,29 @@
       "type": "surge",
       "priority": "high",
       "confidence": "high",
-      "city_code": "chiangmai",
-      "city_name_zh": "清迈",
+      "city_code": "newyork",
+      "city_name_zh": "纽约",
       "checkin_start": "2026-09-15",
       "checkin_end": "2026-10-08",
-      "heat_current": 65.4,
+      "heat_current": 13.0,
       "heat_change_7d": null,
-      "price_change_pct": 0.292,
+      "price_change_pct": 0.209,
       "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 32,
-      "hotels_total": 48,
-      "summary": "清迈 7 天涨幅 +29.2%，32/48 家涨价",
+      "hotels_up_count": 21,
+      "hotels_total": 28,
+      "summary": "纽约 7 天涨幅 +20.9%，21/28 家涨价",
       "evidence": [
-        "7 天内平均涨幅 +29.2%，32/48 家酒店涨价",
-        "最大涨幅 420.8%"
+        "7 天内平均涨幅 +20.9%，21/28 家酒店涨价",
+        "最大涨幅 159.0%"
       ],
-      "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
-      ],
+      "background": [],
       "causes": [
-        "中泰互免签证带动需求上升"
+        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
       ],
       "actions": [
-        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价",
-        "事件驱动型涨价，建议在事件前完成采购"
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价"
       ]
     },
     {
@@ -220,18 +217,18 @@
       "city_name_zh": "新加坡",
       "checkin_start": "2026-09-15",
       "checkin_end": "2026-10-08",
-      "heat_current": 74.4,
+      "heat_current": 72.5,
       "heat_change_7d": null,
-      "price_change_pct": 0.279,
+      "price_change_pct": 0.21,
       "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 28,
-      "hotels_total": 36,
-      "summary": "新加坡 7 天涨幅 +27.9%，28/36 家涨价",
+      "hotels_up_count": 25,
+      "hotels_total": 31,
+      "summary": "新加坡 7 天涨幅 +21.0%，25/31 家涨价",
       "evidence": [
-        "7 天内平均涨幅 +27.9%，28/36 家酒店涨价",
-        "最大涨幅 167.8%",
+        "7 天内平均涨幅 +21.0%，25/31 家酒店涨价",
+        "最大涨幅 93.8%",
         "🎉 中国国庆黄金周（2026-10-01~2026-10-07）— 全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%"
       ],
       "background": [],
@@ -247,27 +244,25 @@
       "type": "anomaly_sold_out",
       "priority": "mid",
       "confidence": "mid",
-      "city_code": "sapporo",
-      "city_name_zh": "札幌",
+      "city_code": "dubai",
+      "city_name_zh": "迪拜",
       "checkin_start": "2026-09-15",
       "checkin_end": "2026-10-08",
-      "heat_current": 15.8,
+      "heat_current": 15.3,
       "heat_change_7d": null,
       "price_change_pct": null,
-      "sold_out_rate": 0.333,
+      "sold_out_rate": 0.311,
       "consecutive_days": 0,
       "snapshot_dates": [],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "札幌 售罄率 33% 异常偏高",
+      "summary": "迪拜 售罄率 31% 异常偏高",
       "evidence": [
-        "售罄率 33%，远高于历史均值"
+        "售罄率 31%，远高于历史均值"
       ],
-      "background": [
-        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
-      ],
+      "background": [],
       "causes": [
-        "涉台外交风波 + 中国客断崖抑制需求"
+        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
       ],
       "actions": [
         "紧急补充替代房源，扩大可售库存",
