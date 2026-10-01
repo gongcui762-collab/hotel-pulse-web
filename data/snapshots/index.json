@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T11:30:14+08:00",
+  "generated_at": "2026-10-01T16:30:47+08:00",
   "snapshots": [
     {
       "date": "2026-10-01",
-      "cities": 19,
-      "hotels": 180,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 18,
       "kpi": {
         "snapshot_date": "2026-10-01",
-        "cities_covered": 19,
-        "hotels_covered": 180,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "pattaya",
-          "ci": "2026-10-03",
-          "heat": 89.8
+          "city": "osaka",
+          "ci": "2026-11-21",
+          "heat": 87.5
         },
-        "outlier_count": 0,
-        "sold_out_count": 290
+        "outlier_count": 976,
+        "sold_out_count": 762
       }
     },
     {
