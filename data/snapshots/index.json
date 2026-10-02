@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-02T11:30:29+08:00",
+  "generated_at": "2026-10-02T20:01:55+08:00",
   "snapshots": [
     {
       "date": "2026-10-02",
-      "cities": 3,
-      "hotels": 27,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 18,
       "kpi": {
         "snapshot_date": "2026-10-02",
-        "cities_covered": 3,
-        "hotels_covered": 27,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "busan",
-          "ci": "2026-11-07",
-          "heat": 77.5
+          "city": "kyoto",
+          "ci": "2026-10-09",
+          "heat": 87.2
         },
-        "outlier_count": 0,
-        "sold_out_count": 49
+        "outlier_count": 986,
+        "sold_out_count": 771
       }
     },
     {
