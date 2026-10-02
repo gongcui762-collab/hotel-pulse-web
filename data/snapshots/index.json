@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T16:30:47+08:00",
+  "generated_at": "2026-10-02T11:30:29+08:00",
   "snapshots": [
+    {
+      "date": "2026-10-02",
+      "cities": 3,
+      "hotels": 27,
+      "checkins": 18,
+      "kpi": {
+        "snapshot_date": "2026-10-02",
+        "cities_covered": 3,
+        "hotels_covered": 27,
+        "max_heat": {
+          "city": "busan",
+          "ci": "2026-11-07",
+          "heat": 77.5
+        },
+        "outlier_count": 0,
+        "sold_out_count": 49
+      }
+    },
     {
       "date": "2026-10-01",
       "cities": 25,
