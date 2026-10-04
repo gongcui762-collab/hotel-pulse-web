@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-04T11:30:16+08:00",
+  "generated_at": "2026-10-04T12:24:15+08:00",
   "snapshots": [
     {
       "date": "2026-10-04",
@@ -14,10 +14,10 @@
         "max_heat": {
           "city": "singapore",
           "ci": "2026-10-10",
-          "heat": 73.1
+          "heat": 84.7
         },
-        "outlier_count": 0,
-        "sold_out_count": 353
+        "outlier_count": 802,
+        "sold_out_count": 617
       }
     },
     {
