@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-05T11:51:30+08:00",
+  "generated_at": "2026-10-06T11:40:23+08:00",
   "snapshot_date": "2026-10-05",
   "window": {
     "start": "2026-09-15",
     "end": "2026-10-08"
   },
-  "signal_count_raw": 9,
+  "signal_count_raw": 10,
   "signal_count_filtered": 5,
   "signals": [
     {
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "type": "anomaly_sold_out",
+      "type": "surge",
       "priority": "mid",
       "confidence": "mid",
       "city_code": "bali",
@@ -151,23 +151,23 @@
       "checkin_end": "2026-10-08",
       "heat_current": 32.5,
       "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 1.0,
+      "price_change_pct": 0.161,
+      "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "巴厘岛 售罄率 100% 异常偏高",
+      "hotels_up_count": 4,
+      "hotels_total": 6,
+      "summary": "巴厘岛 7 天涨幅 +16.1%，4/6 家涨价",
       "evidence": [
-        "售罄率 100%，远高于历史均值"
+        "7 天内平均涨幅 +16.1%，4/6 家酒店涨价",
+        "最大涨幅 79.7%"
       ],
       "background": [],
       "causes": [
-        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
+        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
       ],
       "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
+        "启动价格预警，与供应商沟通锁价可能性"
       ]
     }
   ]
