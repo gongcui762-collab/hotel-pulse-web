@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-07T12:35:05+08:00",
+  "generated_at": "2026-10-08T01:11:34+08:00",
   "snapshot_date": "2026-10-05",
   "window": {
     "start": "2026-09-15",
     "end": "2026-10-08"
   },
-  "signal_count_raw": 10,
-  "signal_count_filtered": 5,
+  "signal_count_raw": 38,
+  "signal_count_filtered": 8,
   "signals": [
     {
       "type": "event_upcoming",
@@ -17,7 +17,7 @@
       "city_name_zh": "大阪",
       "checkin_start": "2026-10-01",
       "checkin_end": "2026-10-07",
-      "heat_current": null,
+      "heat_current": 74.2,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -27,7 +27,7 @@
       "hotels_total": 0,
       "summary": "🎉 大阪 中国国庆黄金周 2026-10-01~2026-10-07",
       "evidence": [
-        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%"
+        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 74.2"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -50,7 +50,7 @@
       "city_name_zh": "东京",
       "checkin_start": "2026-10-01",
       "checkin_end": "2026-10-07",
-      "heat_current": null,
+      "heat_current": 78.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -60,7 +60,7 @@
       "hotels_total": 0,
       "summary": "🎉 东京 中国国庆黄金周 2026-10-01~2026-10-07",
       "evidence": [
-        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%"
+        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 78.7"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -83,7 +83,7 @@
       "city_name_zh": "京都",
       "checkin_start": "2026-10-01",
       "checkin_end": "2026-10-07",
-      "heat_current": null,
+      "heat_current": 70.8,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -93,7 +93,7 @@
       "hotels_total": 0,
       "summary": "🎉 京都 中国国庆黄金周 2026-10-01~2026-10-07",
       "evidence": [
-        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%"
+        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 70.8"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -116,7 +116,7 @@
       "city_name_zh": "首尔",
       "checkin_start": "2026-10-01",
       "checkin_end": "2026-10-07",
-      "heat_current": null,
+      "heat_current": 77.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -126,7 +126,7 @@
       "hotels_total": 0,
       "summary": "🎉 首尔 中国国庆黄金周 2026-10-01~2026-10-07",
       "evidence": [
-        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%"
+        "全年最大出境旅游窗口，7 天长假，主要目的地酒店价格上浮 50-100%；当前热度 77.7"
       ],
       "background": [
         "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
@@ -142,32 +142,155 @@
       ]
     },
     {
-      "type": "surge",
-      "priority": "mid",
-      "confidence": "mid",
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
       "city_code": "bali",
       "city_name_zh": "巴厘岛",
-      "checkin_start": "2026-09-15",
-      "checkin_end": "2026-10-08",
-      "heat_current": 32.5,
+      "checkin_start": "2026-10-05",
+      "checkin_end": "2026-10-05",
+      "heat_current": 84.2,
       "heat_change_7d": null,
-      "price_change_pct": 0.161,
+      "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 4,
-      "hotels_total": 6,
-      "summary": "巴厘岛 7 天涨幅 +16.1%，4/6 家涨价",
+      "consecutive_days": 10,
+      "snapshot_dates": [
+        "2026-09-25",
+        "2026-09-26",
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-03",
+        "2026-10-04",
+        "2026-10-05"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "巴厘岛 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 84.2",
       "evidence": [
-        "7 天内平均涨幅 +16.1%，4/6 家酒店涨价",
-        "最大涨幅 79.7%"
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 84.2",
+        "持续日期：2026-09-25 → 2026-09-26 → 2026-09-28 → 2026-09-29 → 2026-09-30 → 2026-10-01 → 2026-10-02 → 2026-10-03 → 2026-10-04 → 2026-10-05"
       ],
       "background": [],
+      "causes": [],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "立即启动补贴方案，抢占高热窗口"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "busan",
+      "city_name_zh": "釜山",
+      "checkin_start": "2026-10-05",
+      "checkin_end": "2026-10-05",
+      "heat_current": 68.7,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 5,
+      "snapshot_dates": [
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-03",
+        "2026-10-04",
+        "2026-10-05"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "釜山 连续 5 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
+      "evidence": [
+        "连续 5 个采集日窗口内平均热度 ≥ 65，当前 68.7",
+        "持续日期：2026-10-01 → 2026-10-02 → 2026-10-03 → 2026-10-04 → 2026-10-05"
+      ],
+      "background": [
+        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
+      ],
       "causes": [
-        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
+        "中国客大规模转向韩国持续拉高住宿需求"
       ],
       "actions": [
-        "启动价格预警，与供应商沟通锁价可能性"
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "hanoi",
+      "city_name_zh": "河内",
+      "checkin_start": "2026-10-05",
+      "checkin_end": "2026-10-05",
+      "heat_current": 68.7,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 8,
+      "snapshot_dates": [
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-03",
+        "2026-10-04",
+        "2026-10-05"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "河内 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
+      "evidence": [
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 68.7",
+        "持续日期：2026-09-28 → 2026-09-29 → 2026-09-30 → 2026-10-01 → 2026-10-02 → 2026-10-03 → 2026-10-04 → 2026-10-05"
+      ],
+      "background": [],
+      "causes": [],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "high",
+      "confidence": "high",
+      "city_code": "hochiminh",
+      "city_name_zh": "胡志明",
+      "checkin_start": "2026-10-05",
+      "checkin_end": "2026-10-05",
+      "heat_current": 67.5,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 8,
+      "snapshot_dates": [
+        "2026-09-28",
+        "2026-09-29",
+        "2026-09-30",
+        "2026-10-01",
+        "2026-10-02",
+        "2026-10-03",
+        "2026-10-04",
+        "2026-10-05"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "胡志明 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "evidence": [
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "持续日期：2026-09-28 → 2026-09-29 → 2026-09-30 → 2026-10-01 → 2026-10-02 → 2026-10-03 → 2026-10-04 → 2026-10-05"
+      ],
+      "background": [],
+      "causes": [],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案"
       ]
     }
   ]
