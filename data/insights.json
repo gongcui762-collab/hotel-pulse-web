@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-08T11:30:07+08:00",
-  "snapshot_date": "2026-10-08",
+  "generated_at": "2026-10-09T11:30:07+08:00",
+  "snapshot_date": "2026-10-09",
   "window": {
-    "start": "2026-09-15",
-    "end": "2026-10-08"
+    "start": "2026-12-30",
+    "end": "2027-02-15"
   },
   "signal_count_raw": 0,
   "signal_count_filtered": 0,
