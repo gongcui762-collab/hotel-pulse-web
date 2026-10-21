@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-21T11:30:14+08:00",
+  "generated_at": "2026-10-21T16:06:44+08:00",
   "snapshots": [
     {
       "date": "2026-10-21",
-      "cities": 11,
-      "hotels": 100,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 19,
       "kpi": {
         "snapshot_date": "2026-10-21",
-        "cities_covered": 11,
-        "hotels_covered": 100,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "bangkok",
-          "ci": "2026-12-05",
-          "heat": 73.1
+          "city": "osaka",
+          "ci": "2026-11-21",
+          "heat": 86.2
         },
-        "outlier_count": 0,
-        "sold_out_count": 118
+        "outlier_count": 893,
+        "sold_out_count": 814
       }
     },
     {
