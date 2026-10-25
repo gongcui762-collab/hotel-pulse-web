@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-24T11:43:14+08:00",
+  "generated_at": "2026-10-25T12:00:11+08:00",
   "snapshots": [
     {
       "date": "2026-10-24",
       "cities": 1,
-      "hotels": 2,
+      "hotels": 11,
       "checkins": 17,
       "kpi": {
         "snapshot_date": "2026-10-24",
         "cities_covered": 1,
-        "hotels_covered": 2,
+        "hotels_covered": 11,
         "max_heat": {
           "city": "bali",
           "ci": "2026-10-28",
