@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-10-29T11:30:16+08:00",
+  "generated_at": "2026-10-29T22:05:32+08:00",
   "snapshots": [
     {
       "date": "2026-10-29",
-      "cities": 8,
-      "hotels": 46,
+      "cities": 25,
+      "hotels": 204,
       "checkins": 18,
       "kpi": {
         "snapshot_date": "2026-10-29",
-        "cities_covered": 8,
-        "hotels_covered": 46,
+        "cities_covered": 25,
+        "hotels_covered": 204,
         "max_heat": {
           "city": "hanoi",
           "ci": "2026-12-26",
           "heat": 90.0
         },
-        "outlier_count": 0,
-        "sold_out_count": 61
+        "outlier_count": 717,
+        "sold_out_count": 636
       }
     },
     {
