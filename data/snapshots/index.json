@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-01T11:59:36+08:00",
+  "generated_at": "2026-11-02T10:43:15+08:00",
   "snapshots": [
     {
       "date": "2026-11-01",
-      "cities": 14,
-      "hotels": 135,
+      "cities": 25,
+      "hotels": 244,
       "checkins": 16,
       "kpi": {
         "snapshot_date": "2026-11-01",
-        "cities_covered": 14,
-        "hotels_covered": 135,
+        "cities_covered": 25,
+        "hotels_covered": 244,
         "max_heat": {
-          "city": "kyoto",
+          "city": "phuket",
           "ci": "2026-12-26",
-          "heat": 85.0
+          "heat": 87.5
         },
-        "outlier_count": 0,
-        "sold_out_count": 132
+        "outlier_count": 769,
+        "sold_out_count": 609
       }
     },
     {
