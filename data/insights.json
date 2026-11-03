@@ -1,12 +1,42 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-02T11:30:02+08:00",
-  "snapshot_date": "2026-11-01",
+  "generated_at": "2026-11-03T11:30:11+08:00",
+  "snapshot_date": "2026-11-03",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 0,
-  "signal_count_filtered": 0,
-  "signals": []
+  "signal_count_raw": 2,
+  "signal_count_filtered": 1,
+  "signals": [
+    {
+      "type": "anomaly_sold_out",
+      "priority": "mid",
+      "confidence": "mid",
+      "city_code": "bali",
+      "city_name_zh": "巴厘岛",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 78.6,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": 0.444,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "巴厘岛 售罄率 44% 异常偏高",
+      "evidence": [
+        "售罄率 44%，远高于历史均值"
+      ],
+      "background": [],
+      "causes": [
+        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
+      ],
+      "actions": [
+        "紧急补充替代房源，扩大可售库存",
+        "联系酒店确认是否有取消释放房间的可能"
+      ]
+    }
+  ]
 }
