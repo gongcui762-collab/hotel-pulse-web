@@ -1,109 +1,14 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-03T15:01:27+08:00",
-  "snapshot_date": "2026-11-03",
+  "generated_at": "2026-11-04T11:57:15+08:00",
+  "snapshot_date": "2026-11-04",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 12,
-  "signal_count_filtered": 8,
+  "signal_count_raw": 1,
+  "signal_count_filtered": 1,
   "signals": [
-    {
-      "type": "anomaly_sold_out",
-      "priority": "high",
-      "confidence": "mid",
-      "city_code": "kualalumpur",
-      "city_name_zh": "吉隆坡",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 76.9,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.375,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "吉隆坡 售罄率 38% 异常偏高",
-      "evidence": [
-        "售罄率 38%，远高于历史均值"
-      ],
-      "background": [
-        "📋 中马互免签证 + Visit Malaysia 2026（2023-12-01~2026-12-31）— 中马免签 + 2026 马来西亚旅游年，直航大增 + 免签便利"
-      ],
-      "causes": [
-        "中马互免签证 + Visit Malaysia 2026可能推升后续需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "high",
-      "confidence": "mid",
-      "city_code": "kyoto",
-      "city_name_zh": "京都",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 82.2,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.6,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "京都 售罄率 60% 异常偏高",
-      "evidence": [
-        "售罄率 60%，远高于历史均值"
-      ],
-      "background": [
-        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
-      ],
-      "causes": [
-        "涉台外交风波 + 中国客断崖抑制需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "high",
-      "confidence": "mid",
-      "city_code": "phuket",
-      "city_name_zh": "普吉",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 87.5,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.8,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "普吉 售罄率 80% 异常偏高",
-      "evidence": [
-        "售罄率 80%，远高于历史均值"
-      ],
-      "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
-      ],
-      "causes": [
-        "中泰互免签证可能推升后续需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
     {
       "type": "anomaly_sold_out",
       "priority": "mid",
@@ -112,145 +17,21 @@
       "city_name_zh": "巴厘岛",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 78.6,
+      "heat_current": 32.5,
       "heat_change_7d": null,
       "price_change_pct": null,
-      "sold_out_rate": 0.444,
+      "sold_out_rate": 1.0,
       "consecutive_days": 0,
       "snapshot_dates": [],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 售罄率 44% 异常偏高",
+      "summary": "巴厘岛 售罄率 100% 异常偏高",
       "evidence": [
-        "售罄率 44%，远高于历史均值"
+        "售罄率 100%，远高于历史均值"
       ],
       "background": [],
       "causes": [
         "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "mid",
-      "confidence": "mid",
-      "city_code": "chiangmai",
-      "city_name_zh": "清迈",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 78.6,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.444,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "清迈 售罄率 44% 异常偏高",
-      "evidence": [
-        "售罄率 44%，远高于历史均值"
-      ],
-      "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
-      ],
-      "causes": [
-        "中泰互免签证可能推升后续需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "mid",
-      "confidence": "mid",
-      "city_code": "dubai",
-      "city_name_zh": "迪拜",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 25.4,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.714,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "迪拜 售罄率 71% 异常偏高",
-      "evidence": [
-        "售罄率 71%，远高于历史均值"
-      ],
-      "background": [],
-      "causes": [
-        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "mid",
-      "confidence": "mid",
-      "city_code": "pattaya",
-      "city_name_zh": "芭堤雅",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 22.7,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.444,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "芭堤雅 售罄率 44% 异常偏高",
-      "evidence": [
-        "售罄率 44%，远高于历史均值"
-      ],
-      "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
-      ],
-      "causes": [
-        "中泰互免签证可能推升后续需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "mid",
-      "confidence": "mid",
-      "city_code": "sapporo",
-      "city_name_zh": "札幌",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 15.8,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.333,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "札幌 售罄率 33% 异常偏高",
-      "evidence": [
-        "售罄率 33%，远高于历史均值"
-      ],
-      "background": [
-        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
-      ],
-      "causes": [
-        "涉台外交风波 + 中国客断崖抑制需求"
       ],
       "actions": [
         "紧急补充替代房源，扩大可售库存",
