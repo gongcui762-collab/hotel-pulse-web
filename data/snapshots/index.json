@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-04T11:57:22+08:00",
+  "generated_at": "2026-11-05T10:47:50+08:00",
   "snapshots": [
     {
       "date": "2026-11-04",
-      "cities": 1,
-      "hotels": 0,
+      "cities": 25,
+      "hotels": 239,
       "checkins": 19,
       "kpi": {
         "snapshot_date": "2026-11-04",
-        "cities_covered": 1,
-        "hotels_covered": 0,
+        "cities_covered": 25,
+        "hotels_covered": 239,
         "max_heat": {
-          "city": "bali",
-          "ci": "2026-11-04",
-          "heat": 32.5
+          "city": "phuket",
+          "ci": "2027-01-02",
+          "heat": 89.4
         },
-        "outlier_count": 0,
-        "sold_out_count": 0
+        "outlier_count": 939,
+        "sold_out_count": 710
       }
     },
     {
