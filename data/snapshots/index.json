@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-06T12:07:50+08:00",
+  "generated_at": "2026-11-06T18:23:29+08:00",
   "snapshots": [
     {
       "date": "2026-11-06",
-      "cities": 6,
-      "hotels": 50,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 18,
       "kpi": {
         "snapshot_date": "2026-11-06",
-        "cities_covered": 6,
-        "hotels_covered": 50,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "fukuoka",
-          "ci": "2026-11-14",
-          "heat": 90.0
+          "city": "phuket",
+          "ci": "2026-12-26",
+          "heat": 86.9
         },
-        "outlier_count": 0,
-        "sold_out_count": 82
+        "outlier_count": 902,
+        "sold_out_count": 728
       }
     },
     {
