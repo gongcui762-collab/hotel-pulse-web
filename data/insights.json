@@ -1,37 +1,100 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-08T11:43:35+08:00",
-  "snapshot_date": "2026-11-07",
+  "generated_at": "2026-11-09T11:30:13+08:00",
+  "snapshot_date": "2026-11-09",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 1,
-  "signal_count_filtered": 1,
+  "signal_count_raw": 5,
+  "signal_count_filtered": 3,
   "signals": [
     {
       "type": "anomaly_sold_out",
-      "priority": "mid",
+      "priority": "high",
       "confidence": "mid",
-      "city_code": "bali",
-      "city_name_zh": "巴厘岛",
+      "city_code": "seoul",
+      "city_name_zh": "首尔",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 32.5,
+      "heat_current": 80.0,
       "heat_change_7d": null,
       "price_change_pct": null,
-      "sold_out_rate": 1.0,
+      "sold_out_rate": 0.5,
       "consecutive_days": 0,
       "snapshot_dates": [],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "巴厘岛 售罄率 100% 异常偏高",
+      "summary": "首尔 售罄率 50% 异常偏高",
       "evidence": [
-        "售罄率 100%，远高于历史均值"
+        "售罄率 50%，远高于历史均值"
+      ],
+      "background": [
+        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
+      ],
+      "causes": [
+        "中国客大规模转向韩国可能推升后续需求"
+      ],
+      "actions": [
+        "紧急补充替代房源，扩大可售库存",
+        "联系酒店确认是否有取消释放房间的可能",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "anomaly_sold_out",
+      "priority": "mid",
+      "confidence": "mid",
+      "city_code": "newyork",
+      "city_name_zh": "纽约",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 15.0,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": 0.3,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "纽约 售罄率 30% 异常偏高",
+      "evidence": [
+        "售罄率 30%，远高于历史均值"
       ],
       "background": [],
       "causes": [
         "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
+      ],
+      "actions": [
+        "紧急补充替代房源，扩大可售库存",
+        "联系酒店确认是否有取消释放房间的可能"
+      ]
+    },
+    {
+      "type": "anomaly_sold_out",
+      "priority": "mid",
+      "confidence": "mid",
+      "city_code": "sapporo",
+      "city_name_zh": "札幌",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 15.8,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": 0.333,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "札幌 售罄率 33% 异常偏高",
+      "evidence": [
+        "售罄率 33%，远高于历史均值"
+      ],
+      "background": [
+        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
+      ],
+      "causes": [
+        "涉台外交风波 + 中国客断崖抑制需求"
       ],
       "actions": [
         "紧急补充替代房源，扩大可售库存",
