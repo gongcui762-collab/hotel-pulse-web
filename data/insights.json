@@ -1,155 +1,95 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-09T14:47:33+08:00",
-  "snapshot_date": "2026-11-09",
+  "generated_at": "2026-11-10T11:30:10+08:00",
+  "snapshot_date": "2026-11-10",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 8,
+  "signal_count_raw": 6,
   "signal_count_filtered": 5,
   "signals": [
     {
-      "type": "anomaly_sold_out",
+      "type": "surge",
       "priority": "high",
       "confidence": "mid",
-      "city_code": "phuket",
-      "city_name_zh": "普吉",
+      "city_code": "bangkok",
+      "city_name_zh": "曼谷",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 85.0,
+      "heat_current": 72.8,
       "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.7,
+      "price_change_pct": 0.176,
+      "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "普吉 售罄率 70% 异常偏高",
+      "hotels_up_count": 6,
+      "hotels_total": 7,
+      "summary": "曼谷 7 天涨幅 +17.6%，6/7 家涨价",
       "evidence": [
-        "售罄率 70%，远高于历史均值"
+        "7 天内平均涨幅 +17.6%，6/7 家酒店涨价",
+        "最大涨幅 61.5%"
       ],
       "background": [
         "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
       ],
       "causes": [
-        "中泰互免签证可能推升后续需求"
+        "中泰互免签证带动需求上升"
       ],
       "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
+        "启动价格预警，与供应商沟通锁价可能性",
         "事件驱动型涨价，建议在事件前完成采购"
       ]
     },
     {
-      "type": "anomaly_sold_out",
-      "priority": "mid",
+      "type": "surge",
+      "priority": "high",
       "confidence": "mid",
       "city_code": "dubai",
       "city_name_zh": "迪拜",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 21.4,
+      "heat_current": 10.3,
       "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.556,
+      "price_change_pct": 0.439,
+      "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "迪拜 售罄率 56% 异常偏高",
+      "hotels_up_count": 3,
+      "hotels_total": 6,
+      "summary": "迪拜 7 天涨幅 +43.9%，3/6 家涨价",
       "evidence": [
-        "售罄率 56%，远高于历史均值"
+        "7 天内平均涨幅 +43.9%，3/6 家酒店涨价",
+        "最大涨幅 247.8%"
       ],
       "background": [],
       "causes": [
-        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
+        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
       ],
       "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价"
       ]
     },
     {
-      "type": "anomaly_sold_out",
+      "type": "surge",
       "priority": "mid",
       "confidence": "mid",
-      "city_code": "newyork",
-      "city_name_zh": "纽约",
+      "city_code": "fukuoka",
+      "city_name_zh": "福冈",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 15.0,
+      "heat_current": 67.5,
       "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.3,
+      "price_change_pct": 0.107,
+      "sold_out_rate": null,
       "consecutive_days": 0,
       "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "纽约 售罄率 30% 异常偏高",
+      "hotels_up_count": 7,
+      "hotels_total": 10,
+      "summary": "福冈 7 天涨幅 +10.7%，7/10 家涨价",
       "evidence": [
-        "售罄率 30%，远高于历史均值"
-      ],
-      "background": [],
-      "causes": [
-        "售罄率异常偏高，可能存在尚未收录的需求爆发事件"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "mid",
-      "confidence": "mid",
-      "city_code": "pattaya",
-      "city_name_zh": "芭堤雅",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 20.0,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.5,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "芭堤雅 售罄率 50% 异常偏高",
-      "evidence": [
-        "售罄率 50%，远高于历史均值"
-      ],
-      "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
-      ],
-      "causes": [
-        "中泰互免签证可能推升后续需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "mid",
-      "confidence": "mid",
-      "city_code": "sapporo",
-      "city_name_zh": "札幌",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 20.0,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.5,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "札幌 售罄率 50% 异常偏高",
-      "evidence": [
-        "售罄率 50%，远高于历史均值"
+        "7 天内平均涨幅 +10.7%，7/10 家酒店涨价",
+        "最大涨幅 87.5%"
       ],
       "background": [
         "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
@@ -158,8 +98,62 @@
         "涉台外交风波 + 中国客断崖抑制需求"
       ],
       "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能"
+        "启动价格预警，与供应商沟通锁价可能性"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "mid",
+      "city_code": "hanoi",
+      "city_name_zh": "河内",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 67.5,
+      "heat_change_7d": null,
+      "price_change_pct": -0.11,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 5,
+      "hotels_total": 10,
+      "summary": "河内 7 天降幅 -11.0%，5/10 家降价",
+      "evidence": [
+        "7 天内平均降幅 -11.0%，5/10 家酒店降价"
+      ],
+      "background": [],
+      "causes": [
+        "可能为前期高位回落或淡季效应"
+      ],
+      "actions": [
+        "价格回落窗口，可考虑趁低价锁定库存"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "mid",
+      "confidence": "mid",
+      "city_code": "hongkong",
+      "city_name_zh": "香港",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 67.5,
+      "heat_change_7d": null,
+      "price_change_pct": 0.107,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 9,
+      "hotels_total": 10,
+      "summary": "香港 7 天涨幅 +10.7%，9/10 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +10.7%，9/10 家酒店涨价",
+        "最大涨幅 33.9%"
+      ],
+      "background": [],
+      "causes": [],
+      "actions": [
+        "启动价格预警，与供应商沟通锁价可能性"
       ]
     }
   ]
