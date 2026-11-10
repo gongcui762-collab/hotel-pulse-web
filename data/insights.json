@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-10T11:30:10+08:00",
+  "generated_at": "2026-11-10T14:50:54+08:00",
   "snapshot_date": "2026-11-10",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 6,
-  "signal_count_filtered": 5,
+  "signal_count_raw": 17,
+  "signal_count_filtered": 8,
   "signals": [
     {
       "type": "surge",
@@ -17,7 +17,7 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 72.8,
+      "heat_current": 72.3,
       "heat_change_7d": null,
       "price_change_pct": 0.176,
       "sold_out_rate": null,
@@ -49,7 +49,7 @@
       "city_name_zh": "迪拜",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 10.3,
+      "heat_current": 15.8,
       "heat_change_7d": null,
       "price_change_pct": 0.439,
       "sold_out_rate": null,
@@ -68,6 +68,100 @@
       ],
       "actions": [
         "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价"
+      ]
+    },
+    {
+      "type": "anomaly_sold_out",
+      "priority": "high",
+      "confidence": "mid",
+      "city_code": "phuket",
+      "city_name_zh": "普吉",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 87.9,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": 0.819,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "普吉 售罄率 82% 异常偏高",
+      "evidence": [
+        "售罄率 82%，远高于历史均值"
+      ],
+      "background": [
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ],
+      "causes": [
+        "中泰互免签证可能推升后续需求"
+      ],
+      "actions": [
+        "紧急补充替代房源，扩大可售库存",
+        "联系酒店确认是否有取消释放房间的可能",
+        "事件驱动型涨价，建议在事件前完成采购"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "high",
+      "confidence": "mid",
+      "city_code": "sapporo",
+      "city_name_zh": "札幌",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 20.0,
+      "heat_change_7d": null,
+      "price_change_pct": 1.657,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 4,
+      "hotels_total": 4,
+      "summary": "札幌 7 天涨幅 +165.7%，4/4 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +165.7%，4/4 家酒店涨价",
+        "最大涨幅 612.3%"
+      ],
+      "background": [
+        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
+      ],
+      "causes": [
+        "涉台外交风波 + 中国客断崖抑制需求"
+      ],
+      "actions": [
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价"
+      ]
+    },
+    {
+      "type": "surge",
+      "priority": "high",
+      "confidence": "mid",
+      "city_code": "tokyo",
+      "city_name_zh": "东京",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 67.5,
+      "heat_change_7d": null,
+      "price_change_pct": 0.194,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 7,
+      "hotels_total": 10,
+      "summary": "东京 7 天涨幅 +19.4%，7/10 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +19.4%，7/10 家酒店涨价",
+        "最大涨幅 107.5%"
+      ],
+      "background": [
+        "📋 涉台外交风波 + 中国客断崖（2025-11-01~2026-12-31）— 2025.11 涉台言论 → 中方发出赴日旅行警告，12 月中国客同比 -45%，2026 Q1 仍 -54.6%"
+      ],
+      "causes": [
+        "涉台外交风波 + 中国客断崖抑制需求"
+      ],
+      "actions": [
+        "启动价格预警，与供应商沟通锁价可能性"
       ]
     },
     {
@@ -109,7 +203,7 @@
       "city_name_zh": "河内",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 67.5,
+      "heat_current": 68.7,
       "heat_change_7d": null,
       "price_change_pct": -0.11,
       "sold_out_rate": null,
@@ -137,7 +231,7 @@
       "city_name_zh": "香港",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 67.5,
+      "heat_current": 70.0,
       "heat_change_7d": null,
       "price_change_pct": 0.107,
       "sold_out_rate": null,
