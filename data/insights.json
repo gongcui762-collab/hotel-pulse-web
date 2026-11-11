@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T11:30:10+08:00",
+  "generated_at": "2026-11-11T15:07:05+08:00",
   "snapshot_date": "2026-11-11",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 17,
+  "signal_count_raw": 29,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -17,7 +17,7 @@
       "city_name_zh": "巴厘岛",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 64.7,
+      "heat_current": 66.0,
       "heat_change_7d": null,
       "price_change_pct": 0.715,
       "sold_out_rate": null,
@@ -46,7 +46,7 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 72.4,
+      "heat_current": 73.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -58,9 +58,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "曼谷 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 72.4",
+      "summary": "曼谷 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 73.7",
       "evidence": [
-        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 72.4",
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 73.7",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11"
       ],
       "background": [],
@@ -78,7 +78,7 @@
       "city_name_zh": "迪拜",
       "checkin_start": "2026-12-30",
       "checkin_end": "2027-02-15",
-      "heat_current": 10.3,
+      "heat_current": 13.1,
       "heat_change_7d": null,
       "price_change_pct": 0.253,
       "sold_out_rate": null,
@@ -107,7 +107,7 @@
       "city_name_zh": "香港",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 67.5,
+      "heat_current": 70.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -119,9 +119,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "香港 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "香港 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.0",
       "evidence": [
-        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 70.0",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11"
       ],
       "background": [],
@@ -139,7 +139,7 @@
       "city_name_zh": "吉隆坡",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 67.5,
+      "heat_current": 67.4,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -151,9 +151,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "吉隆坡 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "吉隆坡 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.4",
       "evidence": [
-        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 67.4",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11"
       ],
       "background": [],
@@ -169,9 +169,9 @@
       "confidence": "high",
       "city_code": "kyoto",
       "city_name_zh": "京都",
-      "checkin_start": "2027-01-02",
-      "checkin_end": "2027-01-02",
-      "heat_current": 87.4,
+      "checkin_start": "2027-01-09",
+      "checkin_end": "2027-01-09",
+      "heat_current": 67.9,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -183,24 +183,24 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "京都 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 87.4",
+      "summary": "京都 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.9",
       "evidence": [
-        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 87.4",
+        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 67.9",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11"
       ],
       "background": [],
       "causes": [],
       "actions": [
         "提前锁定房源，与酒店谈判包房协议",
-        "立即启动补贴方案，抢占高热窗口"
+        "密切监控热度趋势，准备补贴预案"
       ]
     },
     {
       "type": "consecutive_high",
-      "priority": "mid",
+      "priority": "high",
       "confidence": "high",
-      "city_code": "busan",
-      "city_name_zh": "釜山",
+      "city_code": "osaka",
+      "city_name_zh": "大阪",
       "checkin_start": "2027-01-09",
       "checkin_end": "2027-01-09",
       "heat_current": 67.5,
@@ -215,7 +215,7 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "釜山 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "大阪 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
       "evidence": [
         "连续 3 个采集日窗口内平均热度 ≥ 65，当前 67.5",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11"
@@ -228,35 +228,35 @@
       ]
     },
     {
-      "type": "consecutive_high",
-      "priority": "mid",
-      "confidence": "high",
-      "city_code": "chiangmai",
-      "city_name_zh": "清迈",
-      "checkin_start": "2027-01-02",
-      "checkin_end": "2027-01-02",
-      "heat_current": 67.5,
+      "type": "surge",
+      "priority": "high",
+      "confidence": "mid",
+      "city_code": "pattaya",
+      "city_name_zh": "芭堤雅",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 36.7,
       "heat_change_7d": null,
-      "price_change_pct": null,
+      "price_change_pct": 0.207,
       "sold_out_rate": null,
-      "consecutive_days": 3,
-      "snapshot_dates": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "清迈 连续 3 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 3,
+      "hotels_total": 9,
+      "summary": "芭堤雅 7 天涨幅 +20.7%，3/9 家涨价",
       "evidence": [
-        "连续 3 个采集日窗口内平均热度 ≥ 65，当前 67.5",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11"
+        "7 天内平均涨幅 +20.7%，3/9 家酒店涨价",
+        "最大涨幅 236.8%"
       ],
-      "background": [],
-      "causes": [],
+      "background": [
+        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
+      ],
+      "causes": [
+        "中泰互免签证带动需求上升"
+      ],
       "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价",
+        "事件驱动型涨价，建议在事件前完成采购"
       ]
     }
   ]
