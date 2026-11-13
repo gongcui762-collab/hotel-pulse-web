@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-13T11:30:18+08:00",
+  "generated_at": "2026-11-13T15:37:53+08:00",
   "snapshots": [
     {
       "date": "2026-11-13",
-      "cities": 10,
-      "hotels": 96,
+      "cities": 25,
+      "hotels": 245,
       "checkins": 18,
       "kpi": {
         "snapshot_date": "2026-11-13",
-        "cities_covered": 10,
-        "hotels_covered": 96,
+        "cities_covered": 25,
+        "hotels_covered": 245,
         "max_heat": {
-          "city": "jakarta",
+          "city": "phuket",
           "ci": "2027-01-02",
-          "heat": 77.3
+          "heat": 90.0
         },
-        "outlier_count": 0,
-        "sold_out_count": 110
+        "outlier_count": 913,
+        "sold_out_count": 781
       }
     },
     {
