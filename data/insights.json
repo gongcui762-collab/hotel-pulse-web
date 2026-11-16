@@ -1,14 +1,43 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-16T00:36:45+08:00",
-  "snapshot_date": "2026-11-14",
+  "generated_at": "2026-11-16T11:19:52+08:00",
+  "snapshot_date": "2026-11-16",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 26,
+  "signal_count_raw": 28,
   "signal_count_filtered": 8,
   "signals": [
+    {
+      "type": "surge",
+      "priority": "high",
+      "confidence": "mid",
+      "city_code": "bali",
+      "city_name_zh": "巴厘岛",
+      "checkin_start": "2026-12-30",
+      "checkin_end": "2027-02-15",
+      "heat_current": 70.0,
+      "heat_change_7d": null,
+      "price_change_pct": 0.202,
+      "sold_out_rate": null,
+      "consecutive_days": 0,
+      "snapshot_dates": [],
+      "hotels_up_count": 2,
+      "hotels_total": 10,
+      "summary": "巴厘岛 7 天涨幅 +20.2%，2/10 家涨价",
+      "evidence": [
+        "7 天内平均涨幅 +20.2%，2/10 家酒店涨价",
+        "最大涨幅 179.5%"
+      ],
+      "background": [],
+      "causes": [
+        "暂无已知事件关联，建议关注是否有未收录的展会/赛事/演唱会"
+      ],
+      "actions": [
+        "紧急关注：涨幅超 20%，建议立即启动招商谈判锁价"
+      ]
+    },
     {
       "type": "consecutive_high",
       "priority": "high",
@@ -21,21 +50,22 @@
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "snapshot_dates": [
         "2026-11-09",
         "2026-11-10",
         "2026-11-11",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-14"
+        "2026-11-14",
+        "2026-11-16"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "曼谷 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 73.7",
+      "summary": "曼谷 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 73.7",
       "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 73.7",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14"
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 73.7",
+        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16"
       ],
       "background": [],
       "causes": [],
@@ -52,25 +82,26 @@
       "city_name_zh": "釜山",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 68.3,
+      "heat_current": 67.3,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "snapshot_dates": [
         "2026-11-09",
         "2026-11-10",
         "2026-11-11",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-14"
+        "2026-11-14",
+        "2026-11-16"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "釜山 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.3",
+      "summary": "釜山 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.3",
       "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 68.3",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14"
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 67.3",
+        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16"
       ],
       "background": [],
       "causes": [],
@@ -91,21 +122,22 @@
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "snapshot_dates": [
         "2026-11-09",
         "2026-11-10",
         "2026-11-11",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-14"
+        "2026-11-14",
+        "2026-11-16"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "清迈 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
+      "summary": "清迈 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
       "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 68.7",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14"
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 68.7",
+        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16"
       ],
       "background": [],
       "causes": [],
@@ -126,21 +158,22 @@
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "snapshot_dates": [
         "2026-11-09",
         "2026-11-10",
         "2026-11-11",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-14"
+        "2026-11-14",
+        "2026-11-16"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "福冈 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "福冈 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
       "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 67.5",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14"
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16"
       ],
       "background": [],
       "causes": [],
@@ -161,21 +194,22 @@
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "snapshot_dates": [
         "2026-11-09",
         "2026-11-10",
         "2026-11-11",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-14"
+        "2026-11-14",
+        "2026-11-16"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "河内 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
+      "summary": "河内 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.7",
       "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 68.7",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14"
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 68.7",
+        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16"
       ],
       "background": [],
       "causes": [],
@@ -190,27 +224,28 @@
       "confidence": "high",
       "city_code": "hochiminh",
       "city_name_zh": "胡志明",
-      "checkin_start": "2027-01-02",
-      "checkin_end": "2027-01-02",
+      "checkin_start": "2027-01-09",
+      "checkin_end": "2027-01-09",
       "heat_current": 67.5,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "snapshot_dates": [
         "2026-11-09",
         "2026-11-10",
         "2026-11-11",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-14"
+        "2026-11-14",
+        "2026-11-16"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "胡志明 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "胡志明 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
       "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 67.5",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14"
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16"
       ],
       "background": [],
       "causes": [],
@@ -231,56 +266,22 @@
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 6,
+      "consecutive_days": 7,
       "snapshot_dates": [
         "2026-11-09",
         "2026-11-10",
         "2026-11-11",
         "2026-11-12",
         "2026-11-13",
-        "2026-11-14"
+        "2026-11-14",
+        "2026-11-16"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "香港 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.0",
+      "summary": "香港 连续 7 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.0",
       "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 70.0",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "kualalumpur",
-      "city_name_zh": "吉隆坡",
-      "checkin_start": "2027-01-09",
-      "checkin_end": "2027-01-09",
-      "heat_current": 68.9,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 6,
-      "snapshot_dates": [
-        "2026-11-09",
-        "2026-11-10",
-        "2026-11-11",
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "吉隆坡 连续 6 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.9",
-      "evidence": [
-        "连续 6 个采集日窗口内平均热度 ≥ 65，当前 68.9",
-        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14"
+        "连续 7 个采集日窗口内平均热度 ≥ 65，当前 70.0",
+        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16"
       ],
       "background": [],
       "causes": [],
