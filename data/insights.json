@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-17T11:30:12+08:00",
+  "generated_at": "2026-11-17T14:57:37+08:00",
   "snapshot_date": "2026-11-17",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 12,
+  "signal_count_raw": 28,
   "signal_count_filtered": 8,
   "signals": [
     {
@@ -17,7 +17,7 @@
       "city_name_zh": "曼谷",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 72.5,
+      "heat_current": 72.4,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -34,9 +34,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "曼谷 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 72.5",
+      "summary": "曼谷 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 72.4",
       "evidence": [
-        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 72.5",
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 72.4",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17"
       ],
       "background": [],
@@ -52,9 +52,9 @@
       "confidence": "high",
       "city_code": "busan",
       "city_name_zh": "釜山",
-      "checkin_start": "2027-01-16",
-      "checkin_end": "2027-01-16",
-      "heat_current": 66.9,
+      "checkin_start": "2027-01-02",
+      "checkin_end": "2027-01-02",
+      "heat_current": 66.7,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -71,9 +71,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "釜山 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.9",
+      "summary": "釜山 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 66.7",
       "evidence": [
-        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 66.9",
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 66.7",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17"
       ],
       "background": [],
@@ -91,7 +91,7 @@
       "city_name_zh": "清迈",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 67.5,
+      "heat_current": 73.3,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -108,9 +108,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "清迈 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "清迈 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 73.3",
       "evidence": [
-        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 73.3",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17"
       ],
       "background": [],
@@ -165,7 +165,7 @@
       "city_name_zh": "河内",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 67.5,
+      "heat_current": 68.3,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -182,9 +182,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "河内 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "河内 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.3",
       "evidence": [
-        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 68.3",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17"
       ],
       "background": [],
@@ -200,8 +200,8 @@
       "confidence": "high",
       "city_code": "hochiminh",
       "city_name_zh": "胡志明",
-      "checkin_start": "2027-01-02",
-      "checkin_end": "2027-01-02",
+      "checkin_start": "2027-01-09",
+      "checkin_end": "2027-01-09",
       "heat_current": 67.5,
       "heat_change_7d": null,
       "price_change_pct": null,
@@ -239,7 +239,7 @@
       "city_name_zh": "香港",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 67.5,
+      "heat_current": 70.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
@@ -256,9 +256,9 @@
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "香港 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.5",
+      "summary": "香港 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.0",
       "evidence": [
-        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 67.5",
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 70.0",
         "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17"
       ],
       "background": [],
@@ -269,35 +269,40 @@
       ]
     },
     {
-      "type": "anomaly_sold_out",
+      "type": "consecutive_high",
       "priority": "high",
-      "confidence": "mid",
-      "city_code": "jeju",
-      "city_name_zh": "济州",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 53.0,
+      "confidence": "high",
+      "city_code": "kualalumpur",
+      "city_name_zh": "吉隆坡",
+      "checkin_start": "2027-01-02",
+      "checkin_end": "2027-01-02",
+      "heat_current": 67.4,
       "heat_change_7d": null,
       "price_change_pct": null,
-      "sold_out_rate": 0.5,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
+      "sold_out_rate": null,
+      "consecutive_days": 8,
+      "snapshot_dates": [
+        "2026-11-09",
+        "2026-11-10",
+        "2026-11-11",
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-16",
+        "2026-11-17"
+      ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "济州 售罄率 50% 异常偏高",
+      "summary": "吉隆坡 连续 8 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.4",
       "evidence": [
-        "售罄率 50%，远高于历史均值"
+        "连续 8 个采集日窗口内平均热度 ≥ 65，当前 67.4",
+        "持续日期：2026-11-09 → 2026-11-10 → 2026-11-11 → 2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17"
       ],
-      "background": [
-        "📋 中国客大规模转向韩国（2025-01-01~2026-12-31）— 中日关系趋紧 → 中国客转韩，2025 全年中国客同比 +19.6%，全面超疫前"
-      ],
-      "causes": [
-        "中国客大规模转向韩国可能推升后续需求"
-      ],
+      "background": [],
+      "causes": [],
       "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案"
       ]
     }
   ]
