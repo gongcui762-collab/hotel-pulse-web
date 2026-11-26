@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-25T14:41:56+08:00",
-  "snapshot_date": "2026-11-25",
+  "generated_at": "2026-11-26T11:38:46+08:00",
+  "snapshot_date": "2026-11-26",
   "window": {
     "start": "2026-12-30",
     "end": "2027-02-15"
   },
-  "signal_count_raw": 26,
-  "signal_count_filtered": 8,
+  "signal_count_raw": 3,
+  "signal_count_filtered": 2,
   "signals": [
     {
       "type": "consecutive_high",
@@ -15,303 +15,70 @@
       "confidence": "high",
       "city_code": "bangkok",
       "city_name_zh": "曼谷",
+      "checkin_start": "2027-01-16",
+      "checkin_end": "2027-01-16",
+      "heat_current": 78.1,
+      "heat_change_7d": null,
+      "price_change_pct": null,
+      "sold_out_rate": null,
+      "consecutive_days": 10,
+      "snapshot_dates": [
+        "2026-11-13",
+        "2026-11-14",
+        "2026-11-16",
+        "2026-11-17",
+        "2026-11-18",
+        "2026-11-19",
+        "2026-11-20",
+        "2026-11-24",
+        "2026-11-25",
+        "2026-11-26"
+      ],
+      "hotels_up_count": 0,
+      "hotels_total": 0,
+      "summary": "曼谷 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 78.1",
+      "evidence": [
+        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 78.1",
+        "持续日期：2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17 → 2026-11-18 → 2026-11-19 → 2026-11-20 → 2026-11-24 → 2026-11-25 → 2026-11-26"
+      ],
+      "background": [],
+      "causes": [],
+      "actions": [
+        "提前锁定房源，与酒店谈判包房协议",
+        "密切监控热度趋势，准备补贴预案"
+      ]
+    },
+    {
+      "type": "consecutive_high",
+      "priority": "mid",
+      "confidence": "high",
+      "city_code": "bali",
+      "city_name_zh": "巴厘岛",
       "checkin_start": "2027-01-02",
       "checkin_end": "2027-01-02",
-      "heat_current": 72.4,
+      "heat_current": 70.0,
       "heat_change_7d": null,
       "price_change_pct": null,
       "sold_out_rate": null,
-      "consecutive_days": 10,
+      "consecutive_days": 4,
       "snapshot_dates": [
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-16",
-        "2026-11-17",
-        "2026-11-18",
-        "2026-11-19",
         "2026-11-20",
         "2026-11-24",
-        "2026-11-25"
+        "2026-11-25",
+        "2026-11-26"
       ],
       "hotels_up_count": 0,
       "hotels_total": 0,
-      "summary": "曼谷 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 72.4",
+      "summary": "巴厘岛 连续 4 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.0",
       "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 72.4",
-        "持续日期：2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17 → 2026-11-18 → 2026-11-19 → 2026-11-20 → 2026-11-24 → 2026-11-25"
+        "连续 4 个采集日窗口内平均热度 ≥ 65，当前 70.0",
+        "持续日期：2026-11-20 → 2026-11-24 → 2026-11-25 → 2026-11-26"
       ],
       "background": [],
       "causes": [],
       "actions": [
         "提前锁定房源，与酒店谈判包房协议",
         "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "chiangmai",
-      "city_name_zh": "清迈",
-      "checkin_start": "2027-01-02",
-      "checkin_end": "2027-01-02",
-      "heat_current": 70.3,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-16",
-        "2026-11-17",
-        "2026-11-18",
-        "2026-11-19",
-        "2026-11-20",
-        "2026-11-24",
-        "2026-11-25"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "清迈 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 70.3",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 70.3",
-        "持续日期：2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17 → 2026-11-18 → 2026-11-19 → 2026-11-20 → 2026-11-24 → 2026-11-25"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "fukuoka",
-      "city_name_zh": "福冈",
-      "checkin_start": "2027-01-23",
-      "checkin_end": "2027-01-23",
-      "heat_current": 68.1,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-16",
-        "2026-11-17",
-        "2026-11-18",
-        "2026-11-19",
-        "2026-11-20",
-        "2026-11-24",
-        "2026-11-25"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "福冈 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.1",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.1",
-        "持续日期：2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17 → 2026-11-18 → 2026-11-19 → 2026-11-20 → 2026-11-24 → 2026-11-25"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "hochiminh",
-      "city_name_zh": "胡志明",
-      "checkin_start": "2027-01-09",
-      "checkin_end": "2027-01-09",
-      "heat_current": 68.1,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-16",
-        "2026-11-17",
-        "2026-11-18",
-        "2026-11-19",
-        "2026-11-20",
-        "2026-11-24",
-        "2026-11-25"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "胡志明 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.1",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.1",
-        "持续日期：2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17 → 2026-11-18 → 2026-11-19 → 2026-11-20 → 2026-11-24 → 2026-11-25"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "hongkong",
-      "city_name_zh": "香港",
-      "checkin_start": "2027-01-16",
-      "checkin_end": "2027-01-16",
-      "heat_current": 68.1,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-16",
-        "2026-11-17",
-        "2026-11-18",
-        "2026-11-19",
-        "2026-11-20",
-        "2026-11-24",
-        "2026-11-25"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "香港 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.1",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.1",
-        "持续日期：2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17 → 2026-11-18 → 2026-11-19 → 2026-11-20 → 2026-11-24 → 2026-11-25"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "kualalumpur",
-      "city_name_zh": "吉隆坡",
-      "checkin_start": "2027-01-16",
-      "checkin_end": "2027-01-16",
-      "heat_current": 68.2,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-16",
-        "2026-11-17",
-        "2026-11-18",
-        "2026-11-19",
-        "2026-11-20",
-        "2026-11-24",
-        "2026-11-25"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "吉隆坡 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 68.2",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 68.2",
-        "持续日期：2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17 → 2026-11-18 → 2026-11-19 → 2026-11-20 → 2026-11-24 → 2026-11-25"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "consecutive_high",
-      "priority": "high",
-      "confidence": "high",
-      "city_code": "osaka",
-      "city_name_zh": "大阪",
-      "checkin_start": "2027-01-16",
-      "checkin_end": "2027-01-16",
-      "heat_current": 67.2,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": null,
-      "consecutive_days": 10,
-      "snapshot_dates": [
-        "2026-11-12",
-        "2026-11-13",
-        "2026-11-14",
-        "2026-11-16",
-        "2026-11-17",
-        "2026-11-18",
-        "2026-11-19",
-        "2026-11-20",
-        "2026-11-24",
-        "2026-11-25"
-      ],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "大阪 连续 10 个 snapshot 窗口内平均热度 ≥ 65.0，当前 67.2",
-      "evidence": [
-        "连续 10 个采集日窗口内平均热度 ≥ 65，当前 67.2",
-        "持续日期：2026-11-12 → 2026-11-13 → 2026-11-14 → 2026-11-16 → 2026-11-17 → 2026-11-18 → 2026-11-19 → 2026-11-20 → 2026-11-24 → 2026-11-25"
-      ],
-      "background": [],
-      "causes": [],
-      "actions": [
-        "提前锁定房源，与酒店谈判包房协议",
-        "密切监控热度趋势，准备补贴预案"
-      ]
-    },
-    {
-      "type": "anomaly_sold_out",
-      "priority": "high",
-      "confidence": "mid",
-      "city_code": "phuket",
-      "city_name_zh": "普吉",
-      "checkin_start": "2026-12-30",
-      "checkin_end": "2027-02-15",
-      "heat_current": 72.8,
-      "heat_change_7d": null,
-      "price_change_pct": null,
-      "sold_out_rate": 0.814,
-      "consecutive_days": 0,
-      "snapshot_dates": [],
-      "hotels_up_count": 0,
-      "hotels_total": 0,
-      "summary": "普吉 售罄率 81% 异常偏高",
-      "evidence": [
-        "售罄率 81%，远高于历史均值"
-      ],
-      "background": [
-        "📋 中泰互免签证（2024-03-01~2026-12-31）— 2024.3 起中泰永久互免签证，持续刺激泰国出行需求"
-      ],
-      "causes": [
-        "中泰互免签证可能推升后续需求"
-      ],
-      "actions": [
-        "紧急补充替代房源，扩大可售库存",
-        "联系酒店确认是否有取消释放房间的可能",
-        "事件驱动型涨价，建议在事件前完成采购"
       ]
     }
   ]

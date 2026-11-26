@@ -1,7 +1,25 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-25T14:42:03+08:00",
+  "generated_at": "2026-11-26T11:38:53+08:00",
   "snapshots": [
+    {
+      "date": "2026-11-26",
+      "cities": 2,
+      "hotels": 19,
+      "checkins": 18,
+      "kpi": {
+        "snapshot_date": "2026-11-26",
+        "cities_covered": 2,
+        "hotels_covered": 19,
+        "max_heat": {
+          "city": "bangkok",
+          "ci": "2027-01-16",
+          "heat": 78.6
+        },
+        "outlier_count": 0,
+        "sold_out_count": 42
+      }
+    },
     {
       "date": "2026-11-25",
       "cities": 25,
